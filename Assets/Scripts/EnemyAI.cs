@@ -7,12 +7,12 @@ public class EnemyAI : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform player;
-    public LayerMask isGround, isPlayer;
 
     // Update is called once per frame
     private void Awake()
     {
-        player = GameObject.Find("Player").transform;
+        //player = GameObject.Find("XRRig").transform;
+        player = Camera.main.transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
