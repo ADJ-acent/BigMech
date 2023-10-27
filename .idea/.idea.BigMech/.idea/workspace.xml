@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c74962fd-8c8c-4a1e-9b20-326b709da286" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BigMech/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BigMech/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AndyDev.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AndyDev.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IKFootSolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IKFootSolver.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.4.3/Runtime/Inputs/InputActionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.4.3/Runtime/Locomotion/Continuous/ActionBasedContinuousMoveProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.4.3/Runtime/Locomotion/LocomotionSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -99,6 +102,8 @@
       <updated>1698378722783</updated>
       <workItem from="1698378724564" duration="599000" />
       <workItem from="1698381551268" duration="1000" />
+      <workItem from="1698414045730" duration="105000" />
+      <workItem from="1698414354673" duration="1355000" />
     </task>
     <servers />
   </component>
