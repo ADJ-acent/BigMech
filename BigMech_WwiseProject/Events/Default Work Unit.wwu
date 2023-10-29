@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2184E299-A2E6-443A-92A9-19648C30E517}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{2184E299-A2E6-443A-92A9-19648C30E517}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_hit_sfx" ID="{2B93754C-686D-4581-A76A-A65012BA54F8}">
+					<ChildrenList>
+						<Action Name="" ID="{C3978DD4-66AA-4BD1-9CB9-BE47EB13E948}" ShortID="411315095">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="hit sfx" ID="{33F7B43A-7F81-4E7F-BEB2-2D9E41FB7BDD}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

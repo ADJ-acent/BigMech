@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Android</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{97E3ECE0-57A7-67B2-9351-D7D5459B66B1}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{C47D3116-2AA3-248D-D41F-EA36B8D3600C}">
+			<ShortName>SFX_Test</ShortName>
+			<Path>SFX_Test.bnk</Path>
+			<Media>
+				<File Id="921407178" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>hit sfx.wav</ShortName>
+					<CachePath>SFX/hit sfx_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="694402461" Name="Play_hit_sfx" DurationType="OneShot" DurationMin="0.49950114" DurationMax="0.49950114">
+					<MediaRefs>
+						<MediaRef Id="921407178"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{BCB3EF35-C4F9-0F82-D29D-94233F99569A}</FileHash>
+</SoundBanksInfo>
