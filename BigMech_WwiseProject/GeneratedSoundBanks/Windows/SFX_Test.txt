@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	694402461	Play_hit_sfx			\Default Work Unit\Play_hit_sfx	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	921407178	hit sfx	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\hit sfx_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\hit sfx		88208
+

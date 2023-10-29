@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="hit sfx" ID="{33F7B43A-7F81-4E7F-BEB2-2D9E41FB7BDD}" ShortID="726879077">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="hit sfx" ID="{2E0DBAA4-E222-4F9A-A63F-68BC564FC08D}">
+							<Language>SFX</Language>
+							<AudioFile>hit sfx.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="921407178"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="hit sfx" ID="{2E0DBAA4-E222-4F9A-A63F-68BC564FC08D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
