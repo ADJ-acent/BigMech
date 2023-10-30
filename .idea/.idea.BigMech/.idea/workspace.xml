@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c74962fd-8c8c-4a1e-9b20-326b709da286" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BigMech/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BigMech/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/BROW_diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/BROW_diffuse.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/AndyDev.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AndyDev.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IKFootSolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IKFootSolver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Package Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Package Settings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +105,7 @@
       <workItem from="1698381551268" duration="1000" />
       <workItem from="1698414045730" duration="105000" />
       <workItem from="1698414354673" duration="1355000" />
+      <workItem from="1698633452214" duration="3299000" />
     </task>
     <servers />
   </component>
