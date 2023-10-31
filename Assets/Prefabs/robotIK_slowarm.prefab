@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3210945041114984570
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8181935163019759962, guid: adfed8fd2fd532f4392155c3d7c0f527,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181935163019759962, guid: adfed8fd2fd532f4392155c3d7c0f527,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181935163019759962, guid: adfed8fd2fd532f4392155c3d7c0f527,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181935163019759962, guid: adfed8fd2fd532f4392155c3d7c0f527,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181935163019759962, guid: adfed8fd2fd532f4392155c3d7c0f527,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181935163019759962, guid: adfed8fd2fd532f4392155c3d7c0f527,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181935163019759962, guid: adfed8fd2fd532f4392155c3d7c0f527,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181935163019759962, guid: adfed8fd2fd532f4392155c3d7c0f527,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181935163019759962, guid: adfed8fd2fd532f4392155c3d7c0f527,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181935163019759962, guid: adfed8fd2fd532f4392155c3d7c0f527,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847253310288317408, guid: adfed8fd2fd532f4392155c3d7c0f527,
+        type: 3}
+      propertyPath: m_Name
+      value: robotIK Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8412863253622619063, guid: adfed8fd2fd532f4392155c3d7c0f527, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2979323815012615927, guid: adfed8fd2fd532f4392155c3d7c0f527,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8137918247468515460}
+  m_SourcePrefab: {fileID: 100100000, guid: adfed8fd2fd532f4392155c3d7c0f527, type: 3}
+--- !u!1 &420874055147959949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2979323815012615927, guid: adfed8fd2fd532f4392155c3d7c0f527,
+    type: 3}
+  m_PrefabInstance: {fileID: 3210945041114984570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8137918247468515460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420874055147959949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdce435324e3e0438a505f9eb657851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftArm:
+    controllerTransform: {fileID: 0}
+    targetTransform: {fileID: 5130165566988491863}
+    mechPivotTransform: {fileID: 0}
+    headsetTransform: {fileID: 0}
+    armLength: 0.65
+    mechMin: 6
+    mechMax: 20
+    armVelocity: 0.1
+  rightArm:
+    controllerTransform: {fileID: 0}
+    targetTransform: {fileID: 3779201457969616281}
+    mechPivotTransform: {fileID: 0}
+    headsetTransform: {fileID: 0}
+    armLength: 0.65
+    mechMin: 6
+    mechMax: 20
+    armVelocity: 0.1
+  mechPivot: {fileID: 7693006317359418250}
+  headSetTransform: {fileID: 0}
+  armLength: 0.65
+  mechMinReach: 5
+  mechMaxReach: 15
+--- !u!4 &3779201457969616281 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1800870524513887715, guid: adfed8fd2fd532f4392155c3d7c0f527,
+    type: 3}
+  m_PrefabInstance: {fileID: 3210945041114984570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5130165566988491863 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7763523955884813357, guid: adfed8fd2fd532f4392155c3d7c0f527,
+    type: 3}
+  m_PrefabInstance: {fileID: 3210945041114984570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7693006317359418250 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5065597387246844912, guid: adfed8fd2fd532f4392155c3d7c0f527,
+    type: 3}
+  m_PrefabInstance: {fileID: 3210945041114984570}
+  m_PrefabAsset: {fileID: 0}

@@ -17,7 +17,9 @@ public class MechArmMapLerp
         Vector3 vectorToController = controllerTransform.position - headsetTransform.position;
         float distanceToController = vectorToController.magnitude;
         Vector3 normalizedToController = vectorToController.normalized;
-        targetTransform.position = mechPivotTransform.position + normalizedToController * Mathf.Lerp(mechMin,mechMax,distanceToController/armLength);
+        Vector3 targetPosition = mechPivotTransform.position + normalizedToController * Mathf.Lerp(mechMin,mechMax,distanceToController/armLength);
+        targetTransform.position = Vector3.Lerp(targetTransform.position, targetPosition,
+            armVelocity /(targetPosition - targetTransform.position).magnitude);
         targetTransform.rotation = controllerTransform.rotation;
     }
 }
