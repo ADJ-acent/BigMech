@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c74962fd-8c8c-4a1e-9b20-326b709da286" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BigMech/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BigMech/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AndyDev.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AndyDev.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MechMovement/MechMovementPrototype.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MechMovement/MechMovementPrototype.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
