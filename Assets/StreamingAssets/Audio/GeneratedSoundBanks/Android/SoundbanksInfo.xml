@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="16" SoundBankVersion="145">
 	<RootPaths>
-		<ProjectRoot>../../../../BigMech_WwiseProject</ProjectRoot>
-		<SourceFilesRoot>../../../../BigMech_WwiseProject/.cache/Android</SourceFilesRoot>
+		<ProjectRoot>../../../../../BigMech_WwiseProject</ProjectRoot>
+		<SourceFilesRoot>../../../../../BigMech_WwiseProject/.cache/Android</SourceFilesRoot>
 		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>../../../../BigMech_WwiseProject/GeneratedSoundBanks/Android</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>../../../../../BigMech_WwiseProject/GeneratedSoundBanks/Android</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
@@ -40,5 +40,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7DB655C4-D15A-E3C1-F73E-7CDDDB9B31C4}</FileHash>
+	<FileHash>{E742EDE9-65A5-61D7-1934-F597CD9415A3}</FileHash>
 </SoundBanksInfo>
