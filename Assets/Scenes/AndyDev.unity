@@ -4026,6 +4026,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1025587855}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1941206890 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8368019317241160692, guid: 47cc606ac27ca214ba853b58a29e1286,
+    type: 3}
+  m_PrefabInstance: {fileID: 841800418816403131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1941333449
 GameObject:
   m_ObjectHideFlags: 0
@@ -4216,6 +4222,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1025587855}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2095454953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 420874055147959949, guid: 47cc606ac27ca214ba853b58a29e1286,
+    type: 3}
+  m_PrefabInstance: {fileID: 841800418816403131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2095454957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095454953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbe2c1f2c5e530429949a707ee05779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vrHeadTransform: {fileID: 1475906493}
+  robotRigTransform: {fileID: 1941206890}
+  angleLimit: 0
+  rotationMaxSpeed: 0
 --- !u!4 &2100965337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1330755669629619180, guid: 4f78efde1d647894d858dced88477513,
@@ -4352,7 +4380,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 420874055147959949, guid: 47cc606ac27ca214ba853b58a29e1286,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2095454957}
   m_SourcePrefab: {fileID: 100100000, guid: 47cc606ac27ca214ba853b58a29e1286, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
