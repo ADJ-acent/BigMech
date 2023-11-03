@@ -36,7 +36,6 @@ public class MechMovementPrototype : MonoBehaviour
             float rightVal = rightMove.action.ReadValue<Vector2>().x;
             float forwardVal = rightMove.action.ReadValue<Vector2>().y;
             Vector3 movementDir = forwardVal * robotRigTransform.forward +rightVal * robotParentTransform.right;
-            Debug.Log(vrHeadTransform.forward);
             robotParentTransform.position = oldPos + (movementDir.normalized)*speed;
         }
     }

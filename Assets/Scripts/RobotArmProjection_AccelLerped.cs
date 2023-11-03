@@ -4,7 +4,7 @@ using UnityEngine;
 [System.Serializable]
 
 
-public class RobotArmProjection : MonoBehaviour
+public class RobotArmProjection_AccelLerped : MonoBehaviour
 {
     public MechArmMap leftArm;
     public MechArmMap rightArm;
