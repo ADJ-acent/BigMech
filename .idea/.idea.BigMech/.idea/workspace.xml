@@ -18,6 +18,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/andyj/OneDrive/Desktop-AJslaptop/Github/BigMech/BigMech/Assets/Scripts/MechMovement/MechMovementPrototype.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.4.3/Runtime/Inputs/InputActionManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.4.3/Runtime/Locomotion/Continuous/ActionBasedContinuousMoveProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.4.3/Runtime/Locomotion/LocomotionSystem.cs" root0="SKIP_HIGHLIGHTING" />
@@ -115,6 +116,7 @@
       <workItem from="1698633452214" duration="3299000" />
       <workItem from="1698710629616" duration="4680000" />
       <workItem from="1698846359278" duration="3432000" />
+      <workItem from="1698968480548" duration="4159000" />
     </task>
     <servers />
   </component>

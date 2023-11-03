@@ -1,21 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class MechMovementPrototype : MonoBehaviour
 {
     public Transform vrHeadTransform;
 
     public Transform robotRigTransform;
-
+    public Transform robotParentTransform;
+    // limit of angle to the y axis, if less than this, don't rotate according to the headset
     public float angleLimit;
     // Max Angle to rotate per tick
     public float rotationMaxAngle;
+    public InputActionReference rightMove;
+    public float speed;
     
     // Start is called before the first frame update
     void Start()
     {
-        //Quaternion.Lerp()
     }
 
     // Update is called once per frame
@@ -28,7 +31,13 @@ public class MechMovementPrototype : MonoBehaviour
             Vector3.Angle(Vector3.up, vrHeadTransform.forward) > angleLimit)
         {
             robotRigTransform.rotation = Quaternion.RotateTowards(robotRigTransform.rotation, 
-                Quaternion.Euler(0f, headsetVector3.y,0), rotationMaxAngle); 
+                Quaternion.Euler(0f, headsetVector3.y,0), rotationMaxAngle);
+            Vector3 oldPos = robotParentTransform.position;
+            float rightVal = rightMove.action.ReadValue<Vector2>().x;
+            float forwardVal = rightMove.action.ReadValue<Vector2>().y;
+            Vector3 movementDir = forwardVal * robotRigTransform.forward +rightVal * robotParentTransform.right;
+            Debug.Log(vrHeadTransform.forward);
+            robotParentTransform.position = oldPos + (movementDir.normalized)*speed;
         }
     }
 }
