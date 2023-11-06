@@ -22,7 +22,7 @@ public class MechMovementPrototype : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Quaternion headsetQuaternion = vrHeadTransform.rotation;
         Vector3 headsetVector3 = headsetQuaternion.eulerAngles;

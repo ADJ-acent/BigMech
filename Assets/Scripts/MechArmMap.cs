@@ -6,6 +6,7 @@ public class MechArmMap
 {
     public Transform controllerTransform;
     public Transform targetTransform;
+    public Quaternion handRotationOffset;
     [HideInInspector] public Transform mechPivotTransform;
     [HideInInspector] public Transform headsetTransform;
     [HideInInspector] public float armLength = .65f;
