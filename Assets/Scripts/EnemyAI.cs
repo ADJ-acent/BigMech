@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
+    public PlayerCanvas playerMechanics;
+
     public NavMeshAgent agent;
     public Transform player;
     public Transform enemy;
@@ -18,7 +20,6 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     private void Awake()
     {
-        //player = GameObject.Find("XRRig").transform;
         player = GameObject.Find("Player").transform;
         enemy = GameObject.Find("Enemy").transform;
         agent = GetComponent<NavMeshAgent>();
@@ -29,7 +30,11 @@ public class EnemyAI : MonoBehaviour
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
         if (!playerInAttackRange) ChasePlayer();
-        else AttackPlayer();
+        else 
+        {
+            playerMechanics.ShowAttackSign(player.position, enemy.position);
+            AttackPlayer();
+        }
     }
 
     private void ChasePlayer()
@@ -44,10 +49,12 @@ public class EnemyAI : MonoBehaviour
 
         if (!alreadyAttacked)
         {
+            playerMechanics.ShowBlockSign(player.position, enemy.position);
             Debug.LogFormat("PUNCH! from {0}", transform.name);
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
+            // playerMechanics.HideBlockSign(player.position, enemy.position);
         }
     }
 
