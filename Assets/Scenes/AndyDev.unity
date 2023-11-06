@@ -2919,9 +2919,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftArm:
-    controllerTransform: {fileID: 1156201768}
+    controllerTransform: {fileID: 1596156012}
     targetTransform: {fileID: 1509840665}
-    handRotationOffset: {x: 0, y: 0, z: 0, w: 0}
     mechPivotTransform: {fileID: 0}
     headsetTransform: {fileID: 0}
     armLength: 0.65
@@ -2929,9 +2928,8 @@ MonoBehaviour:
     mechMax: 20
     armVelocity: 0.5
   rightArm:
-    controllerTransform: {fileID: 1029308693}
+    controllerTransform: {fileID: 1905091784}
     targetTransform: {fileID: 666116371}
-    handRotationOffset: {x: 0, y: 0, z: 0, w: 0}
     mechPivotTransform: {fileID: 0}
     headsetTransform: {fileID: 0}
     armLength: 0.65
@@ -3689,6 +3687,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1029308693}
+  - {fileID: 1905091784}
   m_Father: {fileID: 1859420231}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!210 &488441879
@@ -12170,60 +12169,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1926833729}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1404716457 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7834224820006357910, guid: 80f2810f731efef40ba942cc3b63c111,
-    type: 3}
-  m_PrefabInstance: {fileID: 1596633150}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1404716458
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404716457}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.25765932, y: 0.3955928, z: 0.19999997}
-  m_Center: {x: -0.03530035, y: -0.097796366, z: 0.0000000084162535}
---- !u!54 &1404716459
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404716457}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &1407941193 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3108366657495073219, guid: 80f2810f731efef40ba942cc3b63c111,
@@ -13689,6 +13634,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1926833729}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1596156011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1596156012}
+  m_Layer: 0
+  m_Name: LeftMechVRSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1596156012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596156011}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.046, y: -0.031999946, z: -0.112}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1666554556}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1596633150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13981,14 +13957,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2087784998}
-    - targetCorrespondingSourceObject: {fileID: -7834224820006357910, guid: 80f2810f731efef40ba942cc3b63c111,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1404716458}
-    - targetCorrespondingSourceObject: {fileID: -7834224820006357910, guid: 80f2810f731efef40ba942cc3b63c111,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1404716459}
   m_SourcePrefab: {fileID: 100100000, guid: 80f2810f731efef40ba942cc3b63c111, type: 3}
 --- !u!1 &1612359968 stripped
 GameObject:
@@ -14610,6 +14578,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1156201768}
+  - {fileID: 1596156012}
   m_Father: {fileID: 1859420231}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!210 &1666554557
@@ -16319,6 +16288,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1926833729}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1905091783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1905091784}
+  m_Layer: 0
+  m_Name: RightMechVRSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1905091784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905091783}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7660445, z: -0, w: -0.6427876}
+  m_LocalPosition: {x: 0.046, y: -0.031999946, z: -0.112}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 488441878}
+  m_LocalEulerAnglesHint: {x: 0, y: 260, z: 0}
 --- !u!1 &1915004595 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3146531130286713033, guid: 20dbbda525d5d6c4188ff26f6b797334,
