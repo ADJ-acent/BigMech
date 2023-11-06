@@ -47,28 +47,37 @@ public class MechMovementPrototype : MonoBehaviour
             //play the mech foot step sound 
             if (rightVal != 0 || forwardVal != 0)
             {
-                //Debug.Log("moving here?");
-
                 if (!isMoving)
                 {
-                    StartCoroutine(PlayFootstepSound());
-                    isMoving = true;
+                    StartCoroutine(PlayFootstepSounds());
                 }
             }
-            else
-            {
-                isMoving = false;
-            }
-
+        
             robotParentTransform.position = oldPos + (movementDir.normalized)*speed;
         }
     }
 
-    private IEnumerator PlayFootstepSound()
+    private IEnumerator PlayFootstepSounds()
     {
-        mechFootSteps.Post(gameObject);
-       // Adjust the delay for footstep sound
-        yield return new WaitForSeconds(0.5f); 
+        isMoving = true;
+
+        while (true)
+        {
+            mechFootSteps.Post(gameObject);
+
+            // Adjust the delay for footstep sound (you can change this value)
+            yield return new WaitForSeconds(0.5f);
+
+            float rightVal = rightMove.action.ReadValue<Vector2>().x;
+            float forwardVal = rightMove.action.ReadValue<Vector2>().y;
+
+            // Check if the joystick is released
+            if (rightVal == 0 && forwardVal == 0)
+            {
+                isMoving = false;
+                yield break; // Exit the coroutine
+            }
+        }
     }
 
 }
