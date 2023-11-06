@@ -25,6 +25,128 @@
 						<ActiveSource Name="hit sfx" ID="{2E0DBAA4-E222-4F9A-A63F-68BC564FC08D}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="Footsteps" ID="{8473662C-3A7B-4953-B2D0-B782240FFB25}" ShortID="316250235">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="heavy footsteps v1" ID="{72589E87-754A-4B46-B653-70C84CEBE7A1}" ShortID="233138473">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="heavy footsteps v1" ID="{71585DF3-8DCC-4C42-AF1C-1635002A6D5E}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0146775165762508"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0234840265220012"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Footsteps\heavy footsteps v1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="11755695"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="heavy footsteps v1" ID="{71585DF3-8DCC-4C42-AF1C-1635002A6D5E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="heavy footsteps v2" ID="{B59B2056-EFCD-4F57-A9E2-BB53EABA9E2E}" ShortID="583617722">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>50</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="heavy footsteps v2" ID="{0B92DF2F-CEC2-4978-BA77-5B7CB182FE71}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps\heavy footsteps v2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="4915979"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="heavy footsteps v2" ID="{0B92DF2F-CEC2-4978-BA77-5B7CB182FE71}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="heavy footsteps v3" ID="{A59DDA63-2B83-4369-A1F8-0B0061C4A17B}" ShortID="70616342">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="heavy footsteps v3" ID="{A45D9DBA-C633-488A-9C8C-BB7498AF8E18}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0164416315049226"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.00822081575246132"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Footsteps\heavy footsteps v3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="889949765"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="heavy footsteps v3" ID="{A45D9DBA-C633-488A-9C8C-BB7498AF8E18}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="heavy footsteps v4" ID="{A9453614-F446-4F0D-B077-A9F189F5EB0D}" ShortID="369568379">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="heavy footsteps v4" ID="{E5A8A947-D1AF-4B8A-A4A6-986AD4165992}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0264195298372514"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0146775165762508"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Footsteps\heavy footsteps v4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="967748420"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="heavy footsteps v4" ID="{E5A8A947-D1AF-4B8A-A4A6-986AD4165992}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
