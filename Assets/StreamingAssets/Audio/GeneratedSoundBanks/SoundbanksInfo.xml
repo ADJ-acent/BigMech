@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{F906BC84-B9E3-75DF-71AF-137BF7C12B4C}">
+		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{FA468653-EAC1-AAC5-DAB3-31B4AAB3CEC9}">
 			<ShortName>SFX_Test</ShortName>
 			<Path>SFX_Test.bnk</Path>
 			<Media>
@@ -32,11 +32,11 @@
 				</File>
 				<File Id="11755695" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\heavy footsteps v1.wav</ShortName>
-					<CachePath>SFX/Footsteps/heavy footsteps v1_D95AF505.wem</CachePath>
+					<CachePath>SFX/Footsteps/heavy footsteps v1_593B0A3D.wem</CachePath>
 				</File>
 				<File Id="889949765" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\heavy footsteps v3.wav</ShortName>
-					<CachePath>SFX/Footsteps/heavy footsteps v3_85F6607F.wem</CachePath>
+					<CachePath>SFX/Footsteps/heavy footsteps v3_4599E3AF.wem</CachePath>
 				</File>
 				<File Id="921407178" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>hit sfx.wav</ShortName>
@@ -44,7 +44,7 @@
 				</File>
 				<File Id="967748420" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\heavy footsteps v4.wav</ShortName>
-					<CachePath>SFX/Footsteps/heavy footsteps v4_38519059.wem</CachePath>
+					<CachePath>SFX/Footsteps/heavy footsteps v4_99958F3F.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -64,5 +64,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AF0F423B-A42C-8933-5161-16D3F7880D68}</FileHash>
+	<FileHash>{34A59816-B942-8182-E13A-54476ACF16C1}</FileHash>
 </SoundBanksInfo>
