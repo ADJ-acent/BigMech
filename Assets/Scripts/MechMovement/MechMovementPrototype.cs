@@ -7,6 +7,7 @@ public class MechMovementPrototype : MonoBehaviour
 {
     public Transform vrHeadTransform;
 
+    [Header("Robot")]
     public Transform robotRigTransform;
     public Transform robotParentTransform;
     // limit of angle to the y axis, if less than this, don't rotate according to the headset
@@ -15,6 +16,11 @@ public class MechMovementPrototype : MonoBehaviour
     public float rotationMaxAngle;
     public InputActionReference rightMove;
     public float speed;
+
+    [Header("Wwise Events")]
+    public AK.Wwise.Event mechFootSteps;
+    private bool isMoving = false;
+
     
     // Start is called before the first frame update
     void Start()
@@ -36,7 +42,33 @@ public class MechMovementPrototype : MonoBehaviour
             float rightVal = rightMove.action.ReadValue<Vector2>().x;
             float forwardVal = rightMove.action.ReadValue<Vector2>().y;
             Vector3 movementDir = forwardVal * robotRigTransform.forward +rightVal * robotParentTransform.right;
+
+            //Debug.Log(vrHeadTransform.forward);
+            //play the mech foot step sound 
+            if (rightVal != 0 || forwardVal != 0)
+            {
+                //Debug.Log("moving here?");
+
+                if (!isMoving)
+                {
+                    StartCoroutine(PlayFootstepSound());
+                    isMoving = true;
+                }
+            }
+            else
+            {
+                isMoving = false;
+            }
+
             robotParentTransform.position = oldPos + (movementDir.normalized)*speed;
         }
     }
+
+    private IEnumerator PlayFootstepSound()
+    {
+        mechFootSteps.Post(gameObject);
+       // Adjust the delay for footstep sound
+        yield return new WaitForSeconds(0.5f); 
+    }
+
 }
