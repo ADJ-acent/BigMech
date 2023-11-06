@@ -4142,7 +4142,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095454953}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fdbe2c1f2c5e530429949a707ee05779, type: 3}
   m_Name: 
@@ -4155,6 +4155,36 @@ MonoBehaviour:
   rightMove: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   speed: 0.1
+  mechFootSteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c7f75b8cabf8b7648a6bf202c4109550,
+      type: 2}
+--- !u!114 &2095454961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095454953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632838510fcbaff438cfd5e1b45ffb1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vrHeadTransform: {fileID: 1475906493}
+  robotRigTransform: {fileID: 1941206890}
+  robotParentTransform: {fileID: 1468122500}
+  angleLimit: 10
+  rotationMaxAngle: 0.5
+  rightMove: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  speed: 0.1
+  mechFootSteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c7f75b8cabf8b7648a6bf202c4109550,
+      type: 2}
 --- !u!4 &2100965337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1330755669629619180, guid: 4f78efde1d647894d858dced88477513,
@@ -4326,6 +4356,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2095454957}
+    - targetCorrespondingSourceObject: {fileID: 420874055147959949, guid: 47cc606ac27ca214ba853b58a29e1286,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2095454961}
   m_SourcePrefab: {fileID: 100100000, guid: 47cc606ac27ca214ba853b58a29e1286, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

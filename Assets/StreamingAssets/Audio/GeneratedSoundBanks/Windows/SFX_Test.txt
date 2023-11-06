@@ -4,8 +4,8 @@ Event	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4915979	heavy footsteps v2	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Footsteps\heavy footsteps v2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v2		239340
-	11755695	heavy footsteps v1	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Footsteps\heavy footsteps v1_D95AF505.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v1		120748
-	889949765	heavy footsteps v3	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Footsteps\heavy footsteps v3_85F6607F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v3		227768
+	11755695	heavy footsteps v1	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Footsteps\heavy footsteps v1_593B0A3D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v1		120748
+	889949765	heavy footsteps v3	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Footsteps\heavy footsteps v3_4599E3AF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v3		227768
 	921407178	hit sfx	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\hit sfx_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\hit sfx		88208
-	967748420	heavy footsteps v4	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Footsteps\heavy footsteps v4_38519059.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v4		242956
+	967748420	heavy footsteps v4	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Footsteps\heavy footsteps v4_99958F3F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v4		242956
 
