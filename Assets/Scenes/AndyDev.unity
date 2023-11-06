@@ -160,19 +160,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -234,19 +234,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -314,19 +314,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -388,19 +388,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -480,19 +480,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -560,19 +560,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -726,19 +726,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -907,19 +907,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -981,19 +981,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -1061,19 +1061,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -1174,19 +1174,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -1248,19 +1248,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -1353,19 +1353,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -1458,19 +1458,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -1538,19 +1538,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -1618,19 +1618,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -1692,19 +1692,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -1772,19 +1772,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -1846,19 +1846,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -1920,19 +1920,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -1994,19 +1994,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -2068,19 +2068,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -2185,19 +2185,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -2296,19 +2296,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -2370,19 +2370,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -2567,19 +2567,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -2678,19 +2678,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -2972,19 +2972,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -3162,19 +3162,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -3236,19 +3236,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -3316,19 +3316,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -3390,19 +3390,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -3470,19 +3470,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -4230,19 +4230,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -4304,19 +4304,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -4378,19 +4378,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -4458,19 +4458,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -4538,7 +4538,7 @@ Transform:
   m_GameObject: {fileID: 526927832}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 5.39, z: -4.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4575,19 +4575,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -6138,19 +6138,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -6255,19 +6255,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -6335,19 +6335,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -6409,19 +6409,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -6483,19 +6483,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -6569,19 +6569,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -6643,19 +6643,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -6717,19 +6717,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -6791,19 +6791,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -7130,19 +7130,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -7210,19 +7210,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -7601,19 +7601,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -7675,19 +7675,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -7804,19 +7804,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -7915,19 +7915,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -7989,19 +7989,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -8069,19 +8069,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -8155,19 +8155,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -8301,19 +8301,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -8381,19 +8381,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -8455,19 +8455,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -8529,19 +8529,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -8603,19 +8603,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -8677,19 +8677,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -8751,19 +8751,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -8868,19 +8868,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -8942,19 +8942,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -9016,19 +9016,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -9164,19 +9164,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -9238,19 +9238,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -9312,19 +9312,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -9398,19 +9398,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -9478,19 +9478,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -9558,19 +9558,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -9663,19 +9663,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -9767,19 +9767,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -9847,19 +9847,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -10055,19 +10055,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -10141,19 +10141,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -10215,19 +10215,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -10335,19 +10335,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -10415,19 +10415,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -10489,19 +10489,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -10593,19 +10593,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -10757,19 +10757,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -11010,19 +11010,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -11084,19 +11084,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -11195,19 +11195,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -11281,19 +11281,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -11355,19 +11355,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -11429,19 +11429,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -11503,19 +11503,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -11608,19 +11608,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -11688,19 +11688,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -11768,19 +11768,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -11842,19 +11842,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -11961,19 +11961,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -12124,19 +12124,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -12497,19 +12497,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -12571,19 +12571,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -12645,19 +12645,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -12737,19 +12737,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -12811,19 +12811,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -12922,19 +12922,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -13008,19 +13008,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -13728,19 +13728,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -13914,19 +13914,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -14000,19 +14000,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -14074,19 +14074,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -14154,19 +14154,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -14228,19 +14228,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -14302,19 +14302,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -14388,19 +14388,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -14462,19 +14462,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -14594,19 +14594,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -14668,19 +14668,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -14826,19 +14826,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -14900,19 +14900,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -14974,19 +14974,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -15339,19 +15339,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -15446,19 +15446,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -15520,19 +15520,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -15606,19 +15606,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -15976,19 +15976,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -16155,19 +16155,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -16235,19 +16235,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -16309,19 +16309,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -16383,19 +16383,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
@@ -16457,19 +16457,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 20
+    triggerType: 2
+    minimumCollisionForce: 0
     filterCollisionsByTag: 0
     triggerAllowedTags:
     - Mech
-    triggerKey: 0
+    triggerKey: 273
   fractureOptions:
     fragmentCount: 10
     xAxis: 1
     yAxis: 1
     zAxis: 1
     detectFloatingFragments: 0
-    asynchronous: 0
+    asynchronous: 1
     insideMaterial: {fileID: 2100000, guid: 15507732442ee1e4894dc18dbfb5153b, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
