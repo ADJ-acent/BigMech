@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,15 +17,18 @@ public class MechMovementPrototype : MonoBehaviour
     public float rotationMaxAngle;
     public InputActionReference rightMove;
     public float speed;
-
+    public bool pureConstantMode;
+    public bool yWaveMode;
     [Header("Wwise Events")]
     public AK.Wwise.Event mechFootSteps;
     private bool isMoving = false;
+    private float startY;
 
     
     // Start is called before the first frame update
     void Start()
     {
+        startY = robotParentTransform.position.y;
     }
 
     // Update is called once per frame
@@ -39,21 +43,33 @@ public class MechMovementPrototype : MonoBehaviour
             robotRigTransform.rotation = Quaternion.RotateTowards(robotRigTransform.rotation, 
                 Quaternion.Euler(0f, headsetVector3.y,0), rotationMaxAngle);
             Vector3 oldPos = robotParentTransform.position;
-            float rightVal = rightMove.action.ReadValue<Vector2>().x;
-            float forwardVal = rightMove.action.ReadValue<Vector2>().y;
+            float rightVal;
+            float forwardVal;
+            if (pureConstantMode)
+            {
+                rightVal = rightMove.action.ReadValue<Vector2>().normalized.x;
+                forwardVal = rightMove.action.ReadValue<Vector2>().normalized.y;
+            }
+            else
+            {
+                rightVal = rightMove.action.ReadValue<Vector2>().x;
+                forwardVal = rightMove.action.ReadValue<Vector2>().y;
+            }
             Vector3 movementDir = forwardVal * robotRigTransform.forward +rightVal * robotParentTransform.right;
 
             //Debug.Log(vrHeadTransform.forward);
             //play the mech foot step sound 
-            if (rightVal != 0 || forwardVal != 0)
+            if (!isMoving && (rightVal != 0 || forwardVal != 0))
             {
-                if (!isMoving)
-                {
-                    StartCoroutine(PlayFootstepSounds());
-                }
+                StartCoroutine(PlayFootstepSounds());
+                isMoving = true;
             }
         
             robotParentTransform.position = oldPos + (movementDir.normalized)*speed;
+            if (isMoving&& yWaveMode)
+            {
+                robotParentTransform.position = new Vector3(robotParentTransform.position.x, startY + Mathf.Sin(Time.time*6.28f)/2, robotParentTransform.position.z);
+            }
         }
     }
 
@@ -66,11 +82,9 @@ public class MechMovementPrototype : MonoBehaviour
             mechFootSteps.Post(gameObject);
 
             // Adjust the delay for footstep sound (you can change this value)
-            yield return new WaitForSeconds(0.5f);
-
+            yield return new WaitForSeconds(1f);
             float rightVal = rightMove.action.ReadValue<Vector2>().x;
             float forwardVal = rightMove.action.ReadValue<Vector2>().y;
-
             // Check if the joystick is released
             if (rightVal == 0 && forwardVal == 0)
             {
