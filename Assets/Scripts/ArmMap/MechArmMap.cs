@@ -59,7 +59,7 @@ public class MechArmMap
         float dot = Vector3.Dot(directionVector, _lastDirectionVector);
         if (dot > 0)
         {
-            if (directionVector.magnitude > 5)
+            if (directionVector.magnitude > 1)
             {
                 currentSpeed += 0.03f;
             }
