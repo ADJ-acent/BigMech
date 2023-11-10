@@ -1706,7 +1706,7 @@ MonoBehaviour:
     type: 3}
   speed: 0.2
   pureConstantMode: 1
-  yWaveMode: 0
+  yWaveMode: 1
   mechFootSteps:
     idInternal: 0
     valueGuidInternal: 
@@ -3867,6 +3867,11 @@ PrefabInstance:
       propertyPath: m_UpdateWhenOffscreen
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -1660395183640982895, guid: 80f2810f731efef40ba942cc3b63c111,
+        type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -1608308685591021300, guid: 80f2810f731efef40ba942cc3b63c111,
         type: 3}
       propertyPath: m_UpdateWhenOffscreen
@@ -4257,6 +4262,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -1814340368135701571, guid: 80f2810f731efef40ba942cc3b63c111,
+        type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1660395183640982895, guid: 80f2810f731efef40ba942cc3b63c111,
         type: 3}
       propertyPath: m_UpdateWhenOffscreen
       value: 1

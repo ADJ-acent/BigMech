@@ -7,7 +7,7 @@ using UnityEngine;
 public class BuildingDestructionSound : MonoBehaviour
 {
     private float lastActivated = 0f;
-    private float lastCollided = 0f;
+    private bool collided = false;
     
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class BuildingDestructionSound : MonoBehaviour
     }
 
     void BuildingActivated(RayfireRigid rigid)
-    {Debug.Log("here");
+    {
         if (Time.time - lastActivated > 1f)
         {
             
@@ -40,10 +40,10 @@ public class BuildingDestructionSound : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Building") && Time.time - lastCollided > 1f)
+        if (other.gameObject.CompareTag("Building") && !collided)
         {
             AudioManager.Instance.playSmallPiecesShatter(gameObject);
-            lastCollided = Time.time;
+            collided = true;
         }
         
     }

@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Stationary : MonoBehaviour
 {
+    private float lastPlayedSound = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,14 @@ public class Stationary : MonoBehaviour
     void Update()
     {
         transform.localPosition = Vector3.zero;
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Building")&& Time.time - lastPlayedSound > 2.0f)
+        {
+            AudioManager.Instance.playBuildingCollapse(gameObject);
+            lastPlayedSound = Time.time;
+        }
     }
 }
