@@ -55,9 +55,8 @@ public class MechMovementPrototype : MonoBehaviour
                 rightVal = rightMove.action.ReadValue<Vector2>().x;
                 forwardVal = rightMove.action.ReadValue<Vector2>().y;
             }
-            Vector3 movementDir = forwardVal * robotRigTransform.forward +rightVal * robotParentTransform.right;
 
-            //Debug.Log(vrHeadTransform.forward);
+            Vector3 movementDir = forwardVal * robotRigTransform.forward + rightVal * robotRigTransform.right;
             //play the mech foot step sound 
             if (!isMoving && (rightVal != 0 || forwardVal != 0))
             {
