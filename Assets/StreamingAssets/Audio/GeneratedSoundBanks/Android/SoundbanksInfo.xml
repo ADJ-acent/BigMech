@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../../../../../BigMech_WwiseProject</ProjectRoot>
+		<SourceFilesRoot>../../../../../BigMech_WwiseProject/.cache/Android</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>../../../../../BigMech_WwiseProject/GeneratedSoundBanks/Android</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{97E3ECE0-57A7-67B2-9351-D7D5459B66B1}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{D7F05B9B-F89D-B924-BF31-05BCCABF7117}">
+			<ShortName>SFX_Test</ShortName>
+			<Path>SFX_Test.bnk</Path>
+			<Media>
+				<File Id="4915979" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps\heavy footsteps v2.wav</ShortName>
+					<CachePath>SFX/Footsteps/heavy footsteps v2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="11755695" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps\heavy footsteps v1.wav</ShortName>
+					<CachePath>SFX/Footsteps/heavy footsteps v1_593B0A3D.wem</CachePath>
+				</File>
+				<File Id="494743207" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Building Collapse.wav</ShortName>
+					<CachePath>SFX/Building Collapse_10C4C929.wem</CachePath>
+				</File>
+				<File Id="660510088" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Small Piece Shatter\small_piece_1.wav</ShortName>
+					<CachePath>SFX/Small Piece Shatter/small_piece_1_C69D7054.wem</CachePath>
+				</File>
+				<File Id="732692716" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Small Piece Shatter\small_piece_3.wav</ShortName>
+					<CachePath>SFX/Small Piece Shatter/small_piece_3_FDF90812.wem</CachePath>
+				</File>
+				<File Id="741429729" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Small Piece Shatter\small_piece_2.wav</ShortName>
+					<CachePath>SFX/Small Piece Shatter/small_piece_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="766652272" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Punch Building.wav</ShortName>
+					<CachePath>SFX/Punch Building_10C4C929.wem</CachePath>
+				</File>
+				<File Id="793690577" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Small Piece Shatter\small_piece_4.wav</ShortName>
+					<CachePath>SFX/Small Piece Shatter/small_piece_4_7B3E24D7.wem</CachePath>
+				</File>
+				<File Id="889949765" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps\heavy footsteps v3.wav</ShortName>
+					<CachePath>SFX/Footsteps/heavy footsteps v3_4599E3AF.wem</CachePath>
+				</File>
+				<File Id="967748420" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps\heavy footsteps v4.wav</ShortName>
+					<CachePath>SFX/Footsteps/heavy footsteps v4_99958F3F.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2456951556" Name="Play_Building_Collapse" DurationType="OneShot" DurationMin="2.7315104" DurationMax="2.7315104">
+					<MediaRefs>
+						<MediaRef Id="494743207"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3854155799" Name="Play_Footsteps" DurationType="OneShot" DurationMin="1.2906681" DurationMax="1.3767511">
+					<MediaRefs>
+						<MediaRef Id="4915979"/>
+						<MediaRef Id="11755695"/>
+						<MediaRef Id="889949765"/>
+						<MediaRef Id="967748420"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3404907241" Name="Play_Punch_Building" DurationType="OneShot" DurationMin="1.4087917" DurationMax="1.4087917">
+					<MediaRefs>
+						<MediaRef Id="766652272"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="391794082" Name="Play_Small_Piece_Shatter" DurationType="OneShot" DurationMin="0.43093398" DurationMax="0.9746163">
+					<MediaRefs>
+						<MediaRef Id="660510088"/>
+						<MediaRef Id="732692716"/>
+						<MediaRef Id="741429729"/>
+						<MediaRef Id="793690577"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{624C02B7-23A7-5890-A3CD-1AD031FBCE25}</FileHash>
+</SoundBanksInfo>
