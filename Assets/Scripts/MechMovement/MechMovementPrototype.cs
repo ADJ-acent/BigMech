@@ -78,8 +78,7 @@ public class MechMovementPrototype : MonoBehaviour
 
         while (true)
         {
-            mechFootSteps.Post(gameObject);
-
+            AudioManager.Instance.playFootsteps();
             // Adjust the delay for footstep sound (you can change this value)
             yield return new WaitForSeconds(1f);
             float rightVal = rightMove.action.ReadValue<Vector2>().x;
