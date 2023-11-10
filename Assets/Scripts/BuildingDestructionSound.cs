@@ -15,7 +15,7 @@ public class BuildingDestructionSound : MonoBehaviour
         RayfireRigid rayfireRigid = gameObject.GetComponent<RayfireRigid>();
         if (rayfireRigid!= null)
         {
-            rayfireRigid.activationEvent.LocalEvent += BuildingActivated;
+            /*rayfireRigid.activationEvent.LocalEvent += BuildingActivated;*/
             rayfireRigid.demolitionEvent.LocalEvent += BuildingDemolished;
         }
         
