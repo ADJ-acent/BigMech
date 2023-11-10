@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1b717460c7e424faa500c912fac4b2, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 5005f136976bf447aaa9abc502e7c72b
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: 5005f136976bf447aaa9abc502e7c72b
+    GuidInternal: 
+    m_lastTime: -8585021848972516967
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: cc170d94b886364dbecd6f46ade1f295
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: cc170d94b886364dbecd6f46ade1f295
+    GuidInternal: 
+    m_lastTime: -8585021848972659476
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: cc170d94b886364dbecd6f46ade1f295
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 8aa7b05e34f31b44a9548485313e5961
+    ParentPath: SoundBanks\Default Work Unit
+    guid: 8aa7b05e34f31b44a9548485313e5961
+    GuidInternal: 
+    m_lastTime: -8585021848972547228
+    List:
+    - name: SFX_Test
+      guid: 1ee12f5c100d1e4e9a6e3bc6751590d9
+      id: 3018450665
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8aa7b05e34f31b44a9548485313e5961
+      - ElementName: SFX_Test
+        ObjectType: 7
+        guid: 1ee12f5c100d1e4e9a6e3bc6751590d9
+      Path: SoundBanks\Default Work Unit\SFX_Test
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 99e28421e6a23a4492a919648c30e517
+    ParentPath: Events\Default Work Unit
+    guid: 99e28421e6a23a4492a919648c30e517
+    GuidInternal: 
+    m_lastTime: -8585021848972766500
+    List:
+    - name: Play_Footsteps
+      guid: e8cb39b4b56ab644855f9e4cb01ae8a2
+      id: 3854155799
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 99e28421e6a23a4492a919648c30e517
+      - ElementName: Play_Footsteps
+        ObjectType: 3
+        guid: e8cb39b4b56ab644855f9e4cb01ae8a2
+      Path: Events\Default Work Unit\Play_Footsteps
+      maxAttenuation: 0
+      maxDuration: 1.3767511
+      minDuration: 1.2906681
+    - name: Play_hit_sfx
+      guid: 4c75932b6d688145a76aa65012ba54f8
+      id: 694402461
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 99e28421e6a23a4492a919648c30e517
+      - ElementName: Play_hit_sfx
+        ObjectType: 3
+        guid: 4c75932b6d688145a76aa65012ba54f8
+      Path: Events\Default Work Unit\Play_hit_sfx
+      maxAttenuation: 0
+      maxDuration: 0.49950114
+      minDuration: 0.49950114
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 674e02632b30ce4cb4490668a2fc7554
+    ParentPath: Game Parameters\Default Work Unit
+    guid: 674e02632b30ce4cb4490668a2fc7554
+    GuidInternal: 
+    m_lastTime: -8585021848972766500
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: c0b6f85fe0739648b5833452b4f66dbb
+    ParentPath: States\Default Work Unit
+    guid: c0b6f85fe0739648b5833452b4f66dbb
+    GuidInternal: 
+    m_lastTime: -8585021848972527131
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 66755e097d65024bba36e78cff40fdda
+    ParentPath: Switches\Default Work Unit
+    guid: 66755e097d65024bba36e78cff40fdda
+    GuidInternal: 
+    m_lastTime: -8585021848972522028
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: dd19e5e51b2aec4da8263777d27ac25c
+    ParentPath: Triggers\Default Work Unit
+    guid: dd19e5e51b2aec4da8263777d27ac25c
+    GuidInternal: 
+    m_lastTime: -8585021848972522028
+    List: []
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 
+  AutoSyncSelection: 0
+  autoPopulateEnabled: 1
+  currentDataSource: 0
+  CurrentPluginConfig: 
