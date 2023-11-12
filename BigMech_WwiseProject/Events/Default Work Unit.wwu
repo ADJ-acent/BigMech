@@ -3,56 +3,23 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{2184E299-A2E6-443A-92A9-19648C30E517}" PersistMode="Standalone">
 			<ChildrenList>
+				<Event Name="Play_hit_sfx" ID="{2B93754C-686D-4581-A76A-A65012BA54F8}">
+					<ChildrenList>
+						<Action Name="" ID="{C3978DD4-66AA-4BD1-9CB9-BE47EB13E948}" ShortID="411315095">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="hit sfx" ID="{33F7B43A-7F81-4E7F-BEB2-2D9E41FB7BDD}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Play_Footsteps" ID="{B439CBE8-6AB5-44B6-855F-9E4CB01AE8A2}">
 					<ChildrenList>
 						<Action Name="" ID="{5FCC96EE-C0E2-46BE-AB7D-2E040D05DA0B}" ShortID="458822277">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Footsteps" ID="{8473662C-3A7B-4953-B2D0-B782240FFB25}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Small_Piece_Shatter" ID="{82BFA321-EB47-4790-90DC-32D92847CE21}">
-					<ChildrenList>
-						<Action Name="" ID="{DA508CDF-7AB0-4A54-90EE-CD41FAFD4C2E}" ShortID="114996345">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Small Piece Shatter" ID="{ED098A35-E1BB-4925-AA49-5A5915364B5A}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Building_Collapse" ID="{10C6FBA7-B3EE-455B-BE51-557540CC28EA}">
-					<ChildrenList>
-						<Action Name="" ID="{BA163866-C2A4-47E1-B317-28DE44A1DA9E}" ShortID="696322884">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Building Collapse" ID="{6A4AA0D5-4A37-4603-9891-8DFA8917870F}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Punch_Building" ID="{57E1EE69-DA6F-4C3A-8D85-1B6186CCE195}">
-					<ChildrenList>
-						<Action Name="" ID="{EF944FD6-1662-49A4-B80F-4BBD0DCB9E65}" ShortID="605444615">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Punch Building" ID="{4F3A1229-ED5B-4E7D-A086-0C10E9C24490}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_hit_sfx" ID="{D0C810EA-81F9-4508-81E6-9EDC171AA72C}">
-					<ChildrenList>
-						<Action Name="" ID="{A7980E40-47C2-4389-A532-7624A4D4E206}" ShortID="240437181">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="hit sfx" ID="{900AFA10-69E6-40C0-A7D2-7EA0496D6993}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

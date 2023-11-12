@@ -55,8 +55,9 @@ public class MechMovementPrototype : MonoBehaviour
                 rightVal = rightMove.action.ReadValue<Vector2>().x;
                 forwardVal = rightMove.action.ReadValue<Vector2>().y;
             }
+            Vector3 movementDir = forwardVal * robotRigTransform.forward +rightVal * robotParentTransform.right;
 
-            Vector3 movementDir = forwardVal * robotRigTransform.forward + rightVal * robotRigTransform.right;
+            //Debug.Log(vrHeadTransform.forward);
             //play the mech foot step sound 
             if (!isMoving && (rightVal != 0 || forwardVal != 0))
             {
@@ -78,7 +79,8 @@ public class MechMovementPrototype : MonoBehaviour
 
         while (true)
         {
-            AudioManager.Instance.playFootsteps();
+            mechFootSteps.Post(gameObject);
+
             // Adjust the delay for footstep sound (you can change this value)
             yield return new WaitForSeconds(1f);
             float rightVal = rightMove.action.ReadValue<Vector2>().x;

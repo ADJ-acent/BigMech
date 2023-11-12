@@ -13,10 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_BUILDING_COLLAPSE = 2456951556U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
-        static const AkUniqueID PLAY_PUNCH_BUILDING = 3404907241U;
-        static const AkUniqueID PLAY_SMALL_PIECE_SHATTER = 391794082U;
+        static const AkUniqueID PLAY_HIT_SFX = 694402461U;
     } // namespace EVENTS
 
     namespace BANKS
