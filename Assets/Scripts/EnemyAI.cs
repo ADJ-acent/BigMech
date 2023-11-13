@@ -63,7 +63,7 @@ public class EnemyAI : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            playerCanvas.ShowBlockSign(player.position, transform.position);
+            // playerCanvas.ShowBlockSign(player.position, transform.position);
             Debug.LogFormat("PUNCH! from {0}", transform.name);
 
             alreadyAttacked = true;
