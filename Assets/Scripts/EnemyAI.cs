@@ -26,7 +26,9 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+        float y = player.position.y;
+        Vector3 pos = new Vector3(transform.position.x, player.position.y, transform.position.z);
+        playerInAttackRange = Physics.CheckSphere(pos, attackRange, whatIsPlayer);
 
         if (!playerInAttackRange) ChasePlayer();
         else AttackPlayer();
@@ -34,7 +36,9 @@ public class EnemyAI : MonoBehaviour
 
     private void ChasePlayer()
     {
-        agent.SetDestination(player.position);
+        float y = agent.transform.position.y;
+        Vector3 destination = new Vector3(player.position.x, y, player.position.z);
+        agent.SetDestination(destination);
     }
 
     private void AttackPlayer()
