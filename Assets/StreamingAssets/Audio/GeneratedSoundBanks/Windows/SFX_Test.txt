@@ -1,18 +1,23 @@
 Event	ID	Name			Wwise Object Path	Notes
 	391794082	Play_Small_Piece_Shatter			\Default Work Unit\Play_Small_Piece_Shatter	
 	2456951556	Play_Building_Collapse			\Default Work Unit\Play_Building_Collapse	
+	2588973845	Play_engine_loop			\Default Work Unit\Play_engine_loop	
 	3404907241	Play_Punch_Building			\Default Work Unit\Play_Punch_Building	
 	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3407379032	ArmVelocity			\Default Work Unit\ArmVelocity	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4915979	heavy footsteps v2	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Footsteps\heavy footsteps v2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v2		239340
 	11755695	heavy footsteps v1	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Footsteps\heavy footsteps v1_593B0A3D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v1		120748
+	466900395	engine_loop	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\engine_loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\engine_loop		262164
 	494743207	Building Collapse	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Building Collapse_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Building Collapse		524544
-	660510088	small_piece_1	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Small Piece Shatter\small_piece_1_C69D7054.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_1		82836
-	732692716	small_piece_3	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Small Piece Shatter\small_piece_3_FDF90812.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_3		129756
+	660510088	small_piece_1	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Small Piece Shatter\small_piece_1_8E06C0E7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_1		82836
+	732692716	small_piece_3	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Small Piece Shatter\small_piece_3_B6864B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_3		129756
 	741429729	small_piece_2	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Small Piece Shatter\small_piece_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_2		93648
 	766652272	Punch Building	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Punch Building_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Punch Building		270584
-	793690577	small_piece_4	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Small Piece Shatter\small_piece_4_7B3E24D7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_4		187220
+	793690577	small_piece_4	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Small Piece Shatter\small_piece_4_29FCC3A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_4		187220
 	889949765	heavy footsteps v3	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Footsteps\heavy footsteps v3_4599E3AF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v3		227768
 	967748420	heavy footsteps v4	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Footsteps\heavy footsteps v4_99958F3F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v4		242956
 

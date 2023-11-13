@@ -58,6 +58,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_engine_loop" ID="{FE2AA98C-C3A5-4801-8781-B65263972077}">
+					<ChildrenList>
+						<Action Name="" ID="{0F5FEEAA-849D-44CF-B4D0-CBBAD9C2B3AB}" ShortID="547384173">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="engine_loop" ID="{E53D00F2-92FF-4330-B380-2BB5C6084F66}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
