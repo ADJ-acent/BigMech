@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class MechMovementPrototype : MonoBehaviour
 {
@@ -15,10 +16,14 @@ public class MechMovementPrototype : MonoBehaviour
     public float angleLimit;
     // Max Angle to rotate per tick
     public float rotationMaxAngle;
-    public InputActionReference rightMove;
+    public InputActionReference rightTurn;
+    public InputActionReference leftMove;
     public float speed;
     public bool pureConstantMode;
     public bool yWaveMode;
+    public bool joystickTurnMode;
+    public ActionBasedController leftController;
+    public ActionBasedController rightController;
     [Header("Wwise Events")]
     public AK.Wwise.Event mechFootSteps;
     private bool isMoving = false;
@@ -40,20 +45,38 @@ public class MechMovementPrototype : MonoBehaviour
         if (Vector3.Angle(Vector3.down, vrHeadTransform.forward) > angleLimit && 
             Vector3.Angle(Vector3.up, vrHeadTransform.forward) > angleLimit)
         {
-            robotRigTransform.rotation = Quaternion.RotateTowards(robotRigTransform.rotation, 
-                Quaternion.Euler(0f, headsetVector3.y,0), rotationMaxAngle);
+            if (joystickTurnMode)
+            {
+                float turnVal = rightTurn.action.ReadValue<Vector2>().x;
+                //0.01f to prevent accidental turns
+                if (turnVal > 0f)
+                {
+                    robotParentTransform.Rotate(Vector3.up,rotationMaxAngle);
+                    sendMovementControllerHaptics();
+                }
+                else if (turnVal < -0f)
+                {
+                    robotParentTransform.Rotate(Vector3.up,-rotationMaxAngle);
+                    sendMovementControllerHaptics();
+                }
+            }
+            else
+            {
+                robotRigTransform.rotation = Quaternion.RotateTowards(robotRigTransform.rotation,
+                    Quaternion.Euler(0f, headsetVector3.y, 0), rotationMaxAngle);
+            }
             Vector3 oldPos = robotParentTransform.position;
             float rightVal;
             float forwardVal;
             if (pureConstantMode)
             {
-                rightVal = rightMove.action.ReadValue<Vector2>().normalized.x;
-                forwardVal = rightMove.action.ReadValue<Vector2>().normalized.y;
+                rightVal = leftMove.action.ReadValue<Vector2>().normalized.x;
+                forwardVal = leftMove.action.ReadValue<Vector2>().normalized.y;
             }
             else
             {
-                rightVal = rightMove.action.ReadValue<Vector2>().x;
-                forwardVal = rightMove.action.ReadValue<Vector2>().y;
+                rightVal = leftMove.action.ReadValue<Vector2>().x;
+                forwardVal = leftMove.action.ReadValue<Vector2>().y;
             }
 
             Vector3 movementDir = forwardVal * robotRigTransform.forward + rightVal * robotRigTransform.right;
@@ -65,9 +88,10 @@ public class MechMovementPrototype : MonoBehaviour
             }
         
             robotParentTransform.position = oldPos + (movementDir.normalized)*speed;
-            if (isMoving&& yWaveMode)
+            if (isMoving)
             {
-                robotParentTransform.position = new Vector3(robotParentTransform.position.x, startY + Mathf.Sin(Time.time*6.28f)/2, robotParentTransform.position.z);
+                sendMovementControllerHaptics();
+                if (yWaveMode) robotParentTransform.position = new Vector3(robotParentTransform.position.x, startY + Mathf.Sin(Time.time*6.28f)/2, robotParentTransform.position.z);
             }
         }
     }
@@ -81,8 +105,8 @@ public class MechMovementPrototype : MonoBehaviour
             AudioManager.Instance.playFootsteps();
             // Adjust the delay for footstep sound (you can change this value)
             yield return new WaitForSeconds(1f);
-            float rightVal = rightMove.action.ReadValue<Vector2>().x;
-            float forwardVal = rightMove.action.ReadValue<Vector2>().y;
+            float rightVal = leftMove.action.ReadValue<Vector2>().x;
+            float forwardVal = leftMove.action.ReadValue<Vector2>().y;
             // Check if the joystick is released
             if (rightVal == 0 && forwardVal == 0)
             {
@@ -92,4 +116,9 @@ public class MechMovementPrototype : MonoBehaviour
         }
     }
 
+    private void sendMovementControllerHaptics()
+    {
+        rightController.SendHapticImpulse(.1f, 0.1f);
+        leftController.SendHapticImpulse(.1f, 0.1f);
+    }
 }
