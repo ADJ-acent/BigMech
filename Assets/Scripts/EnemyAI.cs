@@ -10,6 +10,8 @@ public class EnemyAI : MonoBehaviour
     public Transform enemy;
     public LayerMask whatIsPlayer;
 
+    public PlayerCanvas playerCanvas;
+
     public float timeBetweenAttacks;
     bool alreadyAttacked;
     public float attackRange;
@@ -26,12 +28,25 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        // float y = player.position.y;
-        // Vector3 pos = new Vector3(transform.position.x, player.position.y, transform.position.z);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
         if (!playerInAttackRange) ChasePlayer();
-        else AttackPlayer();
+        else 
+        {
+            // Vector3 toPosition = (transform.position - player.position).normalized();
+            // float angleToPosition = Vector3.Angle(player.forward, toPosition);
+
+            // if (angleToPosition > 60f)
+            // {
+            //     playerCanvas.ShowLeftWarningSign();
+            // }
+            // else if (angleToPosition < -60f)
+            // {
+            //     playerCanvas.ShowRightWarningSign();
+            // }
+            // else playerCanvas.ShowAttackSign(player.position, transform.position);
+            AttackPlayer();
+        }
     }
 
     private void ChasePlayer()
@@ -48,6 +63,7 @@ public class EnemyAI : MonoBehaviour
 
         if (!alreadyAttacked)
         {
+            playerCanvas.ShowBlockSign(player.position, transform.position);
             Debug.LogFormat("PUNCH! from {0}", transform.name);
 
             alreadyAttacked = true;
