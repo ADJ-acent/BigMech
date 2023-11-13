@@ -10,11 +10,14 @@ public class Stationary : MonoBehaviour
     [SerializeReference]
     private ActionBasedController _controller;
 
-    [SerializeReference] private ParticleSystem _explosion;
+    [SerializeReference] private GameObject _explosionGameObject;
+
+    private ParticleSystem _explosion;
     // Start is called before the first frame update
     void Start()
     {
-        _explosion.Stop();
+        _explosion = _explosionGameObject?.GetComponent<ParticleSystem>();
+        _explosion?.Stop();
     }
 
     // Update is called once per frame
@@ -29,9 +32,14 @@ public class Stationary : MonoBehaviour
         {
             AudioManager.Instance.playBuildingCollapse(gameObject);
             lastPlayedSound = Time.time;
-            _explosion.Clear();
-            _explosion.Play();
+            if (_explosion!= null)
+            {
+                _explosion.Clear();
+                _explosion.transform.position = other.transform.position;
+                _explosion.Play();
+            }
         } 
         _controller.SendHapticImpulse(0.3f, .2f);
     }
+    
 }
