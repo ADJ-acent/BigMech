@@ -9,10 +9,12 @@ public class Stationary : MonoBehaviour
     private float lastPlayedSound = 0f;
     [SerializeReference]
     private ActionBasedController _controller;
+
+    [SerializeReference] private ParticleSystem _explosion;
     // Start is called before the first frame update
     void Start()
     {
-        
+        _explosion.Stop();
     }
 
     // Update is called once per frame
@@ -27,7 +29,8 @@ public class Stationary : MonoBehaviour
         {
             AudioManager.Instance.playBuildingCollapse(gameObject);
             lastPlayedSound = Time.time;
-           
+            _explosion.Clear();
+            _explosion.Play();
         } 
         _controller.SendHapticImpulse(0.3f, .2f);
     }
