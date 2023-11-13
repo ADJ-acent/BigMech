@@ -25,7 +25,7 @@
 				<GameParameter Id="3407379032" Name="ArmVelocity"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{0137241B-7D8E-23AE-2D04-5245174D23EB}">
+		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{2A937D59-C99C-0FA0-7556-82F3CCFE6C27}">
 			<ShortName>SFX_Test</ShortName>
 			<Path>SFX_Test.bnk</Path>
 			<Media>
@@ -112,5 +112,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1B75467A-EBE3-2A30-DD55-B7B6D25A82A1}</FileHash>
+	<FileHash>{B39A16D9-F6CE-0805-31D4-25E3FBA33180}</FileHash>
 </SoundBanksInfo>
