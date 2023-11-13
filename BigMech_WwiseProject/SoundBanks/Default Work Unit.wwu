@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="SFX_Test" ID="{5C2FE11E-0D10-4E1E-9A6E-3BC6751590D9}">
 					<ObjectInclusionList>
+						<ObjectRef Name="engine_loop" ID="{E53D00F2-92FF-4330-B380-2BB5C6084F66}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps" ID="{B439CBE8-6AB5-44B6-855F-9E4CB01AE8A2}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Building_Collapse" ID="{10C6FBA7-B3EE-455B-BE51-557540CC28EA}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Small_Piece_Shatter" ID="{82BFA321-EB47-4790-90DC-32D92847CE21}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>

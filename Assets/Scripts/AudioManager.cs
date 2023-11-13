@@ -11,11 +11,22 @@ public class AudioManager: Singleton<AudioManager>
     
     [Header("Mech Sounds")]
     [SerializeField] public AK.Wwise.Event mechFootSteps;
+    [SerializeField] public AK.Wwise.Event armRampUp;
+
+    // mech robot sounds
+
 
     public void playFootsteps()
     {
         mechFootSteps.Post(gameObject);
     }
+
+    public void playArmRampUp()
+    {
+        armRampUp.Post(gameObject);
+    }
+
+    // building destroy sounds
 
     public void playBuildingCollapse(GameObject source)
     {

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8E642F3C-E1FB-09EF-3032-51FACC8D0E0A}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,8 +21,11 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="3407379032" Name="ArmVelocity"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{D7F05B9B-F89D-B924-BF31-05BCCABF7117}">
+		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{2A937D59-C99C-0FA0-7556-82F3CCFE6C27}">
 			<ShortName>SFX_Test</ShortName>
 			<Path>SFX_Test.bnk</Path>
 			<Media>
@@ -34,17 +37,21 @@
 					<ShortName>Footsteps\heavy footsteps v1.wav</ShortName>
 					<CachePath>SFX/Footsteps/heavy footsteps v1_593B0A3D.wem</CachePath>
 				</File>
+				<File Id="466900395" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>engine_loop.wav</ShortName>
+					<CachePath>SFX/engine_loop_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="494743207" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Building Collapse.wav</ShortName>
 					<CachePath>SFX/Building Collapse_10C4C929.wem</CachePath>
 				</File>
 				<File Id="660510088" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small Piece Shatter\small_piece_1.wav</ShortName>
-					<CachePath>SFX/Small Piece Shatter/small_piece_1_C69D7054.wem</CachePath>
+					<CachePath>SFX/Small Piece Shatter/small_piece_1_8E06C0E7.wem</CachePath>
 				</File>
 				<File Id="732692716" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small Piece Shatter\small_piece_3.wav</ShortName>
-					<CachePath>SFX/Small Piece Shatter/small_piece_3_FDF90812.wem</CachePath>
+					<CachePath>SFX/Small Piece Shatter/small_piece_3_B6864B66.wem</CachePath>
 				</File>
 				<File Id="741429729" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small Piece Shatter\small_piece_2.wav</ShortName>
@@ -56,7 +63,7 @@
 				</File>
 				<File Id="793690577" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small Piece Shatter\small_piece_4.wav</ShortName>
-					<CachePath>SFX/Small Piece Shatter/small_piece_4_7B3E24D7.wem</CachePath>
+					<CachePath>SFX/Small Piece Shatter/small_piece_4_29FCC3A5.wem</CachePath>
 				</File>
 				<File Id="889949765" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\heavy footsteps v3.wav</ShortName>
@@ -71,6 +78,11 @@
 				<Event Id="2456951556" Name="Play_Building_Collapse" DurationType="OneShot" DurationMin="2.7315104" DurationMax="2.7315104">
 					<MediaRefs>
 						<MediaRef Id="494743207"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2588973845" Name="Play_engine_loop" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="466900395"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3854155799" Name="Play_Footsteps" DurationType="OneShot" DurationMin="1.2906681" DurationMax="1.3767511">
@@ -95,7 +107,10 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="3407379032" Name="ArmVelocity"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{64626F3C-92E6-C3FE-97CF-C8ECFEA10A5F}</FileHash>
+	<FileHash>{4B0B42B2-CCCE-F307-6E3B-9AD3FC082C75}</FileHash>
 </SoundBanksInfo>
