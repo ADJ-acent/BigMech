@@ -18,6 +18,12 @@ public class MechArmMap
     private const float startingMomentumSpeed = 0.2f;
     private float currentSpeed = startingMomentumSpeed;
     private float lastStayStillTime = 0f;
+
+    //for sounds
+    private bool havePlayed = false;
+    private string RTPC_Velocity = "ArmVelocity";
+
+
     public void Map()
     {
         Vector3 vectorToController = controllerTransform.position - headsetTransform.position;
@@ -25,9 +31,23 @@ public class MechArmMap
         Vector3 normalizedToController = vectorToController.normalized;
         Vector3 newPositionOffset = normalizedToController * 
             Mathf.Lerp(mechMin,mechMax,distanceToController/armLength);
-        
+
+
+        // add arm ramp up sound
+        Vector3 newPosition = mechPivotTransform.position + (Quaternion.AngleAxis(yAngleAdjustment, Vector3.down) * newPositionOffset);
+        float robotArmVelocity = (newPosition - targetTransform.position).magnitude;
+        // clamp velocity between 0 and 1
+        robotArmVelocity = Mathf.Clamp(robotArmVelocity, 0, 1);
+        AkSoundEngine.SetRTPCValue(RTPC_Velocity, robotArmVelocity);
+        if (!havePlayed)
+        {
+            AudioManager.Instance.playArmRampUp();
+            havePlayed = true;
+        }
+
         targetTransform.position = mechPivotTransform.position + (Quaternion.AngleAxis(yAngleAdjustment, Vector3.down) * newPositionOffset);
         targetTransform.rotation = controllerTransform.rotation;
+
     }
     public void SlowedMap()
     {
@@ -40,6 +60,18 @@ public class MechArmMap
             (normalizedToController * Mathf.Lerp(mechMin, mechMax, distanceToController / armLength));
         Vector3 newPosition = Vector3.Lerp(targetTransform.position, targetPosition,
             armVelocity /(targetPosition - targetTransform.position).magnitude);
+
+        // add arm ramp up sound
+        float robotArmVelocity = (newPosition - targetTransform.position).magnitude;
+        // clamp velocity between 0 and 1
+        robotArmVelocity = Mathf.Clamp(robotArmVelocity, 0, 1);
+        AkSoundEngine.SetRTPCValue(RTPC_Velocity, robotArmVelocity);
+        if (!havePlayed)
+        {
+            AudioManager.Instance.playArmRampUp();
+            havePlayed = true;
+        }
+
         targetTransform.position = newPosition;
         targetTransform.rotation = controllerTransform.rotation;
     }
@@ -82,6 +114,18 @@ public class MechArmMap
         _lastDirectionVector = directionVector;
         Vector3 newPosition = Vector3.Lerp(targetTransform.position, targetPosition,
             currentSpeed /(targetPosition - targetTransform.position).magnitude);
+
+        // add arm ramp up sound
+        float robotArmVelocity = (newPosition - targetTransform.position).magnitude;
+        // clamp velocity between 0 and 1
+        robotArmVelocity = Mathf.Clamp(robotArmVelocity, 0, 1);
+        AkSoundEngine.SetRTPCValue(RTPC_Velocity, robotArmVelocity);
+        if (!havePlayed)
+        {
+            AudioManager.Instance.playArmRampUp();
+            havePlayed = true;
+        }
+
         targetTransform.position = newPosition;
         targetTransform.rotation = controllerTransform.rotation;
     }
