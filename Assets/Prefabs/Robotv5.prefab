@@ -5463,6 +5463,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6378364647289246801}
     m_Modifications:
+    - target: {fileID: 29262317053971117, guid: 93c9478e51d63db4e98c5c664b1405b2,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6f67803c48f3f8647b73d38865557c4d,
+        type: 3}
     - target: {fileID: 5835598247408049002, guid: 93c9478e51d63db4e98c5c664b1405b2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5523,6 +5529,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7572612688453866577, guid: 93c9478e51d63db4e98c5c664b1405b2,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f0386a51a24477a42b3ce86a3699ecb4,
+        type: 3}
+    - target: {fileID: 9088998297449571888, guid: 93c9478e51d63db4e98c5c664b1405b2,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ec66dc6c9aeb9a147b8c4a8f046f695e,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
