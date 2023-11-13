@@ -18,17 +18,16 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     private void Awake()
     {
-        //player = GameObject.Find("XRRig").transform;
-        player = GameObject.Find("Player").transform;
+        player = GameObject.Find("PlayerController").transform;
         enemy = GameObject.Find("Enemy").transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
     private void Update()
     {
-        float y = player.position.y;
-        Vector3 pos = new Vector3(transform.position.x, player.position.y, transform.position.z);
-        playerInAttackRange = Physics.CheckSphere(pos, attackRange, whatIsPlayer);
+        // float y = player.position.y;
+        // Vector3 pos = new Vector3(transform.position.x, player.position.y, transform.position.z);
+        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
         if (!playerInAttackRange) ChasePlayer();
         else AttackPlayer();
