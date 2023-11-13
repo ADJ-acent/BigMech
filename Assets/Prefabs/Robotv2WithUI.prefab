@@ -316,6 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _controller: {fileID: 5866811629691453669}
+  _explosion: {fileID: 0}
 --- !u!135 &3422101117419192263
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2885,6 +2886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _controller: {fileID: 3377484784674200492}
+  _explosion: {fileID: 0}
 --- !u!135 &2693325098992958997
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3635,7 +3637,7 @@ Transform:
   m_GameObject: {fileID: 9213039705293675273}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0430045, y: -19.81, z: -0.0539999}
+  m_LocalPosition: {x: -3.0430045, y: -20.65, z: -0.0539999}
   m_LocalScale: {x: 1.4560739, y: 1.8236307, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -21,6 +21,7 @@ public class EnemyAI : MonoBehaviour
         player = GameObject.Find("PlayerController").transform;
         enemy = GameObject.Find("Enemy").transform;
         agent = GetComponent<NavMeshAgent>();
+        transform.LookAt(player);
     }
 
     private void Update()
