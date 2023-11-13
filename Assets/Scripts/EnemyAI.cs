@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.VFX;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -11,41 +14,46 @@ public class EnemyAI : MonoBehaviour
     public LayerMask whatIsPlayer;
 
     public PlayerCanvas playerCanvas;
-
+    public GameObject aliveEnemy;
+    public GameObject deadEnemy;
+    public ParticleSystem deathVFX;
     public float timeBetweenAttacks;
     bool alreadyAttacked;
     public float attackRange;
     private bool playerInAttackRange;
-
-    // Update is called once per frame
+    private bool dead;
     private void Awake()
     {
         player = GameObject.Find("PlayerController").transform;
         enemy = GameObject.Find("Enemy").transform;
         agent = GetComponent<NavMeshAgent>();
         transform.LookAt(player);
+        deathVFX.Stop();
     }
 
     private void Update()
     {
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
-
-        if (!playerInAttackRange) ChasePlayer();
-        else 
+        if (!dead)
         {
-            // Vector3 toPosition = (transform.position - player.position).normalized();
-            // float angleToPosition = Vector3.Angle(player.forward, toPosition);
+            playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-            // if (angleToPosition > 60f)
-            // {
-            //     playerCanvas.ShowLeftWarningSign();
-            // }
-            // else if (angleToPosition < -60f)
-            // {
-            //     playerCanvas.ShowRightWarningSign();
-            // }
-            // else playerCanvas.ShowAttackSign(player.position, transform.position);
-            AttackPlayer();
+            if (!playerInAttackRange) ChasePlayer();
+            else
+            {
+                // Vector3 toPosition = (transform.position - player.position).normalized();
+                // float angleToPosition = Vector3.Angle(player.forward, toPosition);
+
+                // if (angleToPosition > 60f)
+                // {
+                //     playerCanvas.ShowLeftWarningSign();
+                // }
+                // else if (angleToPosition < -60f)
+                // {
+                //     playerCanvas.ShowRightWarningSign();
+                // }
+                // else playerCanvas.ShowAttackSign(player.position, transform.position);
+                AttackPlayer();
+            }
         }
     }
 
@@ -74,5 +82,19 @@ public class EnemyAI : MonoBehaviour
     private void ResetAttack()
     {
         alreadyAttacked = false;
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Mech"))
+        {
+            aliveEnemy.SetActive(false);
+            deadEnemy.SetActive(true);
+            deathVFX.Clear();
+            deathVFX.Play();
+            agent.enabled = false;
+            GetComponent<BoxCollider>().enabled = false;
+            dead = true;
+        }
     }
 }
