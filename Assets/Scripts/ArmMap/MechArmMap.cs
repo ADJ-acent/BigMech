@@ -35,16 +35,8 @@ public class MechArmMap
 
         // add arm ramp up sound
         Vector3 newPosition = mechPivotTransform.position + (Quaternion.AngleAxis(yAngleAdjustment, Vector3.down) * newPositionOffset);
-        float robotArmVelocity = (newPosition - targetTransform.position).magnitude;
-        // clamp velocity between 0 and 1
-        robotArmVelocity = Mathf.Clamp(robotArmVelocity, 0, 1);
-        AkSoundEngine.SetRTPCValue(RTPC_Velocity, robotArmVelocity);
-        if (!havePlayed)
-        {
-            AudioManager.Instance.playArmRampUp();
-            havePlayed = true;
-        }
-
+        addArmSound(targetTransform.position, newPosition);
+     
         targetTransform.position = mechPivotTransform.position + (Quaternion.AngleAxis(yAngleAdjustment, Vector3.down) * newPositionOffset);
         targetTransform.rotation = controllerTransform.rotation;
 
