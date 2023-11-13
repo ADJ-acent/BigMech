@@ -62,15 +62,7 @@ public class MechArmMap
             armVelocity /(targetPosition - targetTransform.position).magnitude);
 
         // add arm ramp up sound
-        float robotArmVelocity = (newPosition - targetTransform.position).magnitude;
-        // clamp velocity between 0 and 1
-        robotArmVelocity = Mathf.Clamp(robotArmVelocity, 0, 1);
-        AkSoundEngine.SetRTPCValue(RTPC_Velocity, robotArmVelocity);
-        if (!havePlayed)
-        {
-            AudioManager.Instance.playArmRampUp();
-            havePlayed = true;
-        }
+        addArmSound(targetTransform.position, newPosition);
 
         targetTransform.position = newPosition;
         targetTransform.rotation = controllerTransform.rotation;
@@ -116,7 +108,15 @@ public class MechArmMap
             currentSpeed /(targetPosition - targetTransform.position).magnitude);
 
         // add arm ramp up sound
-        float robotArmVelocity = (newPosition - targetTransform.position).magnitude;
+        addArmSound(targetTransform.position, newPosition);
+
+        targetTransform.position = newPosition;
+        targetTransform.rotation = controllerTransform.rotation;
+    }
+
+    public void addArmSound(Vector3 targetPosition, Vector3 newPosition)
+    {
+        float robotArmVelocity = (newPosition - targetPosition).magnitude;
         // clamp velocity between 0 and 1
         robotArmVelocity = Mathf.Clamp(robotArmVelocity, 0, 1);
         AkSoundEngine.SetRTPCValue(RTPC_Velocity, robotArmVelocity);
@@ -126,7 +126,5 @@ public class MechArmMap
             havePlayed = true;
         }
 
-        targetTransform.position = newPosition;
-        targetTransform.rotation = controllerTransform.rotation;
     }
 }
