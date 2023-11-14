@@ -12,18 +12,34 @@ public class AudioManager: Singleton<AudioManager>
     [Header("Mech Sounds")]
     [SerializeField] public AK.Wwise.Event mechFootSteps;
     [SerializeField] public AK.Wwise.Event armRampUp;
+    [SerializeField] public GameObject leftArmSocket;
+    [SerializeField] public GameObject rightArmSocket;
+    private string RTPC_Velocity = "ArmVelocity";
 
     // mech robot sounds
 
+    public void startArmRampUp()
+    {
+            armRampUp.Post(leftArmSocket);
+            armRampUp.Post(rightArmSocket);
+       
+    }
+
+    public void updateArmRampUp(bool left, float robotArmVelocity)
+    {
+        if (left)
+        {
+            AkSoundEngine.SetRTPCValue(RTPC_Velocity, robotArmVelocity, leftArmSocket);
+        }
+        else
+        {
+            AkSoundEngine.SetRTPCValue(RTPC_Velocity, robotArmVelocity, rightArmSocket);
+        }
+    }
 
     public void playFootsteps()
     {
         mechFootSteps.Post(gameObject);
-    }
-
-    public void playArmRampUp()
-    {
-        armRampUp.Post(gameObject);
     }
 
     // building destroy sounds

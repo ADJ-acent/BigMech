@@ -12,6 +12,7 @@ public class MechArmMap
     [HideInInspector] public float armLength = .65f;
     [HideInInspector] public float mechMin = 6f;
     [HideInInspector] public float mechMax = 20f;
+    [HideInInspector] public bool isLeft;
     public float armVelocity;
     public float yAngleAdjustment;
     private Vector3 _lastDirectionVector = Vector3.zero;
@@ -19,9 +20,6 @@ public class MechArmMap
     private float currentSpeed = startingMomentumSpeed;
     private float lastStayStillTime = 0f;
 
-    //for sounds
-    private bool havePlayed = false;
-    private string RTPC_Velocity = "ArmVelocity";
 
 
     public void Map()
@@ -109,14 +107,10 @@ public class MechArmMap
     public void addArmSound(Vector3 targetPosition, Vector3 newPosition)
     {
         float robotArmVelocity = (newPosition - targetPosition).magnitude;
+        if (isLeft) Debug.Log(robotArmVelocity);
         // clamp velocity between 0 and 1
         robotArmVelocity = Mathf.Clamp(robotArmVelocity, 0, 1);
-        AkSoundEngine.SetRTPCValue(RTPC_Velocity, robotArmVelocity);
-        if (!havePlayed)
-        {
-            AudioManager.Instance.playArmRampUp();
-            havePlayed = true;
-        }
+        AudioManager.Instance.updateArmRampUp(isLeft, robotArmVelocity);
 
     }
 }

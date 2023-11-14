@@ -18,6 +18,8 @@ public class RobotArmProjection : MonoBehaviour
     public float armLength = .65f;
     public float mechMinReach;
     public float mechMaxReach;
+    private bool atLeftArm;
+    private bool atRightArm;
     public enum MappingType
     {
         Direct,
@@ -37,6 +39,9 @@ public class RobotArmProjection : MonoBehaviour
         rightArm.mechMax = mechMaxReach;
         leftArm.mechMin = mechMinReach;
         rightArm.mechMin = mechMinReach;
+        leftArm.isLeft = true;
+        rightArm.isLeft = false;
+        AudioManager.Instance.startArmRampUp();
     }
 
     // Update is called once per frame
