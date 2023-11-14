@@ -1,0 +1,23 @@
+Event	ID	Name			Wwise Object Path	Notes
+	391794082	Play_Small_Piece_Shatter			\Default Work Unit\Play_Small_Piece_Shatter	
+	2456951556	Play_Building_Collapse			\Default Work Unit\Play_Building_Collapse	
+	2588973845	Play_engine_loop			\Default Work Unit\Play_engine_loop	
+	3404907241	Play_Punch_Building			\Default Work Unit\Play_Punch_Building	
+	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3407379032	ArmVelocity			\Default Work Unit\ArmVelocity	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	4915979	heavy footsteps v2	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Footsteps\heavy footsteps v2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v2		239340
+	11755695	heavy footsteps v1	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Footsteps\heavy footsteps v1_593B0A3D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v1		120748
+	20868656	engine_loop	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\rumbling metal_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\engine_loop		2688096
+	64125215	Building Collapse	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\building collapse v2_BDED5307.wem		\Actor-Mixer Hierarchy\Default Work Unit\Building Collapse		507460
+	221989671	small_piece_3	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\small stone_00ACDB76.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_3		135048
+	462439837	small_piece_4	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\wood fall 1_7310B6A1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_4		128392
+	741429729	small_piece_2	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Small Piece Shatter\small_piece_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_2		93648
+	766652272	Punch Building	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Punch Building_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Punch Building		270584
+	889949765	heavy footsteps v3	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Footsteps\heavy footsteps v3_4599E3AF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v3		227768
+	967748420	heavy footsteps v4	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Footsteps\heavy footsteps v4_99958F3F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v4		242956
+	1034458455	small_piece_1	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\cement blocks fall_4C03B599.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_1		154340
+

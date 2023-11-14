@@ -25,7 +25,7 @@
 				<GameParameter Id="3407379032" Name="ArmVelocity"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{2A937D59-C99C-0FA0-7556-82F3CCFE6C27}">
+		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{D27F1497-F45F-08DB-463D-12BFE8D348EF}">
 			<ShortName>SFX_Test</ShortName>
 			<Path>SFX_Test.bnk</Path>
 			<Media>
@@ -37,21 +37,21 @@
 					<ShortName>Footsteps\heavy footsteps v1.wav</ShortName>
 					<CachePath>SFX/Footsteps/heavy footsteps v1_593B0A3D.wem</CachePath>
 				</File>
-				<File Id="466900395" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>engine_loop.wav</ShortName>
-					<CachePath>SFX/engine_loop_D79FB2B7.wem</CachePath>
+				<File Id="20868656" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rumbling metal.wav</ShortName>
+					<CachePath>SFX/rumbling metal_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="494743207" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Building Collapse.wav</ShortName>
-					<CachePath>SFX/Building Collapse_10C4C929.wem</CachePath>
+				<File Id="64125215" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>building collapse v2.wav</ShortName>
+					<CachePath>SFX/building collapse v2_BDED5307.wem</CachePath>
 				</File>
-				<File Id="660510088" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Small Piece Shatter\small_piece_1.wav</ShortName>
-					<CachePath>SFX/Small Piece Shatter/small_piece_1_8E06C0E7.wem</CachePath>
+				<File Id="221989671" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>small stone.wav</ShortName>
+					<CachePath>SFX/small stone_00ACDB76.wem</CachePath>
 				</File>
-				<File Id="732692716" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Small Piece Shatter\small_piece_3.wav</ShortName>
-					<CachePath>SFX/Small Piece Shatter/small_piece_3_B6864B66.wem</CachePath>
+				<File Id="462439837" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>wood fall 1.wav</ShortName>
+					<CachePath>SFX/wood fall 1_7310B6A1.wem</CachePath>
 				</File>
 				<File Id="741429729" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small Piece Shatter\small_piece_2.wav</ShortName>
@@ -61,10 +61,6 @@
 					<ShortName>Punch Building.wav</ShortName>
 					<CachePath>SFX/Punch Building_10C4C929.wem</CachePath>
 				</File>
-				<File Id="793690577" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Small Piece Shatter\small_piece_4.wav</ShortName>
-					<CachePath>SFX/Small Piece Shatter/small_piece_4_29FCC3A5.wem</CachePath>
-				</File>
 				<File Id="889949765" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\heavy footsteps v3.wav</ShortName>
 					<CachePath>SFX/Footsteps/heavy footsteps v3_4599E3AF.wem</CachePath>
@@ -73,16 +69,20 @@
 					<ShortName>Footsteps\heavy footsteps v4.wav</ShortName>
 					<CachePath>SFX/Footsteps/heavy footsteps v4_99958F3F.wem</CachePath>
 				</File>
+				<File Id="1034458455" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>cement blocks fall.wav</ShortName>
+					<CachePath>SFX/cement blocks fall_4C03B599.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
-				<Event Id="2456951556" Name="Play_Building_Collapse" DurationType="OneShot" DurationMin="2.7315104" DurationMax="2.7315104">
+				<Event Id="2456951556" Name="Play_Building_Collapse" DurationType="OneShot" DurationMin="2.8762019" DurationMax="2.8762019">
 					<MediaRefs>
-						<MediaRef Id="494743207"/>
+						<MediaRef Id="64125215"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2588973845" Name="Play_engine_loop" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="466900395"/>
+						<MediaRef Id="20868656"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3854155799" Name="Play_Footsteps" DurationType="OneShot" DurationMin="1.2906681" DurationMax="1.3767511">
@@ -98,12 +98,12 @@
 						<MediaRef Id="766652272"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="391794082" Name="Play_Small_Piece_Shatter" DurationType="OneShot" DurationMin="0.43093398" DurationMax="0.9746163">
+				<Event Id="391794082" Name="Play_Small_Piece_Shatter" DurationType="OneShot" DurationMin="0.48725" DurationMax="1.4057617">
 					<MediaRefs>
-						<MediaRef Id="660510088"/>
-						<MediaRef Id="732692716"/>
+						<MediaRef Id="221989671"/>
+						<MediaRef Id="462439837"/>
 						<MediaRef Id="741429729"/>
-						<MediaRef Id="793690577"/>
+						<MediaRef Id="1034458455"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -112,5 +112,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4B0B42B2-CCCE-F307-6E3B-9AD3FC082C75}</FileHash>
+	<FileHash>{6233DD4F-1B4C-655A-B433-879446FCBA3A}</FileHash>
 </SoundBanksInfo>
