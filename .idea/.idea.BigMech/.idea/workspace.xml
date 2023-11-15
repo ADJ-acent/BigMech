@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BigMech/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BigMech/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/AndyDev.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AndyDev.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoForAlpha.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoForAlpha.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,6 +180,7 @@
       <workItem from="1699855409651" duration="2320000" />
       <workItem from="1699886461068" duration="660000" />
       <workItem from="1699923596975" duration="1297000" />
+      <workItem from="1700004984900" duration="607000" />
     </task>
     <servers />
   </component>
