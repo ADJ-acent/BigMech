@@ -9,7 +9,7 @@ public class target : MonoBehaviour
     public float stepstance;                //step distance
     public float high = 0.1f;               //
     public float speed = 2;                 //
-
+    public GameObject manager;
     Vector3 newposition, oldposition, currentposition; //positions
     float lerp = 1;
 
@@ -22,8 +22,13 @@ public class target : MonoBehaviour
     {
         newposition = transform.position;
         currentposition = transform.position;
-        
-    }
+        body = manager.GetComponent<walkmanager>().body;                  //body
+        terrainLayer = manager.GetComponent<walkmanager>().terrainLayer;     //terrain layer (note: higher than actual ground)
+        stepstance = manager.GetComponent<walkmanager>().stepstance;            //step distance
+        high = manager.GetComponent<walkmanager>().high;               //
+        speed = manager.GetComponent<walkmanager>().speed;
+
+}
     
     bool noLegsMoving()
     {
