@@ -2,11 +2,15 @@ using System.Collections.Generic;
 using BehaviorTree;
 using UnityEngine;
 
-public class BossBT : BTree
+namespace BossAI
 {
-    public Transform mechTransform;
-    protected override Node SetupTree()
+    public class BossBT : BTree
     {
-        return new Node();
+        public Transform mechTransform;
+        protected override Node SetupTree()
+        {
+            return new Node();
+        }
     }
+
 }
