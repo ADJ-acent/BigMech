@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c74962fd-8c8c-4a1e-9b20-326b709da286" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BigMech/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BigMech/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AndyDev.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AndyDev.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoForAlpha.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoForAlpha.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MechMovement/MechSingleStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MechMovement/MechSingleStep.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10871f9e312b442cb78b9b97db88fdcb172a00/22/dc1d7164/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviorTree/Node.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviorTree/Selector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviorTree/Sequence.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BossAI/BossBT.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BuildingDestructionSound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stationary.cs" root0="FORCE_HIGHLIGHTING" />
@@ -181,6 +184,7 @@
       <workItem from="1699886461068" duration="660000" />
       <workItem from="1699923596975" duration="1297000" />
       <workItem from="1700004984900" duration="607000" />
+      <workItem from="1700182781208" duration="6215000" />
     </task>
     <servers />
   </component>
