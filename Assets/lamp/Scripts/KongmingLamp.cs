@@ -1,27 +1,53 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class KongmingLamp : MonoBehaviour
 {
     private Transform trans;
     private Vector3 speed;
+    private bool moveUp;
+    private int count;
 
     void Start()
     {
+        moveUp = false;
         trans = transform;
-        // 随机一个升空速度
+        // RANDOM VELOCITY
         speed = new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(1, 3), Random.Range(-0.5f, 0.5f));
+
+        count = 0;
     }
 
 
     void Update()
     {
-        // 沿着速度方向升空
-        trans.position += speed * Time.deltaTime;
-
-        // 高度达到500，自我销毁
-        if (trans.position.y > 500)
+        if (moveUp == false)
         {
-            Destroy(gameObject);
+            //GOING DOWN
+            trans.position -= speed * Time.deltaTime;
+            count++;
+            if(count == 400)
+            {
+                moveUp = true;
+                count = 0;
+            }  
+   
+          
         }
+        else
+        {
+            // GOING UP
+            trans.position += speed * Time.deltaTime;
+            count++;
+            if (count == 400)
+            {
+                moveUp = false;
+                count = 0;
+            }
+        }
+        
+
+      
+
     }
 }
