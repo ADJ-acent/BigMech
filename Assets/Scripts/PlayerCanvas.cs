@@ -33,7 +33,6 @@ public class PlayerCanvas : MonoBehaviour
     {
         if (blockSignOn == false)
         {
-            
             Vector3 pos = new Vector3(0.6f, attackSign.transform.position.y, 
                                       middleCanvas.transform.position.z);
             attackSign.transform.position = pos;
@@ -48,7 +47,7 @@ public class PlayerCanvas : MonoBehaviour
         attackSignOn = false;
 
         // TODO: replace hardcoded x value
-        Vector3 pos = new Vector3(0.6f, blockSign.transform.position.y, 
+        Vector3 pos = new Vector3(0f, blockSign.transform.position.y, 
                                   middleCanvas.transform.position.z);
         blockSign.transform.position = pos;
         blockSign.enabled = true;

@@ -9,8 +9,9 @@ public class EnemyAI : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform player;
-    public Transform enemy;
+    //public Transform enemy;
     public LayerMask whatIsPlayer;
+    public Transform mechTransform;
 
     public PlayerCanvas playerCanvas;
     public GameObject aliveEnemy;
@@ -21,10 +22,12 @@ public class EnemyAI : MonoBehaviour
     public float attackRange;
     private bool playerInAttackRange;
     private bool dead;
+
     private void Awake()
     {
         player = GameObject.Find("PlayerController").transform;
-        enemy = GameObject.Find("Enemy").transform;
+        //enemy = GameObject.Find("Enemy").transform;
+        mechTransform = GameObject.Find("Mech").transform;
         agent = GetComponent<NavMeshAgent>();
         transform.LookAt(player);
         deathVFX.Stop();
@@ -36,21 +39,26 @@ public class EnemyAI : MonoBehaviour
         {
             playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-            if (!playerInAttackRange) ChasePlayer();
+            if (!playerInAttackRange) 
+            {
+                ChasePlayer();
+            }
             else
             {
-                // Vector3 toPosition = (transform.position - player.position).normalized();
-                // float angleToPosition = Vector3.Angle(player.forward, toPosition);
+                Vector3 diff = player.position - transform.position;
+                Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
+                Vector3 axis = new Vector3(0f, 1f, 0f);
+                float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, axis);
 
-                // if (angleToPosition > 60f)
-                // {
-                //     playerCanvas.ShowLeftWarningSign();
-                // }
-                // else if (angleToPosition < -60f)
-                // {
-                //     playerCanvas.ShowRightWarningSign();
-                // }
-                // else playerCanvas.ShowAttackSign(player.position, transform.position);
+                if (angleToPosition > 30f)
+                {
+                    playerCanvas.ShowLeftWarningSign();
+                }
+                else if (angleToPosition < -30f)
+                {
+                    playerCanvas.ShowRightWarningSign();
+                }
+                else playerCanvas.ShowAttackSign(player.position, transform.position);
                 AttackPlayer();
             }
         }
@@ -93,7 +101,7 @@ public class EnemyAI : MonoBehaviour
             deathVFX.Play();
             agent.enabled = false;
             GetComponent<BoxCollider>().enabled = false;
-            dead = true;
+            //dead = true;
         }
     }
 }
