@@ -45,23 +45,28 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
-                Vector3 diff = player.position - transform.position;
-                Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
-                Vector3 axis = new Vector3(0f, 1f, 0f);
-                float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, axis);
-
-                if (angleToPosition > 30f)
-                {
-                    playerCanvas.ShowLeftWarningSign();
-                }
-                else if (angleToPosition < -30f)
-                {
-                    playerCanvas.ShowRightWarningSign();
-                }
-                else playerCanvas.ShowAttackSign(player.position, transform.position);
+                ShowIndicators();
                 AttackPlayer();
             }
         }
+    }
+
+    private void ShowIndicators()
+    {
+        Vector3 diff = transform.position - player.position;
+        Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
+        float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
+        Debug.LogFormat("{0} has angle {1}", transform.name, angleToPosition);
+
+        if (angleToPosition > 55f)
+        {
+            playerCanvas.ShowRightWarningSign();
+        }
+        else if (angleToPosition < -55f)
+        {
+            playerCanvas.ShowLeftWarningSign();
+        }
+        else playerCanvas.ShowAttackSign(player.position, transform.position);
     }
 
     private void ChasePlayer()

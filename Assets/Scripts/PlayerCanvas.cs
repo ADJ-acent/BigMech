@@ -31,6 +31,7 @@ public class PlayerCanvas : MonoBehaviour
 
     public void ShowAttackSign(Vector3 playerPosition, Vector3 enemyPosition)
     {
+        Debug.Log("here");
         if (blockSignOn == false)
         {
             Vector3 pos = new Vector3(0.6f, attackSign.transform.position.y, 
