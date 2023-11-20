@@ -17,14 +17,17 @@ public class EnemyAI : MonoBehaviour
     public GameObject aliveEnemy;
     public GameObject deadEnemy;
     public ParticleSystem deathVFX;
+
     public float timeBetweenAttacks;
     bool alreadyAttacked;
     public float attackRange;
     private bool playerInAttackRange;
+    public float angle;
     private bool dead;
 
     private void Awake()
     {
+        angle = 55f;
         player = GameObject.Find("PlayerController").transform;
         //enemy = GameObject.Find("Enemy").transform;
         mechTransform = GameObject.Find("Mech").transform;
@@ -56,17 +59,22 @@ public class EnemyAI : MonoBehaviour
         Vector3 diff = transform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
         float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
-        Debug.LogFormat("{0} has angle {1}", transform.name, angleToPosition);
 
-        if (angleToPosition > 55f)
+        if (angleToPosition > angle)
         {
             playerCanvas.ShowRightWarningSign();
         }
-        else if (angleToPosition < -55f)
+        else if (angleToPosition < (-1 * angle))
         {
             playerCanvas.ShowLeftWarningSign();
         }
-        else playerCanvas.ShowAttackSign(player.position, transform.position);
+        else 
+        {
+            if (angleToPosition < 0) playerCanvas.ShowAttackSign(Mathf.Abs(angleToPosition), -1);
+            else if (angleToPosition >= 0) playerCanvas.ShowAttackSign(Mathf.Abs(angleToPosition), 1);
+        }
+
+        if (!alreadyAttacked) playerCanvas.ShowBlockSign(Mathf.Abs(angleToPosition), -1);
     }
 
     private void ChasePlayer()
@@ -83,7 +91,6 @@ public class EnemyAI : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            // playerCanvas.ShowBlockSign(player.position, transform.position);
             Debug.LogFormat("PUNCH! from {0}", transform.name);
 
             alreadyAttacked = true;
@@ -106,7 +113,7 @@ public class EnemyAI : MonoBehaviour
             deathVFX.Play();
             agent.enabled = false;
             GetComponent<BoxCollider>().enabled = false;
-            //dead = true;
+            dead = true;
         }
     }
 }
