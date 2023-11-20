@@ -24,6 +24,9 @@ public class EnemyAI : MonoBehaviour
     public float angle;
     private bool dead;
 
+    public PlayerController playerController;
+    public float damage;
+
     private void Awake()
     {
         // playerCanvas.SpawnIndicator();
@@ -108,6 +111,7 @@ public class EnemyAI : MonoBehaviour
         {
             BlockSignCalc();
             Debug.LogFormat("PUNCH! from {0}", transform.name);
+            playerController.health -= damage;
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
