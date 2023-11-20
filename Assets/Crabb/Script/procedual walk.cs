@@ -16,15 +16,26 @@ public class target : MonoBehaviour
 
     //public GameObject manager; //manage all above parameters
 
-    public target[] otherLegs= new target[default];   //legs that does not move simultaniously 
+    public target[] otherLegs = new target[default];   //legs that does not move simultaniously 
     public float footSpacing1, footSpacing2; // position wrt. body
     private void Start()
     {
         newposition = transform.position;
         currentposition = transform.position;
+<<<<<<< Updated upstream
         
     }
     
+=======
+        body = manager.GetComponent<walkmanager>().body;                  //body
+        terrainLayer = manager.GetComponent<walkmanager>().terrainLayer;     //terrain layer (note: higher than actual ground)
+        stepstance = manager.GetComponent<walkmanager>().stepstance;            //step distance
+        high = manager.GetComponent<walkmanager>().high;               //
+        speed = manager.GetComponent<walkmanager>().speed;
+
+    }
+
+>>>>>>> Stashed changes
     bool noLegsMoving()
     {
         foreach (target leg in otherLegs)
@@ -43,8 +54,8 @@ public class target : MonoBehaviour
     void Update()
     {
         transform.position = currentposition;
-        Ray ray = new Ray(body.position + (body.up * footSpacing1)+(body.right*footSpacing2), -body.forward);
-        if (Physics.Raycast(ray,out RaycastHit info, 10, terrainLayer.value))
+        Ray ray = new Ray(body.position + (body.up * footSpacing1) + (body.right * footSpacing2), -body.forward);
+        if (Physics.Raycast(ray, out RaycastHit info, 10, terrainLayer.value))
         {
             if (Vector3.Distance(newposition, info.point) > stepstance && noLegsMoving())
             {
