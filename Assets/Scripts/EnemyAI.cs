@@ -27,7 +27,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Awake()
     {
-        angle = 55f;
+        angle = 32f;
         player = GameObject.Find("PlayerController").transform;
         //enemy = GameObject.Find("Enemy").transform;
         mechTransform = GameObject.Find("Mech").transform;
@@ -48,13 +48,12 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
-                ShowIndicators();
                 AttackPlayer();
             }
         }
     }
 
-    private void ShowIndicators()
+    private void AttackSignCalc()
     {
         Vector3 diff = transform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
@@ -73,8 +72,19 @@ public class EnemyAI : MonoBehaviour
             if (angleToPosition < 0) playerCanvas.ShowAttackSign(Mathf.Abs(angleToPosition), -1);
             else if (angleToPosition >= 0) playerCanvas.ShowAttackSign(Mathf.Abs(angleToPosition), 1);
         }
+    }
 
-        if (!alreadyAttacked) playerCanvas.ShowBlockSign(Mathf.Abs(angleToPosition), -1);
+    private void BlockSignCalc()
+    {
+        Vector3 diff = transform.position - player.position;
+        Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
+        float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
+
+        if ((-1 * angle) <= angleToPosition && angleToPosition <= angle)
+        {
+            if (angleToPosition < 0) playerCanvas.ShowBlockSign(Mathf.Abs(angleToPosition), -1);
+            else if (angleToPosition >= 0) playerCanvas.ShowBlockSign(Mathf.Abs(angleToPosition), 1);
+        }
     }
 
     private void ChasePlayer()
@@ -86,11 +96,13 @@ public class EnemyAI : MonoBehaviour
 
     private void AttackPlayer()
     {
+        AttackSignCalc();
         agent.SetDestination(transform.position);
         transform.LookAt(player);
 
         if (!alreadyAttacked)
         {
+            BlockSignCalc();
             Debug.LogFormat("PUNCH! from {0}", transform.name);
 
             alreadyAttacked = true;

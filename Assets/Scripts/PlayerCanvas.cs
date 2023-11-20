@@ -59,7 +59,6 @@ public class PlayerCanvas : MonoBehaviour
         attackSign.enabled = false;
         attackSignOn = false;
 
-        // TODO: replace hardcoded x value
         Vector3 pos = PositionCalc(angle, wrap);
         blockSign.transform.position = pos;
         blockSign.enabled = true;
