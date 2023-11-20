@@ -251,6 +251,15 @@ AnimationClip:
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.6666667
+        value: {x: -91.56, y: -90, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -260,6 +269,15 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
+        value: {x: -91.56, y: -90, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.6666667
         value: {x: -91.56, y: -90, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -1419,6 +1437,15 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.6666667
+        value: -91.56
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1440,6 +1467,15 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.6666667
+        value: -90
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1454,6 +1490,15 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.6666667
         value: 0
         inSlope: 0
         outSlope: 0
@@ -1482,6 +1527,15 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.6666667
+        value: -91.56
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1496,6 +1550,15 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
+        value: -90
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.6666667
         value: -90
         inSlope: 0
         outSlope: 0
@@ -1524,6 +1587,15 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.6666667
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1541,7 +1613,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1/GIANT_CRAB_FOREARM_L_2/GIANT_CRAB_CLAW_L_A
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1553,7 +1625,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1/GIANT_CRAB_FOREARM_L_2/GIANT_CRAB_CLAW_L_A
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1565,151 +1637,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1/GIANT_CRAB_FOREARM_L_2/GIANT_CRAB_CLAW_L_A
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/mouth_l
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/mouth_l
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/mouth_l
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_r/GIANT_CRAB_ARM_R_1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_r/GIANT_CRAB_ARM_R_1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_r/GIANT_CRAB_ARM_R_1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1/GIANT_CRAB_FOREARM_L_2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1/GIANT_CRAB_FOREARM_L_2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1/GIANT_CRAB_FOREARM_L_2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1757,7 +1685,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1769,7 +1697,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1781,7 +1709,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1793,7 +1721,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/mouth_r
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/mouth_l
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1805,7 +1733,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/mouth_r
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/mouth_l
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1817,7 +1745,187 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/mouth_r
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/mouth_l
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_r/GIANT_CRAB_ARM_R_1/GIANT_CRAB_FOREARM_R_2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_r/GIANT_CRAB_ARM_R_1/GIANT_CRAB_FOREARM_R_2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_r/GIANT_CRAB_ARM_R_1/GIANT_CRAB_FOREARM_R_2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1/GIANT_CRAB_FOREARM_L_2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1/GIANT_CRAB_FOREARM_L_2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1/GIANT_CRAB_FOREARM_L_2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_r/GIANT_CRAB_ARM_R_1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_r/GIANT_CRAB_ARM_R_1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_r/GIANT_CRAB_ARM_R_1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1/GIANT_CRAB_FOREARM_L_2/GIANT_CRAB_CLAW_L_A
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1/GIANT_CRAB_FOREARM_L_2/GIANT_CRAB_CLAW_L_A
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1/GIANT_CRAB_FOREARM_L_2/GIANT_CRAB_CLAW_L_A
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1864,8 +1972,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1
+    attribute: m_LocalEulerAngles.x
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/mouth_r
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1877,43 +1985,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_l/GIANT_CRAB_ARM_L_1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_r/GIANT_CRAB_ARM_R_1/GIANT_CRAB_FOREARM_R_2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_r/GIANT_CRAB_ARM_R_1/GIANT_CRAB_FOREARM_R_2
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/mouth_r
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1925,7 +1997,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/arm_r/GIANT_CRAB_ARM_R_1/GIANT_CRAB_FOREARM_R_2
+    path: GIANT_CRAB_ROOT_/GIANT_CRAB_SHELL/mouth_r
     classID: 4
     script: {fileID: 0}
     flags: 0
