@@ -11,6 +11,7 @@ public class target : MonoBehaviour
     public float speed = 2;                 //
     public GameObject manager;
     Vector3 newposition, oldposition, currentposition; //positions
+    private float offset = 2.5f;
     float lerp = 1;
 
 
@@ -51,10 +52,10 @@ public class target : MonoBehaviour
         Ray ray = new Ray(body.position + (body.up * footSpacing1)+(body.right*footSpacing2), -body.forward);
         if (Physics.Raycast(ray,out RaycastHit info, 10, terrainLayer.value))
         {
-            if (Vector3.Distance(newposition, info.point) > stepstance && noLegsMoving())
+            if (Vector3.Distance(newposition, info.point) > stepstance && noLegsMoving() && lerp >= 1)
             {
                 lerp = 0;
-                newposition = info.point;
+                newposition = info.point + new Vector3(0,offset,0);
             }
         }
 
