@@ -33,12 +33,31 @@ public class PlayerCanvas : MonoBehaviour
         humanTransform = GameObject.Find("VRCharacterIK").transform;
     }
 
+    private void NewStart()
+    {
+    }
+
+    public void SpawnIndicator()
+    {
+        // GameObject attackSign = (GameObject)Instantiate(attackSign0, attackSign0.transform.position, attackSign0.transform.rotation);
+        // GameObject blockSign = (GameObject)Instantiate(blockSign0, blockSign0.transform.position, blockSign0.transform.rotation);
+
+        // var attackSign = Instantiate(attackSign0) as Image;
+        // attackSign.transform.SetParent(middleCanvas.transform, false);
+        // var blockSign = Instantiate(blockSign0) as Image;
+        // blockSign.transform.SetParent(middleCanvas.transform, false);
+
+        Debug.Log("oh my god");
+        
+        NewStart();
+    }
+
     private Vector3 PositionCalc(float angle, int wrap)
     {
         float MeToCanvas = Vector3.Distance(humanTransform.position, transform.position);
         float indicatorDistance = Mathf.Tan(Mathf.Deg2Rad * angle) * MeToCanvas;
         float newX = RobotTransform.position.x + wrap * indicatorDistance;
-        Vector3 pos = new Vector3(newX, attackSign.transform.position.y, 
+        Vector3 pos = new Vector3(newX, middleCanvas.transform.position.y, 
                                 middleCanvas.transform.position.z);
         return pos;
     }

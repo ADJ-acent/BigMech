@@ -9,7 +9,6 @@ public class EnemyAI : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform player;
-    //public Transform enemy;
     public LayerMask whatIsPlayer;
     public Transform mechTransform;
 
@@ -27,9 +26,10 @@ public class EnemyAI : MonoBehaviour
 
     private void Awake()
     {
-        angle = 32f;
+        // playerCanvas.SpawnIndicator();
+
+        angle = 35f;
         player = GameObject.Find("PlayerController").transform;
-        //enemy = GameObject.Find("Enemy").transform;
         mechTransform = GameObject.Find("Mech").transform;
         agent = GetComponent<NavMeshAgent>();
         transform.LookAt(player);
@@ -48,6 +48,10 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
+                // var playerCanvas = new PlayerCanvas();
+                // playerCanvas = Instantiate(playerCanvas1, transform.position + star.getVector(), Quaternion.identity);
+                // playerCanvas.transform.parent = playerCanvas1.transform;
+
                 AttackPlayer();
             }
         }
