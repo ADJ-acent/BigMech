@@ -8,9 +8,13 @@ public class PlayerCanvas : MonoBehaviour
     public Canvas middleCanvas;
     public Image attackSign;
     public Image blockSign;
+    // public GameObject attackSign0;
+    // public GameObject blockSign0;
     public Image armorSign;
     public Image warningSignLeft;
     public Image warningSignRight;
+    public Transform humanTransform;
+    public Transform RobotTransform;
 
     private bool attackSignOn;
     private bool blockSignOn;
@@ -27,29 +31,56 @@ public class PlayerCanvas : MonoBehaviour
         attackSignOn = false;
         blockSignOn = false;
         armorSignOn = false;
+
+        humanTransform = GameObject.Find("VRCharacterIK").transform;
     }
 
-    public void ShowAttackSign(Vector3 playerPosition, Vector3 enemyPosition)
+    private void NewStart()
+    {
+    }
+
+    public void SpawnIndicator()
+    {
+        // GameObject attackSign = Instantiate(attackSign0, attackSign0.transform.position, attackSign0.transform.rotation);
+        // GameObject blockSign = Instantiate(blockSign0, blockSign0.transform.position, blockSign0.transform.rotation);
+
+        // var attackSign = Instantiate(attackSign0) as Image;
+        // attackSign.transform.SetParent(middleCanvas.transform, false);
+        // var blockSign = Instantiate(blockSign0) as Image;
+        // blockSign.transform.SetParent(middleCanvas.transform, false);
+
+        Debug.Log("oh my god");
+        
+        NewStart();
+    }
+
+    private Vector3 PositionCalc(float angle, int wrap)
+    {
+        float MeToCanvas = Vector3.Distance(humanTransform.position, transform.position);
+        float indicatorDistance = Mathf.Tan(Mathf.Deg2Rad * angle) * MeToCanvas;
+        float newX = RobotTransform.position.x + wrap * indicatorDistance;
+        Vector3 pos = new Vector3(newX, middleCanvas.transform.position.y, 
+                                middleCanvas.transform.position.z);
+        return pos;
+    }
+
+    public void ShowAttackSign(float angle, int wrap)
     {
         if (blockSignOn == false)
         {
-            
-            Vector3 pos = new Vector3(0.6f, attackSign.transform.position.y, 
-                                      middleCanvas.transform.position.z);
+            Vector3 pos = PositionCalc(angle, wrap);
             attackSign.transform.position = pos;
             attackSign.enabled = true;
             attackSignOn = true;
         }
     }
 
-    public void ShowBlockSign(Vector3 playerPosition, Vector3 enemyPosition)
+    public void ShowBlockSign(float angle, int wrap)
     {
         attackSign.enabled = false;
         attackSignOn = false;
 
-        // TODO: replace hardcoded x value
-        Vector3 pos = new Vector3(0.6f, blockSign.transform.position.y, 
-                                  middleCanvas.transform.position.z);
+        Vector3 pos = PositionCalc(angle, wrap);
         blockSign.transform.position = pos;
         blockSign.enabled = true;
         blockSignOn = true;

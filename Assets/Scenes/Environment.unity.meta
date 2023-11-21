@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/Environment.unity.meta
 guid: faba8167af7e6454185f1530628cf6a2
+========
+guid: d7995697a97ec20498d17d708e0eec73
+>>>>>>>> 0d10a42790d599153d9d74fb7bbd4c7fdc0d2169:Assets/Scenes/EnvironFixes.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

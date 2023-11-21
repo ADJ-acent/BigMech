@@ -9,22 +9,31 @@ public class EnemyAI : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform player;
-    public Transform enemy;
     public LayerMask whatIsPlayer;
+    public Transform mechTransform;
 
     public PlayerCanvas playerCanvas;
     public GameObject aliveEnemy;
     public GameObject deadEnemy;
     public ParticleSystem deathVFX;
+
     public float timeBetweenAttacks;
     bool alreadyAttacked;
     public float attackRange;
     private bool playerInAttackRange;
+    public float angle;
     private bool dead;
+
+    public PlayerController playerController;
+    public float damage;
+
     private void Awake()
     {
+        // playerCanvas.SpawnIndicator();
+
+        angle = 35f;
         player = GameObject.Find("PlayerController").transform;
-        enemy = GameObject.Find("Enemy").transform;
+        mechTransform = GameObject.Find("Mech").transform;
         agent = GetComponent<NavMeshAgent>();
         transform.LookAt(player);
         deathVFX.Stop();
@@ -36,23 +45,52 @@ public class EnemyAI : MonoBehaviour
         {
             playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-            if (!playerInAttackRange) ChasePlayer();
+            if (!playerInAttackRange) 
+            {
+                ChasePlayer();
+            }
             else
             {
-                // Vector3 toPosition = (transform.position - player.position).normalized();
-                // float angleToPosition = Vector3.Angle(player.forward, toPosition);
+                // var playerCanvas = new PlayerCanvas();
+                // playerCanvas = Instantiate(playerCanvas1, transform.position + star.getVector(), Quaternion.identity);
+                // playerCanvas.transform.parent = playerCanvas1.transform;
 
-                // if (angleToPosition > 60f)
-                // {
-                //     playerCanvas.ShowLeftWarningSign();
-                // }
-                // else if (angleToPosition < -60f)
-                // {
-                //     playerCanvas.ShowRightWarningSign();
-                // }
-                // else playerCanvas.ShowAttackSign(player.position, transform.position);
                 AttackPlayer();
             }
+        }
+    }
+
+    private void AttackSignCalc()
+    {
+        Vector3 diff = transform.position - player.position;
+        Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
+        float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
+
+        if (angleToPosition > angle)
+        {
+            playerCanvas.ShowRightWarningSign();
+        }
+        else if (angleToPosition < (-1 * angle))
+        {
+            playerCanvas.ShowLeftWarningSign();
+        }
+        else 
+        {
+            if (angleToPosition < 0) playerCanvas.ShowAttackSign(Mathf.Abs(angleToPosition), -1);
+            else if (angleToPosition >= 0) playerCanvas.ShowAttackSign(Mathf.Abs(angleToPosition), 1);
+        }
+    }
+
+    private void BlockSignCalc()
+    {
+        Vector3 diff = transform.position - player.position;
+        Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
+        float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
+
+        if ((-1 * angle) <= angleToPosition && angleToPosition <= angle)
+        {
+            if (angleToPosition < 0) playerCanvas.ShowBlockSign(Mathf.Abs(angleToPosition), -1);
+            else if (angleToPosition >= 0) playerCanvas.ShowBlockSign(Mathf.Abs(angleToPosition), 1);
         }
     }
 
@@ -65,13 +103,15 @@ public class EnemyAI : MonoBehaviour
 
     private void AttackPlayer()
     {
+        AttackSignCalc();
         agent.SetDestination(transform.position);
         transform.LookAt(player);
 
         if (!alreadyAttacked)
         {
-            // playerCanvas.ShowBlockSign(player.position, transform.position);
+            BlockSignCalc();
             Debug.LogFormat("PUNCH! from {0}", transform.name);
+            playerController.health -= damage;
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);

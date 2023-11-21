@@ -2,11 +2,31 @@ using System.Collections.Generic;
 using BehaviorTree;
 using UnityEngine;
 
-public class BossBT : BTree
+namespace BossAI
 {
-    public Transform mechTransform;
-    protected override Node SetupTree()
+    public class BossBT : BTree
     {
-        return new Node();
+
+        public Transform mechTransform;
+        public Transform[] buildingTransforms;
+        public float attackRange = 5f;
+        protected override Node SetupTree()
+        {
+            Transform t = transform;
+            return new Selector(new List<Node> {
+                new Sequence(new List<Node>
+                {
+                    new CheckBuildingInAttackRange(t, attackRange),
+                    new TaskAttackBuilding(t)
+                }),
+                
+                new Sequence(new List<Node>
+            {
+                new CheckRemainBuilding(t, buildingTransforms),
+                new TaskGoToBuilding(t),
+            }), 
+            new TaskWander(t,50f)});
+        }
     }
+
 }

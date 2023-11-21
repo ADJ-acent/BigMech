@@ -107,7 +107,6 @@ public class MechArmMap
     public void addArmSound(Vector3 targetPosition, Vector3 newPosition)
     {
         float robotArmVelocity = (newPosition - targetPosition).magnitude;
-        if (isLeft) Debug.Log(robotArmVelocity);
         // clamp velocity between 0 and 1
         robotArmVelocity = Mathf.Clamp(robotArmVelocity, 0, 1);
         AudioManager.Instance.updateArmRampUp(isLeft, robotArmVelocity);

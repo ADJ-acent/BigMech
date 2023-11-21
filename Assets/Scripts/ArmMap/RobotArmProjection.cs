@@ -45,7 +45,7 @@ public class RobotArmProjection : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    private void FixedUpdate()
     {
         switch (mappingType)
         {
