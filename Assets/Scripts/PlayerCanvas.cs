@@ -8,6 +8,8 @@ public class PlayerCanvas : MonoBehaviour
     public Canvas middleCanvas;
     public Image attackSign;
     public Image blockSign;
+    // public GameObject attackSign0;
+    // public GameObject blockSign0;
     public Image armorSign;
     public Image warningSignLeft;
     public Image warningSignRight;
@@ -39,8 +41,8 @@ public class PlayerCanvas : MonoBehaviour
 
     public void SpawnIndicator()
     {
-        // GameObject attackSign = (GameObject)Instantiate(attackSign0, attackSign0.transform.position, attackSign0.transform.rotation);
-        // GameObject blockSign = (GameObject)Instantiate(blockSign0, blockSign0.transform.position, blockSign0.transform.rotation);
+        // GameObject attackSign = Instantiate(attackSign0, attackSign0.transform.position, attackSign0.transform.rotation);
+        // GameObject blockSign = Instantiate(blockSign0, blockSign0.transform.position, blockSign0.transform.rotation);
 
         // var attackSign = Instantiate(attackSign0) as Image;
         // attackSign.transform.SetParent(middleCanvas.transform, false);
