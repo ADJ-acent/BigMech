@@ -454,6 +454,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: crablargewithik
       objectReference: {fileID: 0}
+    - target: {fileID: 1662644961616340558, guid: 2c7cc51e822ef6540b85334c6821a308,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1707473238704444363, guid: 2c7cc51e822ef6540b85334c6821a308,
         type: 3}
       propertyPath: footSpacing2
