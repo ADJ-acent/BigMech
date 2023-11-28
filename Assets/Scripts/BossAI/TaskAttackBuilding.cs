@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using BehaviorTree;
+using RayFire;
 using UnityEngine.AI;
 
 namespace BossAI
@@ -14,13 +15,23 @@ namespace BossAI
         private float _attackCounter;
         private float _attackTime = 4f;
         private uint curCount = 0;
-        private const uint maxCount = 2;
+        private const uint maxCount = 3;
         private bool haveAttacked = false;
+        private int curAttack;
+        private const float scaleSize = 1.5f;
+        private Vector3 originalLeft;
+        private Vector3 originalRight;
+        private RayfireActivator _left;
+        private RayfireActivator _right;
 
-        public TaskAttackBuilding(Transform transform)
+        public TaskAttackBuilding(Transform transform, RayfireActivator left, RayfireActivator right)
         {
             _transform = transform;
             _animator = transform.GetComponent<Animator>();
+            _left = left;
+            _right = right;
+            originalLeft = _left.boxSize;
+            originalRight = _right.boxSize;
         }
         
         public override NodeState Evaluate()
@@ -29,11 +40,13 @@ namespace BossAI
             Transform target = (Transform)GetData("target");
             if (!haveAttacked)
             {
-                Debug.Log(0);
+                curAttack = Random.Range(0, 2);
                 _animator.SetTrigger("Attack");
-                _animator.SetInteger("AttackNum", Random.Range(0,5));
+                _animator.SetInteger("AttackNum", curAttack);
+                _animator.SetFloat("AttackWaitTime",0.1f);
                 haveAttacked = true;
                 state = NodeState.Running;
+                curCount++;
                 return state;
                 
             }
@@ -42,14 +55,30 @@ namespace BossAI
             {
                 if (curCount < maxCount)
                 {
-                    Debug.Log(1);
+                    if (curAttack == maxCount-1)
+                    {
+                        RayfireConnectivity rc = target.GetComponent<RayfireConnectivity>();
+                        rc.enabled = true;
+                    }
+
+                    _right.boxSize *= scaleSize;
+                    _left.boxSize *= scaleSize;
+                    curAttack = Random.Range(0, 2);
                     _animator.SetTrigger("Attack");
-                    _animator.SetInteger("AttackNum", Random.Range(0,2));
+                    _animator.SetInteger("AttackNum", curAttack);
+                    _animator.SetFloat("AttackWaitTime",0.1f);
                     _attackCounter = 0;
                     curCount++;
                 }
                 else
                 {
+                    _right.boxSize = originalRight;
+                    _left.boxSize = originalLeft;
+                    RayfireConnectivity rc = target.GetComponent<RayfireConnectivity>();
+                    if (rc != null)
+                    {
+                        RFCollapse.StartCollapse(rc);
+                    }
                     ClearData("target");
                     _animator.SetTrigger("Idle");
                     haveAttacked = false;
@@ -62,6 +91,5 @@ namespace BossAI
             state = NodeState.Running;
             return state;
         }
-
     }
 }

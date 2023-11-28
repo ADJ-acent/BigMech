@@ -7,34 +7,26 @@ using UnityEngine.AI;
 
 namespace BossAI
 {
-    public class CheckMechInAttractRange : Node
+    public class CheckMechInAttackRange : Node
     {
         private Transform _transform;
         private readonly Animator _animator;
         private readonly NavMeshAgent _navMeshAgent;
         private readonly Transform _mechTransform;
-        private float _attractRange;
+        private float _attackRange;
 
-        public CheckMechInAttractRange(Transform transform, float attractRange, Transform mechTransform)
+        public CheckMechInAttackRange(Transform transform, float attackRange, Transform mechTransform)
         {
             _transform = transform;
             _animator = transform.GetComponent<Animator>();
             _navMeshAgent = transform.GetComponent<NavMeshAgent>();
-            _attractRange = attractRange;
+            _attackRange = attackRange;
             _mechTransform = mechTransform;
         }
         
         public override NodeState Evaluate()
         {
-            object t = GetData("mech");
-            if (t == null)
-            {
-                state = NodeState.Failure;
-                return state;
-            }
-
-            Transform target = (Transform)t;
-            if (Vector3.Distance(_transform.position, target.position) <= _attractRange)
+            if (Vector3.Distance(_transform.position, _mechTransform.position) <= _attackRange)
             { 
                 state = NodeState.Success;
                 return state;
