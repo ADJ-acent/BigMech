@@ -40,7 +40,7 @@ namespace BossAI
             Transform target = (Transform)GetData("target");
             if (!haveAttacked)
             {
-                curAttack = Random.Range(0, 2);
+                curAttack = Random.Range(0, 3);
                 _animator.SetTrigger("Attack");
                 _animator.SetInteger("AttackNum", curAttack);
                 _animator.SetFloat("AttackWaitTime",0.1f);
@@ -48,7 +48,6 @@ namespace BossAI
                 state = NodeState.Running;
                 curCount++;
                 return state;
-                
             }
             _attackCounter += Time.deltaTime;
             if (_attackCounter >= _attackTime)
@@ -63,7 +62,7 @@ namespace BossAI
 
                     _right.boxSize *= scaleSize;
                     _left.boxSize *= scaleSize;
-                    curAttack = Random.Range(0, 2);
+                    curAttack = Random.Range(0, 3);
                     _animator.SetTrigger("Attack");
                     _animator.SetInteger("AttackNum", curAttack);
                     _animator.SetFloat("AttackWaitTime",0.1f);

@@ -14,39 +14,35 @@ namespace BossAI
         private readonly NavMeshAgent _navMeshAgent;
         private bool _hasMoved = false;
         private Transform _mechTransform;
+        private readonly float _offset;
 
-        public TaskGoToMech(Transform transform, Transform mechTransform)
+        public TaskGoToMech(Transform transform, Transform mechTransform, float offset)
         {
             _transform = transform;
             _animator = transform.GetComponent<Animator>();
             _navMeshAgent = transform.GetComponent<NavMeshAgent>();
             _mechTransform = mechTransform;
+            _offset = offset;
         }
         
         public override NodeState Evaluate()
         {
-            if (!_hasMoved)
-            {
-                _navMeshAgent.SetDestination(_mechTransform.position);
-                _animator.SetTrigger("Idle");
-                _hasMoved = true;
-                return NodeState.Running;
-            }
-            // Check if agent reached the destination
-            if (!_navMeshAgent.pathPending)
-            {
-                    if (!_navMeshAgent.hasPath || _navMeshAgent.velocity.sqrMagnitude == 0f)
-                    {
-                        _navMeshAgent.SetDestination(_mechTransform.position);
-                        _animator.SetTrigger("Idle");
-                        
-                    }
 
-            }
+            Vector3 mechPosition = _mechTransform.position;
+            _navMeshAgent.SetDestination(mechPosition + getOffsetFromMech(mechPosition));
+            _animator.SetTrigger("Idle");
+            _hasMoved = true;
+            return NodeState.Running;
 
-            state = NodeState.Running;
-            return state;
         }
+        private Vector3 getOffsetFromMech(Vector3 mechPosition)
+        {
+            
+            return (_transform.position - mechPosition).normalized * _offset;
 
+        }
+    
     }
+    
+
 }
