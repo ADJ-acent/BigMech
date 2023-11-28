@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using BehaviorTree;
+using RayFire;
 using UnityEngine;
 
 namespace BossAI
@@ -9,6 +10,8 @@ namespace BossAI
 
         public Transform mechTransform;
         public Transform[] buildingTransforms;
+        public RayfireActivator left;
+        public RayfireActivator right;
         public float attackRange = 5f;
         protected override Node SetupTree()
         {
@@ -17,7 +20,7 @@ namespace BossAI
                 new Sequence(new List<Node>
                 {
                     new CheckBuildingInAttackRange(t, attackRange),
-                    new TaskAttackBuilding(t)
+                    new TaskAttackBuilding(t, left, right)
                 }),
                 
                 new Sequence(new List<Node>

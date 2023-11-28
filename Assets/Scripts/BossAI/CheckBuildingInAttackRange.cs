@@ -32,9 +32,10 @@ namespace BossAI
             }
 
             Transform target = (Transform)t;
-            if (Vector3.Distance(_transform.position, target.position) <= _attackRange)
+            Vector3 buildingPosition = target.position;
+            if (Vector3.Distance(_transform.position, buildingPosition) <= _attackRange)
             {
-                _transform.LookAt(target.position, Vector3.up);
+                _transform.LookAt(new Vector3(buildingPosition.x, _transform.position.y, buildingPosition.z), Vector3.up);
                 state = NodeState.Success;
                 return state;
             }
