@@ -73,11 +73,6 @@ namespace BossAI
                 {
                     _right.boxSize = originalRight;
                     _left.boxSize = originalLeft;
-                    RayfireConnectivity rc = target.GetComponent<RayfireConnectivity>();
-                    if (rc != null)
-                    {
-                        RFCollapse.StartCollapse(rc);
-                    }
                     ClearData("target");
                     _animator.SetTrigger("Idle");
                     haveAttacked = false;
@@ -85,6 +80,15 @@ namespace BossAI
                     curCount = 0;
                 }
 
+            }
+
+            if (curCount == maxCount && _attackCounter >= _attackTime * 0.75)
+            {
+                RayfireConnectivity rc = target.GetComponent<RayfireConnectivity>();
+                if (rc != null)
+                {
+                    RFCollapse.StartCollapse(rc);
+                }
             }
 
             state = NodeState.Running;
