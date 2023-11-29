@@ -9,8 +9,6 @@ namespace BossAI
 {
     public class CheckHitStatus : Node
     {
-        private float hitTime = .5f;
-        private float hitCounter = 0f;
         private float blockTime = 3f;
         private float blockCounter = 0f;
         private Animator _animator;
@@ -29,7 +27,6 @@ namespace BossAI
         }
         public override NodeState Evaluate()
         {
-            object isStunned = GetData("stun");
             // if currently is blocking, check if we passed the block timer
             if (isBlocking)
             {
@@ -41,33 +38,38 @@ namespace BossAI
                 _animator.SetTrigger("Idle");
                 _navMeshAgent.isStopped = false;
                 isBlocking = false;
+                blockCounter = 0f;
                 return NodeState.Failure;
             }
-            
-            
-            if (isStunned == null || !(bool)isStunned)
+            object isStunned = GetData("stun");
+            //hit when not stunned
+            if ((isStunned == null || !(bool)isStunned) && isHit)
             {
-                if (isHit)
-                {
-                    
-                    return NodeState.Success;
-                }
-                
-                return NodeState.Failure;
-            }
-            if (isHit)
-            {
-                _navMeshAgent.isStopped = true;
-                _transform.position -= _transform.forward * 5;
-                hitCounter = 0f;
+                _animator.SetTrigger("Block");
+                blockCounter = 0f;
+                isBlocking = true;
+                isHit = false;
                 return NodeState.Success;
             }
-
             return NodeState.Failure;
         }
 
-        private void setHitStatus()
+        private void SetHitStatus(Vector3 hitDirection, int damage)
         {
+            object isStunned = GetData("stun");
+            // if stunned move crab to the opposite of the hit
+            if (isStunned != null && (bool) isStunned)
+            {
+                _navMeshAgent.isStopped = true;
+                _transform.position += hitDirection.normalized * 5;
+                if (_health.DealDamage(damage)) parent.SetData("dead", true);
+                
+            }
+
+            if (!isBlocking)
+            {
+                if (_health.DealDamage(damage / 10)) parent.SetData("dead", true);
+            }
             isHit = true;
         }
     }
