@@ -17,9 +17,9 @@ public class BlockedStun : MonoBehaviour
         }
     }
     /*for testing stun*/
-    /*[ContextMenu("stun")]
+    [ContextMenu("stun")]
     private void triggerBlocked()
     {
         blocked?.Invoke();
-    }*/
+    }
 }
