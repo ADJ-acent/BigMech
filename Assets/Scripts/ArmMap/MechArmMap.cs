@@ -19,7 +19,7 @@ public class MechArmMap
     private const float startingMomentumSpeed = 0.2f;
     private float currentSpeed = startingMomentumSpeed;
     private float lastStayStillTime = 0f;
-
+    private Vector3 currentVec;
 
 
     public void Map()
@@ -111,5 +111,15 @@ public class MechArmMap
         robotArmVelocity = Mathf.Clamp(robotArmVelocity, 0, 1);
         AudioManager.Instance.updateArmRampUp(isLeft, robotArmVelocity);
 
+    }
+
+    private void storeMovementInfo(Vector3 last, Vector3 cur)
+    {
+        currentVec = cur - last;
+    }
+
+    public Vector3 getMovementInfo()
+    {
+        return currentVec;
     }
 }

@@ -9,7 +9,8 @@ public class MechFist : MonoBehaviour
     private float lastPlayedSound = 0f;
     [SerializeReference]
     private ActionBasedController _controller;
-
+    public delegate void Hit();
+    public static event Hit hit;
     [SerializeReference] private GameObject _explosionGameObject;
 
     private ParticleSystem _explosion;
@@ -38,8 +39,9 @@ public class MechFist : MonoBehaviour
                 _explosion.transform.position = other.transform.position;
                 _explosion.Play();
             }
-        } 
-        _controller.SendHapticImpulse(0.3f, .2f);
+            _controller.SendHapticImpulse(0.3f, .2f);
+        }
+        
     }
     
 }

@@ -19,6 +19,7 @@ namespace BossAI
         {
             Transform t = transform;
             return new Selector(new List<Node> {
+                new CheckHitStatus(t),
                 new CheckStunStatus(t),
                 new Sequence(new List<Node>
                 {

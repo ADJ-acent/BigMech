@@ -8,14 +8,14 @@ public class IKFootSolver : MonoBehaviour
 
     [SerializeField] LayerMask terrainLayer = default;
     [SerializeField] Transform body = default;
-    [SerializeField] IKFootSolver otherFoot = default;
+    /*[SerializeField] IKFootSolver otherFoot = default;
     [SerializeField] float speed = 4;
     [SerializeField] float stepDistance = .2f;
     [SerializeField] float stepLength = .2f;
     [SerializeField] float sideStepLength = .1f;
 
     [SerializeField] float stepHeight = .3f;
-    [SerializeField] Vector3 footOffset = default;
+    [SerializeField] Vector3 footOffset = default;*/
 
     public Vector3 footRotOffset;
     public float footYPosOffset = 0.1f;
@@ -24,16 +24,16 @@ public class IKFootSolver : MonoBehaviour
     public float rayLength = 1.5f;
     
     float footSpacing;
-    Vector3 oldPosition, currentPosition, newPosition;
+    /*Vector3 oldPosition, currentPosition, newPosition;
     Vector3 oldNormal, currentNormal, newNormal;
-    float lerp;
+    float lerp;*/
 
     private void Start()
     {
         footSpacing = transform.localPosition.x;
-        currentPosition = newPosition = oldPosition = transform.position;
+        /*currentPosition = newPosition = oldPosition = transform.position;
         currentNormal = newNormal = oldNormal = transform.up;
-        lerp = 1;
+        lerp = 1;*/
     }
 
     // Update is called once per frame
