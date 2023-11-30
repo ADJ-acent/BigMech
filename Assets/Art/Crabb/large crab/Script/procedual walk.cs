@@ -9,16 +9,15 @@ public class target : MonoBehaviour
     public float stepstance;                //step distance
     public float high = 0.1f;               //
     public float speed = 2;                 //
-    public GameObject manager;
+    public GameObject manager;              //public GameObject manager; //manage all above parameters
     Vector3 newposition, oldposition, currentposition; //positions
-    private float offset = 2.5f;
+    private float offset = 0.5F;
     float lerp = 1;
+    public Transform center;    //an empty object that keep record of the default position
 
-
-    //public GameObject manager; //manage all above parameters
-
-    public target[] otherLegs= new target[default];   //legs that does not move simultaniously 
+    public target[] otherLegs = new target[default];   //legs that does not move simultaniously 
     public float footSpacing1, footSpacing2; // position wrt. body
+
     private void Start()
     {
         newposition = transform.position;
@@ -29,8 +28,8 @@ public class target : MonoBehaviour
         high = manager.GetComponent<walkmanager>().high;               //
         speed = manager.GetComponent<walkmanager>().speed;
 
-}
-    
+    }
+
     bool noLegsMoving()
     {
         foreach (target leg in otherLegs)
@@ -48,8 +47,14 @@ public class target : MonoBehaviour
     }
     void Update()
     {
+
+
+
+
         transform.position = currentposition;
-        Ray ray = new Ray(body.position + (body.up * footSpacing1)+(body.right*footSpacing2), -body.forward);
+        //Ray ray = new Ray(body.position + (body.up * footSpacing1)+(body.right*footSpacing2), -body.forward);
+        //Ray ray = new Ray(center.position, -body.forward);
+        /*
         if (Physics.Raycast(ray,out RaycastHit info, 10, terrainLayer.value))
         {
             if (Vector3.Distance(newposition, info.point) > stepstance && noLegsMoving() && lerp >= 1)
@@ -57,6 +62,11 @@ public class target : MonoBehaviour
                 lerp = 0;
                 newposition = info.point + new Vector3(0,offset,0);
             }
+        }*/
+        if (Vector3.Distance(newposition, center.position) > stepstance && noLegsMoving() && lerp >= 1)
+        {
+            lerp = 0;
+            newposition = center.position + new Vector3(0, offset, 0);
         }
 
         if (lerp < 1)
