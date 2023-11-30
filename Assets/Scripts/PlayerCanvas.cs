@@ -66,7 +66,7 @@ public class PlayerCanvas : MonoBehaviour
         blockSign.SetActive(true);
         blockSignOn = true;
 
-        StartCoroutine(SpawnDelay());
+        StartCoroutine(SpawnDelay(blockSign));
     }
 
     public void ShowLeftWarningSign()
@@ -79,15 +79,25 @@ public class PlayerCanvas : MonoBehaviour
         warningSignRight.enabled = true;
     }
 
-    public void HideBlockSign()
+    public void HideLeftWarningSign()
     {
-        // blockSign.SetActive(false);
+        warningSignLeft.enabled = false;
+    }
+
+    public void HideRightWarningSign()
+    {
+        warningSignRight.enabled = false;
+    }
+
+    public void HideBlockSign(GameObject blockSign)
+    {
+        blockSign.SetActive(false);
         blockSignOn = false;
     }
 
-    private IEnumerator SpawnDelay()
+    private IEnumerator SpawnDelay(GameObject blockSign)
     {
         yield return new WaitForSeconds(2);
-        HideBlockSign();
+        HideBlockSign(blockSign);
     }
 }

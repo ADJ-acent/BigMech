@@ -32,9 +32,14 @@ public class EnemyAI : MonoBehaviour
     private GameObject attackSign;
     private GameObject blockSign;
     public Canvas canvas;
+    private bool leftWarningSignOn;
+    private bool rightWarningSignOn;
 
     private void Awake()
     {
+        attackSign0.SetActive(false);
+        blockSign0.SetActive(false);
+
         SpawnIndicator();
 
         angle = 35f;
@@ -57,10 +62,6 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
-                // var playerCanvas = new PlayerCanvas();
-                // playerCanvas = Instantiate(playerCanvas1, transform.position + star.getVector(), Quaternion.identity);
-                // playerCanvas.transform.parent = playerCanvas1.transform;
-
                 AttackPlayer();
             }
         }
@@ -71,9 +72,7 @@ public class EnemyAI : MonoBehaviour
         attackSign = Instantiate(attackSign0, attackSign0.transform.position, attackSign0.transform.rotation);
         blockSign = Instantiate(blockSign0, blockSign0.transform.position, blockSign0.transform.rotation);
 
-        // attackSign = Instantiate(attackSign0) as Image;
         attackSign.transform.SetParent(canvas.transform, false);
-        // blockSign = Instantiate(blockSign0) as Image;
         blockSign.transform.SetParent(canvas.transform, false);
 
         attackSign.SetActive(false);
@@ -89,10 +88,12 @@ public class EnemyAI : MonoBehaviour
         if (angleToPosition > angle)
         {
             playerCanvas.ShowRightWarningSign();
+            rightWarningSignOn = true;
         }
         else if (angleToPosition < (-1 * angle))
         {
             playerCanvas.ShowLeftWarningSign();
+            leftWarningSignOn = true;
         }
         else 
         {
@@ -130,7 +131,6 @@ public class EnemyAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             BlockSignCalc();
-            Debug.LogFormat("PUNCH! from {0}", transform.name);
             playerController.health -= damage;
 
             alreadyAttacked = true;
@@ -154,6 +154,19 @@ public class EnemyAI : MonoBehaviour
             agent.enabled = false;
             GetComponent<BoxCollider>().enabled = false;
             dead = true;
+
+            Destroy(attackSign);
+            Destroy(blockSign);
+            if (rightWarningSignOn) 
+            {
+                playerCanvas.HideRightWarningSign();
+                rightWarningSignOn = false;
+            }
+            if (leftWarningSignOn) 
+            {
+                playerCanvas.HideLeftWarningSign();
+                leftWarningSignOn = false;
+            }
         }
     }
 }
