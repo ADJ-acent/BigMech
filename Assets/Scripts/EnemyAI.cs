@@ -27,9 +27,15 @@ public class EnemyAI : MonoBehaviour
     public PlayerController playerController;
     public float damage;
 
+    public GameObject attackSign0;
+    public GameObject blockSign0;
+    private GameObject attackSign;
+    private GameObject blockSign;
+    public Canvas canvas;
+
     private void Awake()
     {
-        // playerCanvas.SpawnIndicator();
+        SpawnIndicator();
 
         angle = 35f;
         player = GameObject.Find("PlayerController").transform;
@@ -60,6 +66,20 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void SpawnIndicator()
+    {
+        attackSign = Instantiate(attackSign0, attackSign0.transform.position, attackSign0.transform.rotation);
+        blockSign = Instantiate(blockSign0, blockSign0.transform.position, blockSign0.transform.rotation);
+
+        // attackSign = Instantiate(attackSign0) as Image;
+        attackSign.transform.SetParent(canvas.transform, false);
+        // blockSign = Instantiate(blockSign0) as Image;
+        blockSign.transform.SetParent(canvas.transform, false);
+
+        attackSign.SetActive(false);
+        blockSign.SetActive(false);
+    }
+
     private void AttackSignCalc()
     {
         Vector3 diff = transform.position - player.position;
@@ -76,8 +96,8 @@ public class EnemyAI : MonoBehaviour
         }
         else 
         {
-            if (angleToPosition < 0) playerCanvas.ShowAttackSign(Mathf.Abs(angleToPosition), -1);
-            else if (angleToPosition >= 0) playerCanvas.ShowAttackSign(Mathf.Abs(angleToPosition), 1);
+            if (angleToPosition < 0) playerCanvas.ShowAttackSign(attackSign, Mathf.Abs(angleToPosition), -1);
+            else if (angleToPosition >= 0) playerCanvas.ShowAttackSign(attackSign, Mathf.Abs(angleToPosition), 1);
         }
     }
 
@@ -89,8 +109,8 @@ public class EnemyAI : MonoBehaviour
 
         if ((-1 * angle) <= angleToPosition && angleToPosition <= angle)
         {
-            if (angleToPosition < 0) playerCanvas.ShowBlockSign(Mathf.Abs(angleToPosition), -1);
-            else if (angleToPosition >= 0) playerCanvas.ShowBlockSign(Mathf.Abs(angleToPosition), 1);
+            if (angleToPosition < 0) playerCanvas.ShowBlockSign(attackSign, blockSign, Mathf.Abs(angleToPosition), -1);
+            else if (angleToPosition >= 0) playerCanvas.ShowBlockSign(attackSign, blockSign, Mathf.Abs(angleToPosition), 1);
         }
     }
 
