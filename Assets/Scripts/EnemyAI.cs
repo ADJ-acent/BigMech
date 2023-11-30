@@ -69,11 +69,8 @@ public class EnemyAI : MonoBehaviour
 
     public void SpawnIndicator()
     {
-        attackSign = Instantiate(attackSign0, attackSign0.transform.position, attackSign0.transform.rotation);
-        blockSign = Instantiate(blockSign0, blockSign0.transform.position, blockSign0.transform.rotation);
-
-        attackSign.transform.SetParent(canvas.transform, false);
-        blockSign.transform.SetParent(canvas.transform, false);
+        attackSign = Instantiate(attackSign0, attackSign0.transform.position, attackSign0.transform.rotation, canvas.transform);
+        blockSign = Instantiate(blockSign0, blockSign0.transform.position, blockSign0.transform.rotation, canvas.transform);
 
         attackSign.SetActive(false);
         blockSign.SetActive(false);

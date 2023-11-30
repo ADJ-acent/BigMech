@@ -6,10 +6,6 @@ using UnityEngine.UI;
 public class PlayerCanvas : MonoBehaviour
 {
     public Canvas middleCanvas;
-    // public GameObject attackSign;
-    // public GameObject blockSign;
-    // public GameObject attackSign0;
-    // public GameObject blockSign0;
     public Image armorSign;
     public Image warningSignLeft;
     public Image warningSignRight;
@@ -22,8 +18,6 @@ public class PlayerCanvas : MonoBehaviour
 
     void Awake()
     {
-        // attackSign.enabled = false;
-        // blockSign.enabled = false;
         armorSign.enabled = false;
         warningSignLeft.enabled = false;
         warningSignRight.enabled = false;
