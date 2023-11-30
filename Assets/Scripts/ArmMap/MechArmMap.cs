@@ -34,7 +34,7 @@ public class MechArmMap
         // add arm ramp up sound
         Vector3 newPosition = mechPivotTransform.position + (Quaternion.AngleAxis(yAngleAdjustment, Vector3.down) * newPositionOffset);
         addArmSound(targetTransform.position, newPosition);
-     
+        storeMovementInfo(targetTransform.position, newPosition);
         targetTransform.position = mechPivotTransform.position + (Quaternion.AngleAxis(yAngleAdjustment, Vector3.down) * newPositionOffset);
         targetTransform.rotation = controllerTransform.rotation;
 
@@ -53,7 +53,7 @@ public class MechArmMap
 
         // add arm ramp up sound
         addArmSound(targetTransform.position, newPosition);
-
+        storeMovementInfo(targetTransform.position, newPosition);
         targetTransform.position = newPosition;
         targetTransform.rotation = controllerTransform.rotation;
     }
@@ -99,9 +99,10 @@ public class MechArmMap
 
         // add arm ramp up sound
         addArmSound(targetTransform.position, newPosition);
-
+        storeMovementInfo(targetTransform.position, newPosition);
         targetTransform.position = newPosition;
         targetTransform.rotation = controllerTransform.rotation;
+        
     }
 
     public void addArmSound(Vector3 targetPosition, Vector3 newPosition)

@@ -9,11 +9,11 @@ public class MechFist : MonoBehaviour
     private float lastPlayedSound = 0f;
     [SerializeReference]
     private ActionBasedController _controller;
-    public delegate void Hit();
-    public static event Hit hit;
     [SerializeReference] private GameObject _explosionGameObject;
-
     private ParticleSystem _explosion;
+    public bool isLeft;
+    public RobotArmProjection robotArmProjection;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +41,11 @@ public class MechFist : MonoBehaviour
             }
             _controller.SendHapticImpulse(0.3f, .2f);
         }
-        
+
+        if (other.gameObject.CompareTag("Crab"))
+        {
+            robotArmProjection.hitMech(isLeft);
+        }
     }
     
 }

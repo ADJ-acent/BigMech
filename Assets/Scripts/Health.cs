@@ -15,7 +15,6 @@ public class Health : MonoBehaviour
     public bool DealDamage(int delta)
     {
         curHealth = Math.Clamp(curHealth - delta, 0, maxHealth);
-        Debug.Log(curHealth);
         if (curHealth == 0) return true;
         return false;
     }

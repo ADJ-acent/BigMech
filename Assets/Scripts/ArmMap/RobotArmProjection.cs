@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
+
 [System.Serializable]
 
 
@@ -18,8 +20,11 @@ public class RobotArmProjection : MonoBehaviour
     public float armLength = .65f;
     public float mechMinReach;
     public float mechMaxReach;
-    private bool atLeftArm;
-    private bool atRightArm;
+
+    public int damage;
+    // event delegate to notify hitting
+    public delegate void Hit(Vector3 dir, int damage);
+    public static event Hit hit;
     public enum MappingType
     {
         Direct,
@@ -63,5 +68,19 @@ public class RobotArmProjection : MonoBehaviour
                 break;
         }
         
+    }
+
+    public void hitMech(bool isLeft)
+    {
+        Vector3 lastMove;
+        if (isLeft)
+        {
+            lastMove = leftArm.getMovementInfo();
+        }
+        else
+        {
+            lastMove = rightArm.getMovementInfo();
+        }
+        if (lastMove.magnitude >= 0.5f) hit?.Invoke(lastMove, damage);
     }
 }

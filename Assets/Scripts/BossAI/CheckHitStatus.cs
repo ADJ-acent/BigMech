@@ -9,7 +9,7 @@ namespace BossAI
 {
     public class CheckHitStatus : Node
     {
-        private float blockTime = 3f;
+        private float blockTime = 2f;
         private float blockCounter = 0f;
         private Animator _animator;
         private Health _health;
@@ -24,6 +24,7 @@ namespace BossAI
             _animator = transform.GetComponent<Animator>();
             _health = transform.GetComponent<Health>();
             _navMeshAgent = transform.GetComponent<NavMeshAgent>();
+            RobotArmProjection.hit += SetHitStatus;
         }
         public override NodeState Evaluate()
         {
@@ -60,6 +61,7 @@ namespace BossAI
             // if stunned move crab to the opposite of the hit
             if (isStunned != null && (bool) isStunned)
             {
+                Debug.Log("hit stunned boi");
                 _navMeshAgent.isStopped = true;
                 _transform.position += hitDirection.normalized * 5;
                 if (_health.DealDamage(damage)) parent.SetData("dead", true);
