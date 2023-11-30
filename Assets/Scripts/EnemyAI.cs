@@ -42,7 +42,7 @@ public class EnemyAI : MonoBehaviour
 
         SpawnIndicator();
 
-        angle = 35f;
+        angle = 65f;
         player = GameObject.Find("PlayerController").transform;
         mechTransform = GameObject.Find("Mech").transform;
         agent = GetComponent<NavMeshAgent>();
@@ -81,7 +81,10 @@ public class EnemyAI : MonoBehaviour
         Vector3 diff = transform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
         float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
-
+        angleToPosition = angleToPosition * 1.7f;
+        if (angleToPosition >= 60f && angleToPosition < 70f) angleToPosition = angleToPosition * 0.9f;
+        else if (angleToPosition >= 70f) angleToPosition = angleToPosition * 0.8f;
+        
         if (angleToPosition > angle)
         {
             playerCanvas.ShowRightWarningSign();
@@ -104,6 +107,9 @@ public class EnemyAI : MonoBehaviour
         Vector3 diff = transform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
         float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
+        angleToPosition = angleToPosition * 1.7f;
+        if (angleToPosition >= 60f && angleToPosition < 70f) angleToPosition = angleToPosition * 0.9f;
+        else if (angleToPosition >= 70f) angleToPosition = angleToPosition * 0.8f;
 
         if ((-1 * angle) <= angleToPosition && angleToPosition <= angle)
         {
