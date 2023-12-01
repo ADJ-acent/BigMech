@@ -7,14 +7,16 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: glass shocked
+  m_Name: shocked glass
   m_Shader: {fileID: -6465566751694194690, guid: 983adb1e5bce5e54f953496b1c10acca,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 2
+  m_InvalidKeywords:
+  - _ALPHAPREMULTIPLY_ON
+  - _SURFACE_TYPE_TRANSPARENT
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -25,7 +27,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: a6b977576665ea94b81021be4db87632, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -45,11 +47,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: a6b977576665ea94b81021be4db87632, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a6b977576665ea94b81021be4db87632, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -107,13 +109,13 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Metallic: 0
+    - _Metallic: 0.054
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.849
+    - _Smoothness: 0.72
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -122,16 +124,16 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 0
     - _electricity_scale: 15
-    - _electricity_width: 0.602
+    - _electricity_width: 0.508
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _color: {r: 0.9622642, g: 0.8289943, b: 0.3510146, a: 0}
     - _electricityspeed: {r: 0.1, g: -1, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &8912568295632438062
+--- !u!114 &3691671178069529868
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
