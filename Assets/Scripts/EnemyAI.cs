@@ -27,11 +27,24 @@ public class EnemyAI : MonoBehaviour
     public PlayerController playerController;
     public float damage;
 
+    public GameObject attackSign0;
+    public GameObject blockSign0;
+    private GameObject attackSign;
+    private GameObject blockSign;
+    private bool attackSignOn;
+    private bool blockSignOn;
+    public Canvas canvas;
+    private bool leftWarningSignOn;
+    private bool rightWarningSignOn;
+
     private void Awake()
     {
-        // playerCanvas.SpawnIndicator();
+        attackSign0.SetActive(false);
+        blockSign0.SetActive(false);
 
-        angle = 35f;
+        SpawnIndicator();
+
+        angle = 65f;
         player = GameObject.Find("PlayerController").transform;
         mechTransform = GameObject.Find("Mech").transform;
         agent = GetComponent<NavMeshAgent>();
@@ -51,13 +64,18 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
-                // var playerCanvas = new PlayerCanvas();
-                // playerCanvas = Instantiate(playerCanvas1, transform.position + star.getVector(), Quaternion.identity);
-                // playerCanvas.transform.parent = playerCanvas1.transform;
-
                 AttackPlayer();
             }
         }
+    }
+
+    public void SpawnIndicator()
+    {
+        attackSign = Instantiate(attackSign0, attackSign0.transform.position, attackSign0.transform.rotation, canvas.transform);
+        blockSign = Instantiate(blockSign0, blockSign0.transform.position, blockSign0.transform.rotation, canvas.transform);
+
+        attackSign.SetActive(false);
+        blockSign.SetActive(false);
     }
 
     private void AttackSignCalc()
@@ -65,19 +83,25 @@ public class EnemyAI : MonoBehaviour
         Vector3 diff = transform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
         float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
+        angleToPosition = angleToPosition * 1.7f;
+        if (angleToPosition >= 60f && angleToPosition < 70f) angleToPosition = angleToPosition * 0.9f;
+        else if (angleToPosition >= 70f) angleToPosition = angleToPosition * 0.8f;
 
         if (angleToPosition > angle)
         {
             playerCanvas.ShowRightWarningSign();
+            rightWarningSignOn = true;
         }
         else if (angleToPosition < (-1 * angle))
         {
             playerCanvas.ShowLeftWarningSign();
+            leftWarningSignOn = true;
         }
         else 
         {
-            if (angleToPosition < 0) playerCanvas.ShowAttackSign(Mathf.Abs(angleToPosition), -1);
-            else if (angleToPosition >= 0) playerCanvas.ShowAttackSign(Mathf.Abs(angleToPosition), 1);
+            if (angleToPosition < 0) playerCanvas.ShowAttackSign(attackSign, Mathf.Abs(angleToPosition), -1);
+            else if (angleToPosition >= 0) playerCanvas.ShowAttackSign(attackSign, Mathf.Abs(angleToPosition), 1);
+            // attackSignOn = true;
         }
     }
 
@@ -86,11 +110,14 @@ public class EnemyAI : MonoBehaviour
         Vector3 diff = transform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
         float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
+        angleToPosition = angleToPosition * 1.7f;
+        if (angleToPosition >= 60f && angleToPosition < 70f) angleToPosition = angleToPosition * 0.9f;
+        else if (angleToPosition >= 70f) angleToPosition = angleToPosition * 0.8f;
 
         if ((-1 * angle) <= angleToPosition && angleToPosition <= angle)
         {
-            if (angleToPosition < 0) playerCanvas.ShowBlockSign(Mathf.Abs(angleToPosition), -1);
-            else if (angleToPosition >= 0) playerCanvas.ShowBlockSign(Mathf.Abs(angleToPosition), 1);
+            if (angleToPosition < 0) playerCanvas.ShowBlockSign(attackSign, blockSign, Mathf.Abs(angleToPosition), -1);
+            else if (angleToPosition >= 0) playerCanvas.ShowBlockSign(attackSign, blockSign, Mathf.Abs(angleToPosition), 1);
         }
     }
 
@@ -110,7 +137,6 @@ public class EnemyAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             BlockSignCalc();
-            Debug.LogFormat("PUNCH! from {0}", transform.name);
             playerController.health -= damage;
 
             alreadyAttacked = true;
@@ -134,6 +160,19 @@ public class EnemyAI : MonoBehaviour
             agent.enabled = false;
             GetComponent<BoxCollider>().enabled = false;
             dead = true;
+
+            Destroy(attackSign);
+            Destroy(blockSign);
+            if (rightWarningSignOn) 
+            {
+                playerCanvas.HideRightWarningSign();
+                rightWarningSignOn = false;
+            }
+            if (leftWarningSignOn) 
+            {
+                playerCanvas.HideLeftWarningSign();
+                leftWarningSignOn = false;
+            }
         }
     }
 }
