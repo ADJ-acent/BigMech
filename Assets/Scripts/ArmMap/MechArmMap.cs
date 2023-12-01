@@ -19,7 +19,7 @@ public class MechArmMap
     private const float startingMomentumSpeed = 0.2f;
     private float currentSpeed = startingMomentumSpeed;
     private float lastStayStillTime = 0f;
-
+    private Vector3 currentVec;
 
 
     public void Map()
@@ -34,7 +34,7 @@ public class MechArmMap
         // add arm ramp up sound
         Vector3 newPosition = mechPivotTransform.position + (Quaternion.AngleAxis(yAngleAdjustment, Vector3.down) * newPositionOffset);
         addArmSound(targetTransform.position, newPosition);
-     
+        storeMovementInfo(targetTransform.position, newPosition);
         targetTransform.position = mechPivotTransform.position + (Quaternion.AngleAxis(yAngleAdjustment, Vector3.down) * newPositionOffset);
         targetTransform.rotation = controllerTransform.rotation;
 
@@ -53,7 +53,7 @@ public class MechArmMap
 
         // add arm ramp up sound
         addArmSound(targetTransform.position, newPosition);
-
+        storeMovementInfo(targetTransform.position, newPosition);
         targetTransform.position = newPosition;
         targetTransform.rotation = controllerTransform.rotation;
     }
@@ -99,9 +99,10 @@ public class MechArmMap
 
         // add arm ramp up sound
         addArmSound(targetTransform.position, newPosition);
-
+        storeMovementInfo(targetTransform.position, newPosition);
         targetTransform.position = newPosition;
         targetTransform.rotation = controllerTransform.rotation;
+        
     }
 
     public void addArmSound(Vector3 targetPosition, Vector3 newPosition)
@@ -111,5 +112,15 @@ public class MechArmMap
         robotArmVelocity = Mathf.Clamp(robotArmVelocity, 0, 1);
         AudioManager.Instance.updateArmRampUp(isLeft, robotArmVelocity);
 
+    }
+
+    private void storeMovementInfo(Vector3 last, Vector3 cur)
+    {
+        currentVec = cur - last;
+    }
+
+    public Vector3 getMovementInfo()
+    {
+        return currentVec;
     }
 }

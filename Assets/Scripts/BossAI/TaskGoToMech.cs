@@ -12,7 +12,6 @@ namespace BossAI
         private Transform _transform;
         private readonly Animator _animator;
         private readonly NavMeshAgent _navMeshAgent;
-        private bool _hasMoved = false;
         private Transform _mechTransform;
         private readonly float _offset;
 
@@ -31,7 +30,6 @@ namespace BossAI
             Vector3 mechPosition = _mechTransform.position;
             _navMeshAgent.SetDestination(mechPosition + getOffsetFromMech(mechPosition));
             _animator.SetTrigger("Idle");
-            _hasMoved = true;
             return NodeState.Running;
 
         }

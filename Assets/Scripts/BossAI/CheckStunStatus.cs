@@ -10,7 +10,7 @@ namespace BossAI
     public class CheckStunStatus : Node
     {
         private bool isStunned = false;
-        private float stunTime = 2.5f;
+        private float stunTime = 3.5f;
         private float stunCounter = 0f;
         private Animator _animator;
         
@@ -29,6 +29,7 @@ namespace BossAI
                     stunCounter = 0f;
                     isStunned = false;
                     parent.SetData("stun", false);
+                    _animator.SetFloat("AttackDir", 1f);
                     _animator.SetTrigger("Idle");
                     state = NodeState.Failure;
                     return state;
@@ -50,6 +51,7 @@ namespace BossAI
                 stunCounter = 0f;
                 isStunned = true;
                 _animator.SetTrigger("Stun");
+                _animator.SetFloat("AttackDir", -1f);
             }
 
             state = stun ? NodeState.Success : NodeState.Failure;
