@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    public PlayerController playerController;
     public int maxHealth = 100;
     public int curHealth;
 
@@ -15,6 +16,7 @@ public class Health : MonoBehaviour
     public bool DealDamage(int delta)
     {
         curHealth = Math.Clamp(curHealth - delta, 0, maxHealth);
+        playerController.healthLeft -= delta;
         if (curHealth == 0) return true;
         return false;
     }

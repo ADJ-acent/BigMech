@@ -17,6 +17,7 @@ namespace BossAI
         private bool haveAttacked = false;
         private int curAttack;
         private Transform _mechTransform;
+        // public PlayerController playerController;
         
 
         public TaskAttackMech(Transform transform, Transform mechTransform)
