@@ -16,7 +16,7 @@ public class CrabBossUI : MonoBehaviour
     public bool warningSignLeftOn;
     public bool warningSignRightOn;
 
-    public Vector3 crabPosition;
+    public Transform crabTransform;
     public Transform player;
     public Transform humanTransform;
     public Transform mechTransform;
@@ -31,9 +31,6 @@ public class CrabBossUI : MonoBehaviour
         warningSignLeft.enabled = false;
         warningSignRight.enabled = false;
 
-        Vector3 rand = Random.insideUnitCircle;
-        print(rand);
-        crabPosition = new Vector3(rand.x, 0, rand.y) + transform.position;
         player = GameObject.Find("PlayerController").transform;
         humanTransform = GameObject.Find("VRCharacterIK").transform;
         mechTransform = GameObject.Find("Robotv2").transform; // TODO: change robot name
@@ -60,7 +57,7 @@ public class CrabBossUI : MonoBehaviour
 
     private void BlockSignCalc()
     {
-        Vector3 diff = crabPosition - player.position;
+        Vector3 diff = crabTransform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
         float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
         // angleToPosition = angleToPosition * 1.7f;
