@@ -31,6 +31,8 @@ public class EnemyAI : MonoBehaviour
     public GameObject blockSign0;
     private GameObject attackSign;
     private GameObject blockSign;
+    private bool attackSignOn;
+    private bool blockSignOn;
     public Canvas canvas;
     private bool leftWarningSignOn;
     private bool rightWarningSignOn;
@@ -84,7 +86,7 @@ public class EnemyAI : MonoBehaviour
         angleToPosition = angleToPosition * 1.7f;
         if (angleToPosition >= 60f && angleToPosition < 70f) angleToPosition = angleToPosition * 0.9f;
         else if (angleToPosition >= 70f) angleToPosition = angleToPosition * 0.8f;
-        
+
         if (angleToPosition > angle)
         {
             playerCanvas.ShowRightWarningSign();
@@ -99,6 +101,7 @@ public class EnemyAI : MonoBehaviour
         {
             if (angleToPosition < 0) playerCanvas.ShowAttackSign(attackSign, Mathf.Abs(angleToPosition), -1);
             else if (angleToPosition >= 0) playerCanvas.ShowAttackSign(attackSign, Mathf.Abs(angleToPosition), 1);
+            // attackSignOn = true;
         }
     }
 
