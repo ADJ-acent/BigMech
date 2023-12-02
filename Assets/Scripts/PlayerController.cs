@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public float healthLeft;
     public Image healthBarLeft;
 
+    // TODO: hands raycast
+
     // Start is called before the first frame update
     void Start()
     { 
