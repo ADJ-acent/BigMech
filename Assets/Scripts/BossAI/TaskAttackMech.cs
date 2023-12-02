@@ -17,11 +17,13 @@ namespace BossAI
         private bool haveAttacked = false;
         private int curAttack;
         private Transform _mechTransform;
-        // public PlayerController playerController;
+        private float damage = 10f;
+        public PlayerController _playerController;
         
 
-        public TaskAttackMech(Transform transform, Transform mechTransform)
+        public TaskAttackMech(Transform transform, Transform mechTransform, PlayerController playerController)
         {
+            _playerController = playerController;
             _transform = transform;
             _animator = transform.GetComponent<Animator>();
             _mechTransform = mechTransform;
@@ -49,6 +51,9 @@ namespace BossAI
                     _animator.SetFloat("AttackWaitTime",1f);
                     _attackCounter = 0;
                     parent.parent.SetData("Attack", true);
+
+                    // TODO: check if blocked
+                    _playerController.healthRight -= damage;
             }
 
             state = NodeState.Running;

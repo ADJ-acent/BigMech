@@ -7,7 +7,7 @@ namespace BossAI
 {
     public class BossBT : BTree
     {
-
+        public PlayerController playerController;
         public Transform mechTransform;
         public float offsetFromMech;
         public float mechAttractRange;
@@ -25,7 +25,7 @@ namespace BossAI
                 new Sequence(new List<Node>
                 {
                     new CheckMechInAttackRange(t, offsetFromMech, mechTransform),
-                    new TaskAttackMech(t, mechTransform)
+                    new TaskAttackMech(t, mechTransform, playerController)
                 }),
                 new Sequence(new List<Node>
                 {
