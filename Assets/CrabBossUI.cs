@@ -7,8 +7,12 @@ public class CrabBossUI : MonoBehaviour
 {
     public Canvas middleCanvas;
     public Canvas indicatorCanvas;
-    public Image attackSign;
+    public Image attackSignBlue;
+    public Image attackSignGreen;
     public Image blockSignBlue;
+    public Image blockSignYellow;
+    public Image blockSignRed;
+    public Image blockSignGreen;
     public Image warningSignLeft;
     public Image warningSignRight;
 
@@ -19,16 +23,20 @@ public class CrabBossUI : MonoBehaviour
     public Transform player;
     public Transform humanTransform;
     public Transform mechTransform;
-
     private float angle;
+
+    public PlayerController playerController;
 
     // Start is called before the first frame update
     void Start()
     {
         // TODO: remove this line
-        blockSignOn = true;
-        attackSign.enabled = false;
+        attackSignBlue.enabled = false;
+        attackSignGreen.enabled = false;
         blockSignBlue.enabled = false;
+        blockSignGreen.enabled = false;
+        blockSignYellow.enabled = false;
+        blockSignRed.enabled = false;
         warningSignLeft.enabled = false;
         warningSignRight.enabled = false;
 
@@ -36,7 +44,7 @@ public class CrabBossUI : MonoBehaviour
         humanTransform = GameObject.Find("VRCharacterIK").transform;
         mechTransform = GameObject.Find("Robotv2").transform; // TODO: change robot name
 
-        angle = 45f;
+        angle = 40f;
     }
 
     // Update is called once per frame
@@ -44,21 +52,72 @@ public class CrabBossUI : MonoBehaviour
     {
         if (blockSignOn) 
         {
+            HideAttackSign();
             BlockSignCalc();
             BlockSignMode();
-            return;
         }
-        // blockSignBlue.enabled = false;
-        warningSignLeft.enabled = false;
-        warningSignRight.enabled = false;
+        else
+        {
+            HideBlockSign();
+            if (attackSignOn) 
+            {
+                AttackSignCalc();
+                AttackSignMode();
+            }
+            else 
+            {
+                HideAttackSign();
+                Debug.Log("good");
+            }
+        }
+    }
 
-        // TODO: same for attack sign
+    private void AttackSignMode()
+    {
+
+    }
+
+    private void AttackSignCalc()
+    {
+        Vector3 diff = crabTransform.position - player.position;
+        Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
+        float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
+
+        if ((-1 * angle) <= angleToPosition && angleToPosition <= angle)
+        {
+            if (angleToPosition < 0) ShowAttackSign(Mathf.Abs(angleToPosition), -1);
+            else if (angleToPosition >= 0) ShowAttackSign(Mathf.Abs(angleToPosition), 1);
+        }
+        else if ((-1 * angle) > angleToPosition) ShowLeftWarningSign();
+        else ShowRightWarningSign();
+    }
+
+    public void ShowAttackSign(float angle, int wrap)
+    {
+        Vector3 pos = PositionCalc(angle, wrap);
+        attackSignBlue.transform.position = pos;
+        attackSignBlue.enabled = true;
     }
 
     private void BlockSignMode()
     {
         if (blockSignBlue.enabled == true)
         {
+            if (playerController.isBlocking)
+            {
+                blockSignBlue.enabled = false;
+                blockSignYellow.enabled = true;
+                if (playerController.successfulBlocking)
+                {
+                    blockSignYellow.enabled = false;
+                    blockSignGreen.enabled = true;
+                }
+            }
+            if (playerController.unsuccessfulBlocking)
+            {
+                blockSignBlue.enabled = false;
+                blockSignRed.enabled = true;
+            }
 
         }
     }   
@@ -68,11 +127,6 @@ public class CrabBossUI : MonoBehaviour
         Vector3 diff = crabTransform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
         float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
-        // angleToPosition = angleToPosition * 1.7f;
-        // if (angleToPosition >= 60f && angleToPosition < 70f) angleToPosition = angleToPosition * 0.9f;
-        // else if (angleToPosition >= 70f) angleToPosition = angleToPosition * 0.8f;
-
-        print(angleToPosition);
 
         if ((-1 * angle) <= angleToPosition && angleToPosition <= angle)
         {
@@ -88,7 +142,7 @@ public class CrabBossUI : MonoBehaviour
         float MeToCanvas = Vector3.Distance(humanTransform.position, middleCanvas.transform.position);
         float indicatorDistance = Mathf.Tan(Mathf.Deg2Rad * angle) * MeToCanvas;
         RectTransform rectT = middleCanvas.GetComponent<RectTransform>();
-        float scaledIndicatorDistance = rectT.rect.width * rectT.localScale.x * indicatorDistance;
+        float scaledIndicatorDistance = rectT.rect.width * rectT.localScale.x * indicatorDistance / 1.5f;
         Vector3 distanceChange = scaledIndicatorDistance * (Quaternion.Euler(0, wrap * 90, 0) * mechTransform.forward);
         Vector3 pos = indicatorCanvas.transform.position + (1f * distanceChange);
         return pos;
@@ -100,12 +154,25 @@ public class CrabBossUI : MonoBehaviour
         blockSignBlue.transform.position = pos;
         blockSignBlue.enabled = true;
 
-        StartCoroutine(SpawnDelay());
+        // StartCoroutine(SpawnDelay());
     }
 
     public void HideBlockSign()
     {
         blockSignBlue.enabled = false;
+        blockSignYellow.enabled = false;
+        blockSignGreen.enabled = false;
+        blockSignRed.enabled = false;
+        warningSignLeft.enabled = false;
+        warningSignRight.enabled = false;
+    }
+
+    public void HideAttackSign()
+    {
+        attackSignBlue.enabled = false;
+        attackSignGreen.enabled = false;
+        warningSignLeft.enabled = false;
+        warningSignRight.enabled = false;
     }
 
     public void ShowLeftWarningSign()
@@ -116,16 +183,6 @@ public class CrabBossUI : MonoBehaviour
     public void ShowRightWarningSign()
     {
         warningSignRight.enabled = true;
-    }
-
-    public void HideLeftWarningSign()
-    {
-        warningSignLeft.enabled = false;
-    }
-
-    public void HideRightWarningSign()
-    {
-        warningSignRight.enabled = false;
     }
 
     private IEnumerator SpawnDelay()
