@@ -184,10 +184,4 @@ public class CrabBossUI : MonoBehaviour
     {
         warningSignRight.enabled = true;
     }
-
-    private IEnumerator SpawnDelay()
-    {
-        yield return new WaitForSeconds(2);
-        HideBlockSign();
-    }
 }

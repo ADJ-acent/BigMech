@@ -33,6 +33,8 @@ public class PlayerController : MonoBehaviour
     {
         HealthBarFill();
         BlockingCalc();
+        Debug.LogFormat("successfulBlocking is {0}", successfulBlocking);
+        Debug.LogFormat("blocking is {0}", isBlocking);
     }
 
     private void HealthBarFill()
@@ -45,7 +47,8 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 meToCrab = crabTransform.position - transform.position;
         meToCrab.y = 0f;
-        if (Physics.Raycast(transform.position, meToCrab, 3f, 8))
+        LayerMask mask = LayerMask.GetMask("Player");
+        if (Physics.Raycast(transform.position, meToCrab, 10f, mask))
         {
             isBlocking = true;
         }
