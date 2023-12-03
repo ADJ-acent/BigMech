@@ -67,6 +67,6 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage()
     {
-        if (unsuccessfulBlocking) healthRight -= crabDamage;
+       healthRight -= crabDamage;
     }
 }

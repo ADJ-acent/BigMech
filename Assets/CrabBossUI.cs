@@ -18,6 +18,7 @@ public class CrabBossUI : MonoBehaviour
 
     public bool attackSignOn;
     public bool blockSignOn;
+    public bool successfulAttack;
 
     public Transform crabTransform;
     public Transform player;
@@ -50,6 +51,14 @@ public class CrabBossUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (successfulAttack) 
+        {
+            blockSignOn = false;
+            HideBlockSign();
+            attackSignBlue.enabled = false;
+            AttackSignCalc(attackSignGreen);
+            // StartCoroutine(Wait());
+        }
         if (blockSignOn) 
         {
             HideAttackSign();
@@ -57,6 +66,7 @@ public class CrabBossUI : MonoBehaviour
             {
                 blockSignYellow.enabled = false;
                 BlockSignCalc(blockSignGreen);
+                // StartCoroutine(Wait());
             }
             else if (playerController.unsuccessfulBlocking)
             {
@@ -81,19 +91,14 @@ public class CrabBossUI : MonoBehaviour
             HideBlockSign();
             if (attackSignOn) 
             {
+                attackSignGreen.enabled = false;
                 AttackSignCalc(attackSignBlue);
-                AttackSignMode();
             }
             else
             {
                 HideAttackSign();
             }
         }
-    }
-
-    private void AttackSignMode()
-    {
-
     }
 
     private void AttackSignCalc(Image sign)
@@ -117,29 +122,6 @@ public class CrabBossUI : MonoBehaviour
         sign.transform.position = pos;
         sign.enabled = true;
     }
-
-    private void BlockSignMode()
-    {
-        // if (blockSignBlue.enabled == true)
-        // {
-            if (playerController.isBlocking)
-            {
-                blockSignBlue.enabled = false;
-                BlockSignCalc(blockSignYellow);
-            }
-            if (playerController.successfulBlocking)
-            {
-                blockSignYellow.enabled = false;
-                BlockSignCalc(blockSignGreen);
-            }
-            if (playerController.unsuccessfulBlocking)
-            {
-                blockSignBlue.enabled = false;
-                BlockSignCalc(blockSignRed);
-            }
-
-        // }
-    }   
 
     private void BlockSignCalc(Image sign)
     {
@@ -201,5 +183,10 @@ public class CrabBossUI : MonoBehaviour
     public void ShowRightWarningSign()
     {
         warningSignRight.enabled = true;
+    }
+
+    public IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(10);
     }
 }

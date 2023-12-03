@@ -39,8 +39,8 @@ namespace BossAI
                     _animator.SetInteger("AttackNum", curAttack);
                     _animator.SetFloat("AttackWaitTime",1f);
 
-                    // TODO: may need to move code elsewhere
-                    _playerController.TakeDamage();
+                    // TODO: may need to move code elsewhere or add event to animation
+                    if (!_playerController.isBlocking) _playerController.TakeDamage();
                     _crabBossUI.blockSignOn = false;
                     _crabBossUI.attackSignOn = true;
 
