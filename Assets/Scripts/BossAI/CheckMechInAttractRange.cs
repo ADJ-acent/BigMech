@@ -31,10 +31,12 @@ namespace BossAI
             if (Vector3.Distance(_transform.position, _mechTransform.position) <= _attractRange)
             { 
                 _crabBossUI.attackSignOn = true;
+                _crabBossUI.blockSignOn = false;
                 state = NodeState.Success;
                 return state;
             }
             _crabBossUI.attackSignOn = false;
+            _crabBossUI.blockSignOn = false;
             state = NodeState.Failure;
             return state;
         }

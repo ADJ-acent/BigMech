@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
         else isBlocking = false;
 
         AnimatorStateInfo crabStateInfo = _animator.GetCurrentAnimatorStateInfo(0);   
-        if (crabStateInfo.IsTag("chargeAttack") || crabStateInfo.IsTag("attack"))
+        if (crabStateInfo.IsTag("attack"))
         {
             successfulBlocking = isBlocking;
             unsuccessfulBlocking = !isBlocking;

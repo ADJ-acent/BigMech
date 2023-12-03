@@ -53,8 +53,28 @@ public class CrabBossUI : MonoBehaviour
         if (blockSignOn) 
         {
             HideAttackSign();
-            BlockSignCalc(blockSignBlue);
-            BlockSignMode();
+            if (playerController.successfulBlocking) 
+            {
+                blockSignYellow.enabled = false;
+                BlockSignCalc(blockSignGreen);
+            }
+            else if (playerController.unsuccessfulBlocking)
+            {
+                blockSignBlue.enabled = false;
+                BlockSignCalc(blockSignRed);
+            }
+            else if (playerController.isBlocking)
+            {
+                blockSignBlue.enabled = false;
+                BlockSignCalc(blockSignYellow);
+            }
+            else 
+            {
+                blockSignYellow.enabled = false;
+                blockSignGreen.enabled = false;
+                blockSignRed.enabled = false;
+                BlockSignCalc(blockSignBlue);
+            }
         }
         else
         {
@@ -64,7 +84,7 @@ public class CrabBossUI : MonoBehaviour
                 AttackSignCalc(attackSignBlue);
                 AttackSignMode();
             }
-            else 
+            else
             {
                 HideAttackSign();
             }
