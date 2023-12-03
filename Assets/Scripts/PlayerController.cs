@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 meToCrab = crabTransform.position - transform.position;
         meToCrab.y = 0f;
-        if (Physics.Raycast(transform.position, meToCrab, 3f))
+        if (Physics.Raycast(transform.position, meToCrab, 3f, 8))
         {
             isBlocking = true;
         }
