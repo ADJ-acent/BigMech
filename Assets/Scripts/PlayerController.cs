@@ -33,8 +33,6 @@ public class PlayerController : MonoBehaviour
     {
         HealthBarFill();
         BlockingCalc();
-        Debug.LogFormat("successfulBlocking is {0}", successfulBlocking);
-        Debug.LogFormat("blocking is {0}", isBlocking);
     }
 
     private void HealthBarFill()
@@ -55,7 +53,7 @@ public class PlayerController : MonoBehaviour
         else isBlocking = false;
 
         AnimatorStateInfo crabStateInfo = _animator.GetCurrentAnimatorStateInfo(0);   
-        if (crabStateInfo.IsTag("attack"))
+        if (crabStateInfo.IsTag("chargeAttack") || crabStateInfo.IsTag("attack"))
         {
             successfulBlocking = isBlocking;
             unsuccessfulBlocking = !isBlocking;

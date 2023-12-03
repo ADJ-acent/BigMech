@@ -53,7 +53,7 @@ public class CrabBossUI : MonoBehaviour
         if (blockSignOn) 
         {
             HideAttackSign();
-            BlockSignCalc();
+            BlockSignCalc(blockSignBlue);
             BlockSignMode();
         }
         else
@@ -61,13 +61,12 @@ public class CrabBossUI : MonoBehaviour
             HideBlockSign();
             if (attackSignOn) 
             {
-                AttackSignCalc();
+                AttackSignCalc(attackSignBlue);
                 AttackSignMode();
             }
             else 
             {
                 HideAttackSign();
-                Debug.Log("good");
             }
         }
     }
@@ -77,7 +76,7 @@ public class CrabBossUI : MonoBehaviour
 
     }
 
-    private void AttackSignCalc()
+    private void AttackSignCalc(Image sign)
     {
         Vector3 diff = crabTransform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
@@ -85,44 +84,44 @@ public class CrabBossUI : MonoBehaviour
 
         if ((-1 * angle) <= angleToPosition && angleToPosition <= angle)
         {
-            if (angleToPosition < 0) ShowAttackSign(Mathf.Abs(angleToPosition), -1);
-            else if (angleToPosition >= 0) ShowAttackSign(Mathf.Abs(angleToPosition), 1);
+            if (angleToPosition < 0) ShowAttackSign(sign, Mathf.Abs(angleToPosition), -1);
+            else if (angleToPosition >= 0) ShowAttackSign(sign, Mathf.Abs(angleToPosition), 1);
         }
         else if ((-1 * angle) > angleToPosition) ShowLeftWarningSign();
         else ShowRightWarningSign();
     }
 
-    public void ShowAttackSign(float angle, int wrap)
+    public void ShowAttackSign(Image sign, float angle, int wrap)
     {
         Vector3 pos = PositionCalc(angle, wrap);
-        attackSignBlue.transform.position = pos;
-        attackSignBlue.enabled = true;
+        sign.transform.position = pos;
+        sign.enabled = true;
     }
 
     private void BlockSignMode()
     {
-        if (blockSignBlue.enabled == true)
-        {
+        // if (blockSignBlue.enabled == true)
+        // {
             if (playerController.isBlocking)
             {
                 blockSignBlue.enabled = false;
-                blockSignYellow.enabled = true;
-                if (playerController.successfulBlocking)
-                {
-                    blockSignYellow.enabled = false;
-                    blockSignGreen.enabled = true;
-                }
+                BlockSignCalc(blockSignYellow);
+            }
+            if (playerController.successfulBlocking)
+            {
+                blockSignYellow.enabled = false;
+                BlockSignCalc(blockSignGreen);
             }
             if (playerController.unsuccessfulBlocking)
             {
                 blockSignBlue.enabled = false;
-                blockSignRed.enabled = true;
+                BlockSignCalc(blockSignRed);
             }
 
-        }
+        // }
     }   
 
-    private void BlockSignCalc()
+    private void BlockSignCalc(Image sign)
     {
         Vector3 diff = crabTransform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
@@ -130,8 +129,8 @@ public class CrabBossUI : MonoBehaviour
 
         if ((-1 * angle) <= angleToPosition && angleToPosition <= angle)
         {
-            if (angleToPosition < 0) ShowBlockSign(Mathf.Abs(angleToPosition), -1);
-            else if (angleToPosition >= 0) ShowBlockSign(Mathf.Abs(angleToPosition), 1);
+            if (angleToPosition < 0) ShowBlockSign(sign, Mathf.Abs(angleToPosition), -1);
+            else if (angleToPosition >= 0) ShowBlockSign(sign, Mathf.Abs(angleToPosition), 1);
         }
         else if ((-1 * angle) > angleToPosition) ShowLeftWarningSign();
         else ShowRightWarningSign();
@@ -143,18 +142,17 @@ public class CrabBossUI : MonoBehaviour
         float indicatorDistance = Mathf.Tan(Mathf.Deg2Rad * angle) * MeToCanvas;
         RectTransform rectT = middleCanvas.GetComponent<RectTransform>();
         float scaledIndicatorDistance = rectT.rect.width * rectT.localScale.x * indicatorDistance / 1.5f;
-        Vector3 distanceChange = scaledIndicatorDistance * (Quaternion.Euler(0, wrap * 90, 0) * mechTransform.forward);
+        Vector3 direction = (Quaternion.Euler(0, wrap * 90, 0) * mechTransform.forward);
+        Vector3 distanceChange = scaledIndicatorDistance * direction;
         Vector3 pos = indicatorCanvas.transform.position + (1f * distanceChange);
         return pos;
     }
 
-    public void ShowBlockSign(float angle, int wrap)
+    public void ShowBlockSign(Image sign, float angle, int wrap)
     {
         Vector3 pos = PositionCalc(angle, wrap);
-        blockSignBlue.transform.position = pos;
-        blockSignBlue.enabled = true;
-
-        // StartCoroutine(SpawnDelay());
+        sign.transform.position = pos;
+        sign.enabled = true;
     }
 
     public void HideBlockSign()
