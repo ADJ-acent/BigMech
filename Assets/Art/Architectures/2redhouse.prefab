@@ -554,16 +554,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7165561617605254631, guid: 1e13e85e1eab2f9459bba577efa7da05,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 96.38088
-      objectReference: {fileID: 0}
-    - target: {fileID: 7165561617605254631, guid: 1e13e85e1eab2f9459bba577efa7da05,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 96.38088
-      objectReference: {fileID: 0}
-    - target: {fileID: 7165561617605254631, guid: 1e13e85e1eab2f9459bba577efa7da05,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.43
       objectReference: {fileID: 0}
@@ -635,16 +625,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Point Light (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7165561617605254631, guid: 1e13e85e1eab2f9459bba577efa7da05,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 96.38088
-      objectReference: {fileID: 0}
-    - target: {fileID: 7165561617605254631, guid: 1e13e85e1eab2f9459bba577efa7da05,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 96.38088
       objectReference: {fileID: 0}
     - target: {fileID: 7165561617605254631, guid: 1e13e85e1eab2f9459bba577efa7da05,
         type: 3}
@@ -722,16 +702,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7165561617605254631, guid: 1e13e85e1eab2f9459bba577efa7da05,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 96.38088
-      objectReference: {fileID: 0}
-    - target: {fileID: 7165561617605254631, guid: 1e13e85e1eab2f9459bba577efa7da05,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 96.38088
-      objectReference: {fileID: 0}
-    - target: {fileID: 7165561617605254631, guid: 1e13e85e1eab2f9459bba577efa7da05,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.849996
       objectReference: {fileID: 0}
@@ -803,16 +773,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Point Light (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7165561617605254631, guid: 1e13e85e1eab2f9459bba577efa7da05,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 96.38088
-      objectReference: {fileID: 0}
-    - target: {fileID: 7165561617605254631, guid: 1e13e85e1eab2f9459bba577efa7da05,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 96.38088
       objectReference: {fileID: 0}
     - target: {fileID: 7165561617605254631, guid: 1e13e85e1eab2f9459bba577efa7da05,
         type: 3}
