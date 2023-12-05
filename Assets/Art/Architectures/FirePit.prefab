@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.56628513, y: 0.42488497, z: 0.42251775, w: 0.5659265}
   m_LocalPosition: {x: 68.46661, y: 156.7837, z: 5.8993835}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.29999998, y: 0.30000004, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2217334854041195355}
@@ -146,6 +146,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306443186487516174, guid: 214a13f91a3b806448d66193162715e1,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
