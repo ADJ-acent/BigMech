@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public Transform crabTransform;
     public Animator _animator;
     public float crabDamage;
+    public bool isPlaying;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
         healthLeft = maxHealth;
 
         _animator = crabTransform.GetComponent<Animator>();
+        isPlaying = false;
     }
 
     // Update is called once per frame
@@ -63,10 +65,27 @@ public class PlayerController : MonoBehaviour
             successfulBlocking = false;
             unsuccessfulBlocking = false;
         }
+
+        if (successfulBlocking && !isPlaying)
+        {
+            StartCoroutine(PlayBlockSound());
+            isPlaying = successfulBlocking;
+        }
+
+
     }
 
     public void TakeDamage()
     {
        healthRight -= crabDamage;
     }
+
+    private IEnumerator PlayBlockSound()
+    {
+        AudioManager.Instance.playBigHit();
+        yield return new WaitForSeconds(1f);
+        isPlaying = false;
+            
+    }
+    
 }
