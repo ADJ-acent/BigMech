@@ -13,7 +13,7 @@ public class KongmingLamp : MonoBehaviour
         moveUp = false;
         trans = transform;
         // RANDOM VELOCITY
-        speed = new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(1, 3), Random.Range(-0.5f, 0.5f));
+        speed = new Vector3(Random.Range(-0.5f, 0.5f), 0.5f, Random.Range(-0.5f, 0.5f));
 
         count = 0;
     }
@@ -37,7 +37,7 @@ public class KongmingLamp : MonoBehaviour
         else
         {
             // GOING UP
-            trans.position += speed * Time.deltaTime;
+            trans.position += speed * Time.deltaTime ;
             count++;
             if (count == 400)
             {
