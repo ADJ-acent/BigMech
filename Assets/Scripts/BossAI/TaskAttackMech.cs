@@ -34,6 +34,9 @@ namespace BossAI
             _attackCounter += Time.deltaTime;
             if (!haveAttacked || _attackCounter >= _attackTime)
             {
+                    _crabBossUI.blockSignOn = true;
+                    _crabBossUI.attackSignOn = false;
+
                     curAttack = Random.Range(0, 2);
                     _animator.SetTrigger("Attack");
                     _animator.SetInteger("AttackNum", curAttack);
@@ -41,14 +44,13 @@ namespace BossAI
 
                     // TODO: may need to move code elsewhere or add event to animation
                     if (!_playerController.isBlocking) _playerController.TakeDamage();
-                    _crabBossUI.blockSignOn = false;
-                    _crabBossUI.attackSignOn = true;
 
                     _attackCounter = 0;
                     haveAttacked = true;
                     parent.parent.SetData("Attack", true);
             }
-
+            // _crabBossUI.attackSignOn = false;
+            // _crabBossUI.blockSignOn = false;
             state = NodeState.Running;
             return state;
         }

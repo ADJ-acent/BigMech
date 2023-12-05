@@ -32,8 +32,6 @@ namespace BossAI
             {
                 Vector3 mechPos = _mechTransform.position;
                 _transform.LookAt(new Vector3(mechPos.x, _transform.position.y, mechPos.z));
-                _crabBossUI.blockSignOn = true;
-                _crabBossUI.attackSignOn = false;
 
                 state = NodeState.Success;
                 return state;
