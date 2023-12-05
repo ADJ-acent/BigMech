@@ -23,7 +23,7 @@ namespace BossAI
             return new Selector(new List<Node> {
                 new CheckAliveStatus(t),
                 new CheckHitStatus(t),
-                new CheckStunStatus(t),
+                new CheckStunStatus(t), 
                 new Sequence(new List<Node>
                 {
                     new CheckMechInAttackRange(t, offsetFromMech, mechTransform, crabBossUI),
