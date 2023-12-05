@@ -76,6 +76,7 @@ public class CrabBossUI : MonoBehaviour
             else if (playerController.isBlocking)
             {
                 blockSignBlue.enabled = false;
+                blockSignGreen.enabled = false;
                 BlockSignCalc(blockSignYellow);
             }
             else 
