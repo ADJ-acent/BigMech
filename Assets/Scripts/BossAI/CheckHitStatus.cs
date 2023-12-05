@@ -61,9 +61,9 @@ namespace BossAI
             // if stunned move crab to the opposite of the hit
             if (isStunned != null && (bool) isStunned)
             {
-                Debug.Log("hit stunned boi");
                 _navMeshAgent.isStopped = true;
-                _transform.position += hitDirection.normalized * 5;
+                _transform.position += hitDirection.normalized * 3;
+                _animator.SetTrigger("Hit");
                 if (_health.DealDamage(damage)) parent.SetData("dead", true);
                 
             }
