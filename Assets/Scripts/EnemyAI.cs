@@ -137,7 +137,7 @@ public class EnemyAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             BlockSignCalc();
-            playerController.health -= damage;
+            playerController.healthRight -= damage;
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);

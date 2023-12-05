@@ -26,7 +26,6 @@ namespace BossAI
         
         public override NodeState Evaluate()
         {
-
             Vector3 mechPosition = _mechTransform.position;
             _navMeshAgent.SetDestination(mechPosition + getOffsetFromMech(mechPosition));
             _animator.SetTrigger("Idle");

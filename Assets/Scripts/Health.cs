@@ -1,8 +1,11 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    public PlayerController playerController;
+    public CrabBossUI crabBossUI;
     public int maxHealth = 100;
     public int curHealth;
 
@@ -14,8 +17,18 @@ public class Health : MonoBehaviour
     /* returns true if the entity is dead, false otherwise*/
     public bool DealDamage(int delta)
     {
+        crabBossUI.successfulAttack = true;
+        StartCoroutine(Wait());
+
         curHealth = Math.Clamp(curHealth - delta, 0, maxHealth);
+        playerController.healthLeft -= delta;
         if (curHealth == 0) return true;
         return false;
+    }
+
+    public IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1);
+        crabBossUI.successfulAttack = false;
     }
 }

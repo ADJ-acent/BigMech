@@ -17,10 +17,13 @@ namespace BossAI
         private bool haveAttacked = false;
         private int curAttack;
         private Transform _mechTransform;
-        
+        public PlayerController _playerController;
+        public CrabBossUI _crabBossUI;
 
-        public TaskAttackMech(Transform transform, Transform mechTransform)
+        public TaskAttackMech(Transform transform, Transform mechTransform, PlayerController playerController, CrabBossUI crabBossUI)
         {
+            _crabBossUI = crabBossUI;
+            _playerController = playerController;
             _transform = transform;
             _animator = transform.GetComponent<Animator>();
             _mechTransform = mechTransform;
@@ -28,25 +31,21 @@ namespace BossAI
         
         public override NodeState Evaluate()
         {
-            if (!haveAttacked)
-            {
-                curAttack = Random.Range(0, 2);
-                _animator.SetTrigger("Attack");
-                _animator.SetInteger("AttackNum", curAttack);
-                _animator.SetFloat("AttackWaitTime",1f);
-                haveAttacked = true;
-                state = NodeState.Running;
-                parent.parent.SetData("Attack", true);
-                return state;
-            }
             _attackCounter += Time.deltaTime;
-            if (_attackCounter >= _attackTime)
+            if (!haveAttacked || _attackCounter >= _attackTime)
             {
                     curAttack = Random.Range(0, 2);
                     _animator.SetTrigger("Attack");
                     _animator.SetInteger("AttackNum", curAttack);
                     _animator.SetFloat("AttackWaitTime",1f);
+
+                    // TODO: may need to move code elsewhere or add event to animation
+                    if (!_playerController.isBlocking) _playerController.TakeDamage();
+                    _crabBossUI.blockSignOn = false;
+                    _crabBossUI.attackSignOn = true;
+
                     _attackCounter = 0;
+                    haveAttacked = true;
                     parent.parent.SetData("Attack", true);
             }
 
