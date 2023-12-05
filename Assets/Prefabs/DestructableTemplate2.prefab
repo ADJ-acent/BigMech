@@ -16,7 +16,7 @@ PrefabInstance:
     - target: {fileID: 5919646108348912040, guid: 33e52eeae65c0ff4884d483683bf7b1b,
         type: 3}
       propertyPath: m_Name
-      value: house no bool Variant
+      value: DestructableTemplate2
       objectReference: {fileID: 0}
     - target: {fileID: 5957510926599760627, guid: 33e52eeae65c0ff4884d483683bf7b1b,
         type: 3}
