@@ -178,11 +178,15 @@ public class CrabBossUI : MonoBehaviour
 
     public void ShowLeftWarningSign()
     {
+        HideAttackSign();
+        HideBlockSign();
         warningSignLeft.enabled = true;
     }
 
     public void ShowRightWarningSign()
     {
+        HideAttackSign();
+        HideBlockSign();
         warningSignRight.enabled = true;
     }
 
