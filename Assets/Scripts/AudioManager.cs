@@ -45,19 +45,19 @@ public class AudioManager: Singleton<AudioManager>
         mechFootSteps.Post(gameObject);
     }
 
-    public void playSmallHit(GameObject source)
+    public void playSmallHit()
     {
-        smallHit.Post(source);
+        smallHit.Post(gameObject);
     }
 
-    public void playMidHit(GameObject source)
+    public void playMidHit()
     {
-        midHit.Post(source);
+        midHit.Post(gameObject);
     }
 
-    public void playBigHit(GameObject source)
+    public void playBigHit()
     {
-        bigHit.Post(source);
+        bigHit.Post(gameObject);
     }
 
     // building destroy sounds

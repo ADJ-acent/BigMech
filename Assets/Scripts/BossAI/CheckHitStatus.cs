@@ -61,6 +61,7 @@ namespace BossAI
             // if stunned move crab to the opposite of the hit
             if (isStunned != null && (bool) isStunned)// strong hit
             {
+                AudioManager.Instance.playBigHit();
                 _navMeshAgent.isStopped = true;
                 _transform.position += hitDirection.normalized * 3;
                 _animator.SetTrigger("Hit");
@@ -70,10 +71,15 @@ namespace BossAI
 
             if (!isBlocking) // weak hit
             {
+                AudioManager.Instance.playMidHit();
                 if (_health.DealDamage(damage / 10)) parent.SetData("dead", true);
             }
-            // else (hit but no damage)
-            isHit = true;
+            else
+            {
+                // else (hit but no damage)
+                AudioManager.Instance.playSmallHit();
+                isHit = true;
+            }
         }
     }
 }
