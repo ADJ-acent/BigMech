@@ -12,6 +12,9 @@ public class AudioManager: Singleton<AudioManager>
     [Header("Mech Sounds")]
     [SerializeField] public AK.Wwise.Event mechFootSteps;
     [SerializeField] public AK.Wwise.Event armRampUp;
+    [SerializeField] public AK.Wwise.Event smallHit;
+    [SerializeField] public AK.Wwise.Event midHit;
+    [SerializeField] public AK.Wwise.Event bigHit;
     [SerializeField] public GameObject leftArmSocket;
     [SerializeField] public GameObject rightArmSocket;
     private string RTPC_Velocity = "ArmVelocity";
@@ -40,6 +43,21 @@ public class AudioManager: Singleton<AudioManager>
     public void playFootsteps()
     {
         mechFootSteps.Post(gameObject);
+    }
+
+    public void playSmallHit(GameObject source)
+    {
+        smallHit.Post(source);
+    }
+
+    public void playMidHit(GameObject source)
+    {
+        midHit.Post(source);
+    }
+
+    public void playBigHit(GameObject source)
+    {
+        bigHit.Post(source);
     }
 
     // building destroy sounds

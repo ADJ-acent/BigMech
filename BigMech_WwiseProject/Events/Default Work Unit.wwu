@@ -69,6 +69,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Big_Hit" ID="{CE2C3F4E-A19D-46CC-A30E-11E1175D9B3A}">
+					<ChildrenList>
+						<Action Name="" ID="{F5074EE9-D7E6-4A2A-98CA-95E4B5B961D7}" ShortID="530040439">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Big Hit" ID="{68D1682A-8CBA-4F9F-8E8C-887011F2CAA7}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Mid_Hits" ID="{9CFCC519-ACDA-4B6B-A5DB-3217624C3D5D}">
+					<ChildrenList>
+						<Action Name="" ID="{239639BB-026B-436E-BB8E-0F9CE88E1637}" ShortID="988403236">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mid Hits" ID="{C257AF82-A52A-49B7-91C1-2E92BE3748E5}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Small_Hits" ID="{17514D44-C650-4B48-A8F6-579085304956}">
+					<ChildrenList>
+						<Action Name="" ID="{07061CD4-DC3F-4408-8DAB-8CCF8C57BBD0}" ShortID="364028211">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Small Hits" ID="{B78795DD-C23A-4DA8-875A-6033DAD1F251}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

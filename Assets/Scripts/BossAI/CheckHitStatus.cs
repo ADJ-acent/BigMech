@@ -59,7 +59,7 @@ namespace BossAI
         {
             object isStunned = GetData("stun");
             // if stunned move crab to the opposite of the hit
-            if (isStunned != null && (bool) isStunned)
+            if (isStunned != null && (bool) isStunned)// strong hit
             {
                 _navMeshAgent.isStopped = true;
                 _transform.position += hitDirection.normalized * 3;
@@ -68,10 +68,11 @@ namespace BossAI
                 
             }
 
-            if (!isBlocking)
+            if (!isBlocking) // weak hit
             {
                 if (_health.DealDamage(damage / 10)) parent.SetData("dead", true);
             }
+            // else (hit but no damage)
             isHit = true;
         }
     }
