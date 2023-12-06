@@ -40,11 +40,6 @@ public class CrabBossUI : MonoBehaviour
         blockSignRed.enabled = false;
         warningSignLeft.enabled = false;
         warningSignRight.enabled = false;
-
-        player = GameObject.Find("PlayerController").transform;
-        humanTransform = GameObject.Find("VRCharacterIK").transform;
-        mechTransform = GameObject.Find("Robotv2").transform; // TODO: change robot name
-
         angle = 40f;
     }
 
