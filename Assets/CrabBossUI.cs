@@ -19,6 +19,8 @@ public class CrabBossUI : MonoBehaviour
     public bool attackSignOn;
     public bool blockSignOn;
     public bool successfulAttack;
+    public bool blockCheckDone;
+    public Image blockCheckResult;
 
     public Transform crabTransform;
     public Transform player;
@@ -40,11 +42,6 @@ public class CrabBossUI : MonoBehaviour
         blockSignRed.enabled = false;
         warningSignLeft.enabled = false;
         warningSignRight.enabled = false;
-
-        player = GameObject.Find("PlayerController").transform;
-        humanTransform = GameObject.Find("VRCharacterIK").transform;
-        mechTransform = GameObject.Find("Robotv2").transform; // TODO: change robot name
-
         angle = 40f;
     }
 
@@ -59,6 +56,8 @@ public class CrabBossUI : MonoBehaviour
             AttackSignCalc(attackSignGreen);
             // StartCoroutine(Wait());
         }
+
+        if (blockCheckDone) return;
         if (blockSignOn) 
         {
             HideAttackSign();
@@ -104,6 +103,7 @@ public class CrabBossUI : MonoBehaviour
 
     private void AttackSignCalc(Image sign)
     {
+        if (crabTransform == null) return;
         Vector3 diff = crabTransform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
         float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
@@ -126,6 +126,7 @@ public class CrabBossUI : MonoBehaviour
 
     private void BlockSignCalc(Image sign)
     {
+        if (crabTransform == null) return;
         Vector3 diff = crabTransform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
         float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);

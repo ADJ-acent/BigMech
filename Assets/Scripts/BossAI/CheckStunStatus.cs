@@ -13,11 +13,15 @@ namespace BossAI
         private float stunTime = 3.5f;
         private float stunCounter = 0f;
         private Animator _animator;
+        private PlayerController _player;
+        private NavMeshAgent _navMeshAgent;
         
-        public CheckStunStatus (Transform transform)
+        public CheckStunStatus (Transform transform, PlayerController player)
         {
             BlockedStun.blocked += setStunStatus;
             _animator = transform.GetComponent<Animator>();
+            _navMeshAgent = transform.GetComponent<NavMeshAgent>();
+            _player = player;
         }
         public override NodeState Evaluate()
         {
@@ -31,6 +35,7 @@ namespace BossAI
                     parent.SetData("stun", false);
                     _animator.SetFloat("AttackDir", 1f);
                     _animator.SetTrigger("Idle");
+                    _navMeshAgent.isStopped = false;
                     state = NodeState.Failure;
                     return state;
                 }
@@ -52,15 +57,29 @@ namespace BossAI
                 isStunned = true;
                 _animator.SetTrigger("Stun");
                 _animator.SetFloat("AttackDir", -1f);
+                _navMeshAgent.isStopped = true;
             }
 
             state = stun ? NodeState.Success : NodeState.Failure;
             return state;
         }
 
-        private void setStunStatus()
+        public void setStunStatus()
         {
-            parent.SetData("stun", true);
+            if (_player.isBlocking)
+            {
+                if (_animator.GetCurrentAnimatorStateInfo(0).IsTag("leftAttack"))
+                {
+                    //play left block sound
+                }
+                else
+                {
+                    //play right block sound
+                }
+                parent.SetData("stun", true);
+                
+            }
+            //damage player otherwise
         }
 
     }

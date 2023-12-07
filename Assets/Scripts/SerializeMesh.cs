@@ -10,6 +10,8 @@ namespace TheTide.utils
     public class SerializeMesh : MonoBehaviour
     {
         [HideInInspector] [SerializeField] Vector2[] uv;
+        [HideInInspector] [SerializeField] Vector2[] uv2;
+        [HideInInspector] [SerializeField] Vector2[] uv3;
         [HideInInspector] [SerializeField] Vector3[] verticies;
         [HideInInspector] [SerializeField] int[] triangles;
         [HideInInspector] [SerializeField]bool serialized = false;
@@ -37,6 +39,8 @@ namespace TheTide.utils
             uv = mesh.uv;
             verticies = mesh.vertices;
             triangles = mesh.triangles;
+            uv2 = mesh.uv2;
+            uv3 = mesh.uv3;
  
             serialized = true;
         }
@@ -47,7 +51,8 @@ namespace TheTide.utils
             mesh.vertices = verticies;
             mesh.triangles = triangles;
             mesh.uv = uv;
-           
+            mesh.uv2 = uv2;
+            mesh.uv3 = uv3;
             mesh.RecalculateNormals();
             mesh.RecalculateBounds();
  

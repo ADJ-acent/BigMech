@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using BehaviorTree;
 using RayFire;
@@ -17,13 +18,15 @@ namespace BossAI
         public RayfireActivator leftClaw;
         public RayfireActivator rightClaw;
         public float attackRange = 5f;
+        private CheckStunStatus _stunNode;
         protected override Node SetupTree() 
         {
             Transform t = transform;
+            _stunNode = new CheckStunStatus(t, playerController);
             return new Selector(new List<Node> {
                 new CheckAliveStatus(t),
                 new CheckHitStatus(t),
-                new CheckStunStatus(t), 
+                _stunNode, 
                 new Sequence(new List<Node>
                 {
                     new CheckMechInAttackRange(t, offsetFromMech, mechTransform, crabBossUI),
@@ -46,6 +49,29 @@ namespace BossAI
                     new TaskGoToBuilding(t),
                 }), 
             new TaskWander(t,50f)});
+        }
+
+        public void CrabStartAttack()
+        {
+            crabBossUI.blockSignOn = true;
+            crabBossUI.attackSignOn = false;
+        }
+        public void CrabAttack()
+        {
+            _stunNode.setStunStatus();
+            crabBossUI.blockCheckDone = true;
+            crabBossUI.blockCheckResult =
+                playerController.isBlocking ? crabBossUI.blockSignGreen : crabBossUI.blockSignRed;
+            StartCoroutine(turnOffBlockSign());
+        }
+        
+
+        private IEnumerator turnOffBlockSign()
+        {
+            yield return new WaitForSeconds(2);
+            crabBossUI.HideBlockSign();
+            crabBossUI.blockSignOn = false;
+            crabBossUI.blockCheckDone = false;
         }
     }
 
