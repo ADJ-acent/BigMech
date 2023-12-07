@@ -4808,6 +4808,8 @@ MonoBehaviour:
   attackSignOn: 0
   blockSignOn: 0
   successfulAttack: 0
+  blockCheckDone: 0
+  blockCheckResult: {fileID: 0}
   crabTransform: {fileID: 0}
   player: {fileID: 5846352714682481836}
   humanTransform: {fileID: 7566179898570681854}

@@ -19,7 +19,6 @@ namespace BossAI
         public RayfireActivator rightClaw;
         public float attackRange = 5f;
         private CheckStunStatus _stunNode;
-        private TaskAttackMech _attackMechNode;
         protected override Node SetupTree() 
         {
             Transform t = transform;
