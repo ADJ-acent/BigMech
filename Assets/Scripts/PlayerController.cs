@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         HealthBarFill();
-        BlockingCalc();
+        if (crabTransform != null) BlockingCalc();
     }
 
     private void HealthBarFill()
@@ -48,17 +48,14 @@ public class PlayerController : MonoBehaviour
         Vector3 meToCrab = crabTransform.position - transform.position;
         meToCrab.y = 0f;
         LayerMask mask = LayerMask.GetMask("Player");
-        if (Physics.Raycast(transform.position, meToCrab, 10f, mask))
-        {
-            isBlocking = true;
-        }
-        else isBlocking = false;
-
+        isBlocking = Physics.Raycast(transform.position, meToCrab, 10f, mask);
+        
         AnimatorStateInfo crabStateInfo = _animator.GetCurrentAnimatorStateInfo(0);   
-        if (crabStateInfo.IsTag("attack"))
+        if (crabStateInfo.IsTag("leftAttack") || crabStateInfo.IsTag("rightAttack"))
         {
             successfulBlocking = isBlocking;
             unsuccessfulBlocking = !isBlocking;
+            
         }
         else 
         {

@@ -11,10 +11,10 @@ public class BlockedStun : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Mech"))
+        /*if (other.CompareTag("Mech"))
         {
             if (_animator.GetCurrentAnimatorStateInfo(0).IsTag("attack")) blocked?.Invoke();
-        }
+        }*/
     }
     /*for testing stun*/
     [ContextMenu("stun")]

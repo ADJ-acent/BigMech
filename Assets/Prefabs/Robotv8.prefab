@@ -435,7 +435,6 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  m_HasMigratedActions: 1
 --- !u!114 &5275879630189076973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1151,6 +1150,30 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 7779212132400271959, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  m_ScaleToggleAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Scale Toggle
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: 307f5a79-9720-462d-8a60-791ec9308d85
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  m_ScaleDeltaAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Scale Delta
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 13f41be2-c31d-4029-925d-3d2a50bc58eb
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   m_ButtonPressPoint: 0.5
 --- !u!114 &389309540586438100
 MonoBehaviour:
@@ -1253,6 +1276,7 @@ MonoBehaviour:
   m_SampleFrequency: 20
   m_HitDetectionType: 0
   m_SphereCastRadius: 0.1
+  m_ConeCastAngle: 6
   m_RaycastMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1264,6 +1288,7 @@ MonoBehaviour:
   m_AutoDeselect: 0
   m_TimeToAutoDeselect: 3
   m_EnableUIInteraction: 1
+  m_BlockUIOnInteractableSelection: 1
   m_AllowAnchorControl: 1
   m_UseForceGrab: 1
   m_RotateSpeed: 180
@@ -1279,6 +1304,7 @@ MonoBehaviour:
   m_EnableARRaycasting: 0
   m_OccludeARHitsWith3DObjects: 0
   m_OccludeARHitsWith2DObjects: 0
+  m_ScaleMode: 0
 --- !u!120 &3916133027285719285
 LineRenderer:
   serializedVersion: 2
@@ -2863,6 +2889,30 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 875253871413052681, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  m_ScaleToggleAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Scale Toggle
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: 86e9e30e-ef74-4d53-b421-4b2de0a54023
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  m_ScaleDeltaAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Scale Delta
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 76ffa4a5-0f5d-40be-b7f3-8c53060e334e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   m_ButtonPressPoint: 0.5
 --- !u!114 &756795672206607225
 MonoBehaviour:
@@ -2965,6 +3015,7 @@ MonoBehaviour:
   m_SampleFrequency: 20
   m_HitDetectionType: 0
   m_SphereCastRadius: 0.1
+  m_ConeCastAngle: 6
   m_RaycastMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2976,6 +3027,7 @@ MonoBehaviour:
   m_AutoDeselect: 0
   m_TimeToAutoDeselect: 3
   m_EnableUIInteraction: 1
+  m_BlockUIOnInteractableSelection: 1
   m_AllowAnchorControl: 1
   m_UseForceGrab: 1
   m_RotateSpeed: 180
@@ -2991,6 +3043,7 @@ MonoBehaviour:
   m_EnableARRaycasting: 0
   m_OccludeARHitsWith3DObjects: 0
   m_OccludeARHitsWith2DObjects: 0
+  m_ScaleMode: 0
 --- !u!120 &5162226454395160383
 LineRenderer:
   serializedVersion: 2
@@ -3823,9 +3876,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7c3c386c5c42740808d7a6ae3bb993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  healthRight: 0
   maxHealth: 0
-  healthBar: {fileID: 7535346675692388813}
+  healthBarRight: {fileID: 0}
+  healthLeft: 0
+  healthBarLeft: {fileID: 0}
+  isBlocking: 0
+  crabIsAttacking: 0
+  successfulBlocking: 0
+  unsuccessfulBlocking: 0
+  crabTransform: {fileID: 0}
+  _animator: {fileID: 0}
+  crabDamage: 0
+  isPlaying: 0
 --- !u!1 &8675098597545159727
 GameObject:
   m_ObjectHideFlags: 0
@@ -4714,18 +4777,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3253285263061546800 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5023469571027181940, guid: f287b37df3741ef468e9b80e5ca79485,
-    type: 3}
-  m_PrefabInstance: {fileID: 7535383370428372548}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4467264308392626601 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6155829669213167597, guid: f287b37df3741ef468e9b80e5ca79485,
@@ -4745,42 +4796,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   middleCanvas: {fileID: 2966007248624139978}
-  attackSign: {fileID: 5262407546519548973}
-  blockSign: {fileID: 3253285263061546800}
+  indicatorCanvas: {fileID: 0}
+  attackSignBlue: {fileID: 0}
+  attackSignGreen: {fileID: 0}
+  blockSignBlue: {fileID: 0}
+  blockSignYellow: {fileID: 0}
+  blockSignRed: {fileID: 0}
+  blockSignGreen: {fileID: 0}
   warningSignLeft: {fileID: 8325098513520938177}
   warningSignRight: {fileID: 3207221639394608779}
   attackSignOn: 0
   blockSignOn: 0
-  warningSignLeftOn: 0
-  warningSignRightOn: 0
-  crabPosition: {x: 0, y: 0, z: 0}
+  successfulAttack: 0
+  crabTransform: {fileID: 0}
   player: {fileID: 5846352714682481836}
   humanTransform: {fileID: 7566179898570681854}
   mechTransform: {fileID: 2411077483464546107}
---- !u!114 &5262407546519548973 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2419801378246697577, guid: f287b37df3741ef468e9b80e5ca79485,
-    type: 3}
-  m_PrefabInstance: {fileID: 7535383370428372548}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7535346675692388813 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 530655974004617, guid: f287b37df3741ef468e9b80e5ca79485,
-    type: 3}
-  m_PrefabInstance: {fileID: 7535383370428372548}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
 --- !u!114 &8325098513520938177 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1953365682708585093, guid: f287b37df3741ef468e9b80e5ca79485,

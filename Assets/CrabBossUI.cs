@@ -121,6 +121,7 @@ public class CrabBossUI : MonoBehaviour
 
     private void BlockSignCalc(Image sign)
     {
+        if (crabTransform == null) return;
         Vector3 diff = crabTransform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
         float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);

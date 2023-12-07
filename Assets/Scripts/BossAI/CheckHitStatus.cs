@@ -63,7 +63,6 @@ namespace BossAI
             {
                 AudioManager.Instance.playBigHit();
                 _navMeshAgent.isStopped = true;
-                _transform.position += hitDirection.normalized * 3;
                 _animator.SetTrigger("Hit");
                 if (_health.DealDamage(damage)) parent.SetData("dead", true);
                 
