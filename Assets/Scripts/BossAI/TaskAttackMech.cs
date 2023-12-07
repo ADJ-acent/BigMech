@@ -34,9 +34,6 @@ namespace BossAI
             _attackCounter += Time.deltaTime;
             if (!haveAttacked || _attackCounter >= _attackTime)
             {
-                    _crabBossUI.blockSignOn = true;
-                    _crabBossUI.attackSignOn = false;
-
                     curAttack = Random.Range(0, 2);
                     _animator.SetTrigger("Attack");
                     _animator.SetInteger("AttackNum", curAttack);
