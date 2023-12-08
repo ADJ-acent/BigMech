@@ -56,10 +56,10 @@ namespace BossAI
         {
             crabBossUI.blockSignOn = true;
             crabBossUI.attackSignOn = false;
-            if (!playerController.isBlocking) playerController.TakeDamage(damage);
         }
         public void CrabAttack()
         {
+            if (!playerController.isBlocking) playerController.TakeDamage(damage);
             _stunNode.setStunStatus();
             crabBossUI.blockCheckDone = true;
             crabBossUI.blockCheckResult =
