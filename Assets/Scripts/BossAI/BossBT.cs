@@ -90,6 +90,10 @@ namespace BossAI
             crabBossUI.blockSignOn = false;
             crabBossUI.blockCheckDone = false;
         }
-    }
 
+        public void BlockSuccessCalc()
+        {
+        playerController.BlockSuccessCalc();
+        }
+    }
 }
