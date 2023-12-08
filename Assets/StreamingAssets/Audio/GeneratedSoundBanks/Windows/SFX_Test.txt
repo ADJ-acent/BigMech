@@ -1,5 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
+	324646143	Play_Defeat			\Default Work Unit\Play_Defeat	
 	391794082	Play_Small_Piece_Shatter			\Default Work Unit\Play_Small_Piece_Shatter	
+	640433324	Play_CrabRoar			\Default Work Unit\Play_CrabRoar	
 	1214530318	Play_Big_Hit			\Default Work Unit\Play_Big_Hit	
 	2165031948	Play_Small_Hits			\Default Work Unit\Play_Small_Hits	
 	2453267296	Play_Victory			\Default Work Unit\Play_Victory	
@@ -16,9 +18,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4915979	heavy footsteps v2	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Footsteps\heavy footsteps v2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v2		239340
 	11755695	heavy footsteps v1	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Footsteps\heavy footsteps v1_593B0A3D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v1		120748
 	20868656	engine_loop	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\rumbling metal_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\engine_loop		2688096
+	27048691	CrabRoar	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\CrabRoar_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CrabRoar		244926
 	64125215	Building Collapse	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\building collapse v2_3B51F27E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Building Collapse		507460
 	187151702	Small Hit 1	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Small Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Hits\Small Hit 1		133320
 	221989671	small_piece_3	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\small stone_A4E24545.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_3		135048
+	275675252	Defeat	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Defeat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Defeat		325808
 	292839511	Victory	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Victory_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Victory		651468
 	462439837	small_piece_4	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\wood fall 1_9E34FAA9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_4		128392
 	504562728	Mid Hit 5	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Mid Hit 5 v2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mid Hits\Mid Hit 5		210916

@@ -34,6 +34,7 @@ namespace BossAI
                 Object.Destroy(_transform.gameObject);
                 return NodeState.Success;
             }
+    
 
             return NodeState.Failure;
         }

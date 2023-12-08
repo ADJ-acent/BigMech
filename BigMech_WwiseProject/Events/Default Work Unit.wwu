@@ -102,6 +102,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Victory" ID="{50C2C536-AD06-40A1-ADF3-2DC4C0B1E3F7}">
+					<ChildrenList>
+						<Action Name="" ID="{23341BE0-771D-4BFF-A775-981E946595B9}" ShortID="156371348">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Victory" ID="{92B23728-4592-4B77-AEE5-B4638DBF9BBD}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Defeat" ID="{A10C19BB-2876-4420-8F18-E2D5B60B0191}">
+					<ChildrenList>
+						<Action Name="" ID="{98848E1E-13B0-4F20-BB53-D3D433FCB603}" ShortID="672403416">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Defeat" ID="{7A5E73F3-3981-48E7-877F-42EAA73E702E}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

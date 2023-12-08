@@ -53,6 +53,7 @@ namespace BossAI
 
         public void CrabStartAttack()
         {
+            AudioManager.Instance.playCrabRoar();
             crabBossUI.blockSignOn = true;
             crabBossUI.attackSignOn = false;
         }

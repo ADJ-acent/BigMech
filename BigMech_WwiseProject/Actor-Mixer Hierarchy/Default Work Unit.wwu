@@ -546,6 +546,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Mid Hit 1" ID="{18BF5CAF-4033-4332-A73E-928C5F69E1BA}" ShortID="270931626">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
@@ -575,6 +582,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Mid Hit 2" ID="{3E5CB70E-9FB6-4D8F-9B11-E4F14146835E}" ShortID="519307884">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
@@ -604,6 +618,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Mid Hit 3" ID="{818D55FB-9A32-4EA2-A858-88E3ABE7C691}" ShortID="652448746">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
@@ -633,6 +654,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Mid Hit 4" ID="{09316609-A9DA-42E1-99A6-9BF885ECE880}" ShortID="851046064">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
@@ -656,12 +684,26 @@
 										<MediaID ID="1072550534"/>
 									</MediaIDList>
 								</AudioFileSource>
+								<AudioFileSource Name="Mid Hit Long" ID="{BA1DD4E4-9854-49ED-B269-4B55ED41A540}">
+									<Language>SFX</Language>
+									<AudioFile>Mid Hit Long.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1011316994"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Mid Hit 4 v2" ID="{B3761672-A7D4-4076-A438-FC722C36BD2D}" Platform="Linked"/>
+								<ActiveSource Name="Mid Hit Long" ID="{BA1DD4E4-9854-49ED-B269-4B55ED41A540}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Mid Hit 5" ID="{A6329527-503E-447C-88F1-FC779593991F}" ShortID="268872015">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
@@ -748,6 +790,50 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="Victory" ID="{92B23728-4592-4B77-AEE5-B4638DBF9BBD}" ShortID="934027652">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Victory" ID="{1462E4F2-4966-4396-9A72-7B056DDDA56F}">
+							<Language>SFX</Language>
+							<AudioFile>Victory.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="292839511"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Victory" ID="{1462E4F2-4966-4396-9A72-7B056DDDA56F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Defeat" ID="{7A5E73F3-3981-48E7-877F-42EAA73E702E}" ShortID="323450498">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Defeat" ID="{8BF6E1CA-5DA8-4EE8-A8A0-C12BDC3886DD}">
+							<Language>SFX</Language>
+							<AudioFile>Defeat.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="275675252"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Defeat" ID="{8BF6E1CA-5DA8-4EE8-A8A0-C12BDC3886DD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

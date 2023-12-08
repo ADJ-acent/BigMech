@@ -25,7 +25,7 @@
 				<GameParameter Id="3407379032" Name="ArmVelocity"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{FAA03397-162E-D773-C1C4-40459E26CAFB}">
+		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{31972FAF-2916-9C9E-CCAD-A1EB3822F526}">
 			<ShortName>SFX_Test</ShortName>
 			<Path>SFX_Test.bnk</Path>
 			<Media>
@@ -41,6 +41,10 @@
 					<ShortName>rumbling metal.wav</ShortName>
 					<CachePath>SFX/rumbling metal_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="27048691" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CrabRoar.wav</ShortName>
+					<CachePath>SFX/CrabRoar_10C4C929.wem</CachePath>
+				</File>
 				<File Id="64125215" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>building collapse v2.wav</ShortName>
 					<CachePath>SFX/building collapse v2_3B51F27E.wem</CachePath>
@@ -52,6 +56,10 @@
 				<File Id="221989671" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>small stone.wav</ShortName>
 					<CachePath>SFX/small stone_A4E24545.wem</CachePath>
+				</File>
+				<File Id="275675252" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Defeat.wav</ShortName>
+					<CachePath>SFX/Defeat_10C4C929.wem</CachePath>
 				</File>
 				<File Id="292839511" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Victory.wav</ShortName>
@@ -121,6 +129,16 @@
 						<MediaRef Id="64125215"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="640433324" Name="Play_CrabRoar" DurationType="OneShot" DurationMin="2.5503125" DurationMax="2.5503125">
+					<MediaRefs>
+						<MediaRef Id="27048691"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="324646143" Name="Play_Defeat" DurationType="OneShot" DurationMin="1.8461678" DurationMax="1.8461678">
+					<MediaRefs>
+						<MediaRef Id="275675252"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2588973845" Name="Play_engine_loop" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="20868656"/>
@@ -173,5 +191,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{427DBEA1-2A1A-0EFC-75C7-E5B88387DA0A}</FileHash>
+	<FileHash>{785B3CDB-7A9B-E118-5E9D-2285CE84D68E}</FileHash>
 </SoundBanksInfo>
