@@ -55,7 +55,7 @@ public class SmallCrabUI : MonoBehaviour
         float scaledIndicatorDistance = rectT.rect.width * rectT.localScale.x * indicatorDistance / 1.5f;
         Vector3 direction = (Quaternion.Euler(0, wrap * 90, 0) * mechTransform.forward);
         Vector3 distanceChange = scaledIndicatorDistance * direction;
-        Vector3 pos = attackSignBlue0.transform.position + (new Vector3(Mathf.Pow(1.5f, distanceChange.x), 2*distanceChange.y, Mathf.Pow(1.5f, distanceChange.z)));
+        Vector3 pos = attackSignBlue0.transform.position + distanceChange;
         return pos;
     }
 
