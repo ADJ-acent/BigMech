@@ -15,6 +15,7 @@
 						<ObjectRef Name="Play_Small_Hits" ID="{17514D44-C650-4B48-A8F6-579085304956}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Mid_Hits" ID="{9CFCC519-ACDA-4B6B-A5DB-3217624C3D5D}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Punch_Building" ID="{57E1EE69-DA6F-4C3A-8D85-1B6186CCE195}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CrabRoar" ID="{2058F058-948D-4EA6-9CB1-955746B68D3B}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

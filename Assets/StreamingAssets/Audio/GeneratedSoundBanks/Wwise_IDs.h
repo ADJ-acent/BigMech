@@ -15,7 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_BIG_HIT = 1214530318U;
         static const AkUniqueID PLAY_BUILDING_COLLAPSE = 2456951556U;
-        static const AkUniqueID PLAY_CRABROAR = 640433324U;
+        static const AkUniqueID PLAY_CRAB_ROAR = 3088348135U;
         static const AkUniqueID PLAY_DEFEAT = 324646143U;
         static const AkUniqueID PLAY_ENGINE_LOOP = 2588973845U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;

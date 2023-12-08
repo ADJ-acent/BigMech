@@ -124,6 +124,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_CrabRoar" ID="{2058F058-948D-4EA6-9CB1-955746B68D3B}">
+					<ChildrenList>
+						<Action Name="" ID="{BCD33EC5-B47D-419E-B302-CBE99157CC0B}" ShortID="346584555">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CrabRoar" ID="{F91AFBE2-F258-4073-B66B-66D0B92B1A0D}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
