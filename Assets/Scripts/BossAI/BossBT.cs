@@ -62,14 +62,18 @@ namespace BossAI
         public void CrabStartAttack()
         {
             AudioManager.Instance.playCrabRoar();
-            crabBossUI.blockSignOn = true;
-            crabBossUI.attackSignOn = false;
+            // TODO: replace or move it somewhere else
+            bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= 20f;
+            if (playerInAttackRange)
+            {
+                crabBossUI.blockSignOn = true;
+                crabBossUI.attackSignOn = false;
+            }
         }
         public void CrabAttack()
         {
+            // TODO: replace with actual value
             bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= 20f;
-            // Debug.Log(playerInAttackRange);
-            // if (!playerController.isBlocking && playerInAttackRange) playerController.TakeDamage(damage);
             if (!playerController.isBlocking && playerInAttackRange) playerController.TakeDamage(damage);
             _stunNode.setStunStatus();
             crabBossUI.blockCheckDone = true;

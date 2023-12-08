@@ -132,12 +132,16 @@ public class EnemyAI : MonoBehaviour
 
     public IEnumerator Wait()
     {
-        attackSignGreen.enabled = true;
+        smallCrabUI.AttackSignCalc(attackSignGreen, warningSignLeft, warningSignRight, transform);
         yield return new WaitForSeconds(2);     
         Destroy(attackSignBlue0);
         Destroy(attackSignGreen0);
         Destroy(attackSignBlue);
         Destroy(attackSignGreen);   
+        Destroy(warningSignLeft0);
+        Destroy(warningSignRight0);
+        Destroy(warningSignLeft);
+        Destroy(warningSignRight);
         // TODO: replace with animation
         Destroy(transform);
     }
