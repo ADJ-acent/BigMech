@@ -27,7 +27,9 @@ namespace BossAI
         
         public override NodeState Evaluate()
         {
-            Vector3 targetPosition = (_transform.position - _mechTransform.position).normalized *_personalSpace;
+            Vector3 diffVector = _transform.position - _mechTransform.position;
+            diffVector.y = 0;
+            Vector3 targetPosition = diffVector.normalized * _personalSpace;
             _navMeshAgent.SetDestination(new Vector3(targetPosition.x, _transform.position.y, targetPosition.z));
 
             state = NodeState.Running;

@@ -30,7 +30,7 @@ namespace BossAI
                 new Sequence(new List<Node>
                 {
                     new CheckMechTooClose(t, mechTransform, attackRange-10),
-                    new TaskBackOff(t, mechTransform, attackRange)
+                    new TaskBackOff(t, mechTransform, attackRange-5)
                         
                 }),
                 new Sequence(new List<Node>
