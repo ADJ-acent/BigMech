@@ -107,6 +107,7 @@ public class CrabBossUI : MonoBehaviour
         Vector3 diff = crabTransform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
         float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
+        angleToPosition *= 1.2f;
 
         if ((-1 * angle) <= angleToPosition && angleToPosition <= angle)
         {
@@ -130,6 +131,7 @@ public class CrabBossUI : MonoBehaviour
         Vector3 diff = crabTransform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
         float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
+        angleToPosition *= 1.2f;
 
         if ((-1 * angle) <= angleToPosition && angleToPosition <= angle)
         {

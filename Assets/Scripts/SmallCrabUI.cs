@@ -38,7 +38,6 @@ public class SmallCrabUI : MonoBehaviour
         float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
         angleToPosition *= 1.2f;
 
-
         if ((-1 * angle) <= angleToPosition && angleToPosition <= angle)
         {
             if (angleToPosition < 0) 
