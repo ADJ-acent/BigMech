@@ -17,6 +17,12 @@ public class target : MonoBehaviour
 
     public target[] otherLegs = new target[default];   //legs that does not move simultaniously 
     public float footSpacing1, footSpacing2; // position wrt. body
+    private bool crabWalkSound;
+    private int count;
+    bool withinRange;
+    private float footPos;
+    public GameObject Ground;
+    float groundYPosition;
 
     private void Start()
     {
@@ -27,6 +33,11 @@ public class target : MonoBehaviour
         stepstance = manager.GetComponent<walkmanager>().stepstance;            //step distance
         high = manager.GetComponent<walkmanager>().high;               //
         speed = manager.GetComponent<walkmanager>().speed;
+        crabWalkSound = false;
+        count = 0;
+        withinRange = false;
+        groundYPosition = Ground.transform.position.y;
+        //Debug.Log(groundYPosition);
 
     }
 
@@ -69,6 +80,29 @@ public class target : MonoBehaviour
             newposition = center.position + new Vector3(0, offset, 0);
         }
 
+        //Vector3 footposition1 = Vector3.Lerp(oldposition, newposition, lerp);
+        float footposition1 = currentposition.y-6f;
+        //footposition1.y += Mathf.Sin(lerp * Mathf.PI) * high;
+        //print(footposition1);
+
+        if (footposition1 <= groundYPosition - Mathf.Epsilon && footposition1 >= groundYPosition + Mathf.Epsilon)
+        {
+            withinRange = true;
+        }
+
+        //if (lerp <= 1 - Mathf.Epsilon && lerp >= 1 + Mathf.Epsilon)
+        //{
+        //    withinRange = true;
+        //    Debug.Log("ever here?");
+        //}
+
+        if (withinRange && !crabWalkSound)
+        {
+            crabWalkSound = true;
+            StartCoroutine(PlayCrabWalkSound());
+            //AudioManager.Instance.playCrabWalk();
+        }
+
         if (lerp < 1)
         {
             Vector3 footposition = Vector3.Lerp(oldposition, newposition, lerp);
@@ -86,5 +120,14 @@ public class target : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(newposition, 0.2f);
+    }
+
+    private IEnumerator PlayCrabWalkSound()
+    {
+        AudioManager.Instance.playCrabWalk();
+        count += 1;
+        //Debug.Log(count);
+        yield return new WaitForSeconds(0.5f);
+        crabWalkSound = false;
     }
 }
