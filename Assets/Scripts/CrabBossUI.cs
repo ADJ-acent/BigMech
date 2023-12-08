@@ -150,7 +150,7 @@ public class CrabBossUI : MonoBehaviour
         float scaledIndicatorDistance = rectT.rect.width * rectT.localScale.x * indicatorDistance / 1.5f;
         Vector3 direction = (Quaternion.Euler(0, wrap * 90, 0) * mechTransform.forward);
         Vector3 distanceChange = scaledIndicatorDistance * direction;
-        Vector3 pos = indicatorCanvas.transform.position + (1f * distanceChange);
+        Vector3 pos = indicatorCanvas.transform.position + distanceChange;
         return pos;
     }
 

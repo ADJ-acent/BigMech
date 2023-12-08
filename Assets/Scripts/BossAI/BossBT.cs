@@ -63,7 +63,7 @@ namespace BossAI
         {
             AudioManager.Instance.playCrabRoar();
             // TODO: replace or move it somewhere else
-            bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= 20f;
+            bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= 40f;
             if (playerInAttackRange)
             {
                 crabBossUI.blockSignOn = true;
@@ -73,7 +73,7 @@ namespace BossAI
         public void CrabAttack()
         {
             // TODO: replace with actual value
-            bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= 20f;
+            bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= 40f;
             if (!playerController.isBlocking && playerInAttackRange) playerController.TakeDamage(damage);
             _stunNode.setStunStatus();
             crabBossUI.blockCheckDone = true;
