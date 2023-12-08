@@ -843,6 +843,7 @@
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
 											<Property Name="Max" Type="Real64" Value="20"/>
+											<Property Name="Min" Type="Real64" Value="-20"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -855,8 +856,8 @@
 									<Modifier Name="" ID="{E976C68D-DB39-4A7F-B048-B5828CD9D307}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="400"/>
-											<Property Name="Min" Type="Real64" Value="-300"/>
+											<Property Name="Max" Type="Real64" Value="500"/>
+											<Property Name="Min" Type="Real64" Value="-400"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -937,8 +938,144 @@
 								<ActiveSource Name="Silence" ID="{8A1C7C60-B375-499D-8D58-A38C47A61216}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="CrabHiss" ID="{8EFDC972-E957-4BBF-A8E7-AA6849877D03}" ShortID="369474891">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CrabHiss" ID="{5B9734F6-0975-4E90-A161-8EAD7FE77296}">
+									<Language>SFX</Language>
+									<AudioFile>CrabHiss.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="813198519"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CrabHiss" ID="{5B9734F6-0975-4E90-A161-8EAD7FE77296}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Crab Walk" ID="{18F0555E-B208-4317-9A03-9A5AE3B6C187}" ShortID="95409394">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{48DBEF44-1B3A-44D2-B53C-D946FF3AABFC}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="10"/>
+											<Property Name="Min" Type="Real64" Value="-10"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B346A6CD-14B7-4FEC-902E-2793929F773D}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+							<ObjectRef Name="Underground_Parking1" ID="{8DA66AA3-6CA0-41A0-B7A2-BB6FCABFCDA8}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Crab_Walk1" ID="{651870AB-04FA-4C94-B332-C94F6A322C27}" ShortID="212512224">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Crab_Walk1" ID="{C105D2DE-4792-4D8B-B40C-3459B94D855A}">
+									<Language>SFX</Language>
+									<AudioFile>Crab_Walk1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="967776350"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Crab_Walk1" ID="{C105D2DE-4792-4D8B-B40C-3459B94D855A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Crab_Walk2" ID="{EA0519C7-2E6F-4DDA-80B2-A4120E429E63}" ShortID="124856330">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Crab_Walk2" ID="{C445652F-7D2C-4258-B4BE-DC8940A8B1D4}">
+									<Language>SFX</Language>
+									<AudioFile>Crab_Walk2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="755305463"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Crab_Walk2" ID="{C445652F-7D2C-4258-B4BE-DC8940A8B1D4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="Night Ambience" ID="{3FEF9864-01BA-4F29-868A-A79DF26FE49B}" ShortID="647700185">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Night Ambience" ID="{B184325C-136B-4691-89FD-E4AFC30E3546}">
+							<Language>SFX</Language>
+							<AudioFile>Night Ambience.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="572267456"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Night Ambience" ID="{B184325C-136B-4691-89FD-E4AFC30E3546}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

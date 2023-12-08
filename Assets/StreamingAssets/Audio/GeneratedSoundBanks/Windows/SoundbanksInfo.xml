@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B9C26538-91CD-60B0-D074-22C6AE2A42F0}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{978DB45D-87C0-7CAC-D341-6F23668F14A8}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -25,7 +25,7 @@
 				<GameParameter Id="3407379032" Name="ArmVelocity"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{C3E93EA7-D9D7-D8AC-DBE9-58DC78069A5A}">
+		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{515CCAA4-56CC-B7A0-F5C4-032778CA1605}">
 			<ShortName>SFX_Test</ShortName>
 			<Path>SFX_Test.bnk</Path>
 			<Media>
@@ -73,6 +73,10 @@
 					<ShortName>Mid Hit 5 v2.wav</ShortName>
 					<CachePath>SFX/Mid Hit 5 v2_10C4C929.wem</CachePath>
 				</File>
+				<File Id="572267456" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Night Ambience.wav</ShortName>
+					<CachePath>SFX/Night Ambience_10C4C929.wem</CachePath>
+				</File>
 				<File Id="741429729" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small Piece Shatter\small_piece_2.wav</ShortName>
 					<CachePath>SFX/Small Piece Shatter/small_piece_2_10C4C929.wem</CachePath>
@@ -81,9 +85,17 @@
 					<ShortName>Mid Hit 2 v2.wav</ShortName>
 					<CachePath>SFX/Mid Hit 2 v2_10C4C929.wem</CachePath>
 				</File>
+				<File Id="755305463" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Crab_Walk2.wav</ShortName>
+					<CachePath>SFX/Crab_Walk2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="766652272" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Punch Building.wav</ShortName>
 					<CachePath>SFX/Punch Building_10C4C929.wem</CachePath>
+				</File>
+				<File Id="813198519" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CrabHiss.wav</ShortName>
+					<CachePath>SFX/CrabHiss_10C4C929.wem</CachePath>
 				</File>
 				<File Id="889949765" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\heavy footsteps v3.wav</ShortName>
@@ -96,6 +108,10 @@
 				<File Id="967748420" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\heavy footsteps v4.wav</ShortName>
 					<CachePath>SFX/Footsteps/heavy footsteps v4_99958F3F.wem</CachePath>
+				</File>
+				<File Id="967776350" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Crab_Walk1.wav</ShortName>
+					<CachePath>SFX/Crab_Walk1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1011316994" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Mid Hit Long.wav</ShortName>
@@ -123,6 +139,9 @@
 					<Plugin Id="854738304" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="981157829" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
+				<ShareSets>
+					<Plugin Id="2098638826" Name="Underground_Parking1" LibName="Wwise Matrix Reverb" LibId="7536643"/>
+				</ShareSets>
 			</Plugins>
 			<Events>
 				<Event Id="1214530318" Name="Play_Big_Hit" DurationType="OneShot" DurationMin="2.7085035" DurationMax="2.7085035">
@@ -135,15 +154,27 @@
 						<MediaRef Id="64125215"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3088348135" Name="Play_Crab_Roar" DurationType="OneShot" DurationMin="0.7937005" DurationMax="3.0328498">
+				<Event Id="3088348135" Name="Play_Crab_Roar" DurationType="OneShot" DurationMin="0.74915355" DurationMax="3.2131925">
 					<MediaRefs>
 						<MediaRef Id="27048691"/>
+						<MediaRef Id="813198519"/>
 					</MediaRefs>
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="854738304"/>
 							<PluginRef Id="981157829"/>
 						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="2055996920" Name="Play_Crab_Walk" DurationType="OneShot" DurationMin="0.08789829" DurationMax="0.14982575">
+					<MediaRefs>
+						<MediaRef Id="755305463"/>
+						<MediaRef Id="967776350"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2098638826"/>
+						</ShareSets>
 					</PluginRefs>
 				</Event>
 				<Event Id="324646143" Name="Play_Defeat" DurationType="OneShot" DurationMin="1.8461678" DurationMax="1.8461678">
@@ -171,6 +202,11 @@
 						<MediaRef Id="1011316994"/>
 						<MediaRef Id="1012927564"/>
 						<MediaRef Id="1031678577"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2019603999" Name="Play_Night_Ambience" DurationType="OneShot" DurationMin="126.28267" DurationMax="126.28267">
+					<MediaRefs>
+						<MediaRef Id="572267456"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3404907241" Name="Play_Punch_Building" DurationType="OneShot" DurationMin="1.4087917" DurationMax="1.4087917">
@@ -203,5 +239,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F53F4D3D-0652-F2F8-A139-5AFF59F1F67C}</FileHash>
+	<FileHash>{9BF34BC8-A5E2-0915-45DF-456DCC09B0CC}</FileHash>
 </SoundBanksInfo>

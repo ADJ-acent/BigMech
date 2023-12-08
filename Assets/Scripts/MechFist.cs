@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class MechFist : MonoBehaviour
@@ -13,12 +14,14 @@ public class MechFist : MonoBehaviour
     private ParticleSystem _explosion;
     public bool isLeft;
     public RobotArmProjection robotArmProjection;
+    public VisualEffect visualEffect;
     
     // Start is called before the first frame update
     void Start()
     {
         _explosion = _explosionGameObject?.GetComponent<ParticleSystem>();
         _explosion?.Stop();
+        visualEffect.Stop();
     }
 
     // Update is called once per frame
@@ -45,6 +48,9 @@ public class MechFist : MonoBehaviour
         if (other.gameObject.CompareTag("Crab"))
         {
             robotArmProjection.hitMech(isLeft);
+            _explosion.Clear();
+            visualEffect.transform.position = transform.position;
+            visualEffect.Play();
         }
     }
     

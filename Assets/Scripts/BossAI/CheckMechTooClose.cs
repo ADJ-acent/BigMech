@@ -14,7 +14,7 @@ namespace BossAI
         // least seconds before crab can back off again
         private const float backoffTimer = 2f;
         // max seconds crab can be backing off for
-        private const float backOffCounter = 1f;
+        private const float backOffCounter = 4f;
         private float curBackOffCounter = 0f;
         private float lastBackOff;
         private bool backing = false;
@@ -37,24 +37,27 @@ namespace BossAI
             {
                 return NodeState.Failure;
             }
-            if ((new Vector3(_mechTransform.position.x, _transform.position.y, _mechTransform.position.z) - 
-                 _transform.position).magnitude < _personalSpace)
+
+            Vector3 vectorDiff =
+                new Vector3(_mechTransform.position.x, _transform.position.y, _mechTransform.position.z);
+            if ( (vectorDiff - _transform.position).magnitude < _personalSpace || 
+                 (backing && (vectorDiff - _transform.position).magnitude < (_personalSpace + 5f)))
             {
-                // haven't backed off in a while
-                if (Time.time - lastBackOff > backoffTimer)
-                {
-                    curBackOffCounter = 0f;
-                }
                 // is currently backing off
-                else if (backing && Time.deltaTime + curBackOffCounter < backOffCounter)
+                if (backing && Time.deltaTime + curBackOffCounter < backOffCounter)
                 {
                     curBackOffCounter += Time.deltaTime;
+                }
+                // haven't backed off in a while
+                else if (Time.time - lastBackOff > backoffTimer)
+                {
+                    curBackOffCounter = 0f;
                 }
                 else
                 {
                     _navMeshAgent.updateRotation = true;
                     if (backing) lastBackOff = Time.time;
-                    backing = false;
+                    backing = false; 
                     curBackOffCounter = 0f;
                     _navMeshAgent.ResetPath();
                     return NodeState.Failure;
@@ -67,6 +70,7 @@ namespace BossAI
                 return state;
             }
             _navMeshAgent.updateRotation = true;
+            _navMeshAgent.ResetPath();
             backing = false;
             return NodeState.Failure;
             

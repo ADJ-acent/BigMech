@@ -19,6 +19,7 @@ namespace BossAI
         public RayfireActivator rightClaw;
         public float attackRange = 5f;
         private CheckStunStatus _stunNode;
+        public float damage = 10f;
         protected override Node SetupTree() 
         {
             Transform t = transform;
@@ -30,13 +31,13 @@ namespace BossAI
                 new Sequence(new List<Node>
                 {
                     new CheckMechTooClose(t, mechTransform, attackRange-10),
-                    new TaskBackOff(t, mechTransform, attackRange)
+                    new TaskBackOff(t, mechTransform, attackRange-5)
                         
                 }),
                 new Sequence(new List<Node>
                 {
                     new CheckMechInAttackRange(t, offsetFromMech, mechTransform, crabBossUI),
-                    new TaskAttackMech(t, mechTransform, playerController, crabBossUI)
+                    new TaskAttackMech(t, mechTransform, playerController, crabBossUI, damage)
                 }),
                 new Sequence(new List<Node>
                 {
@@ -65,6 +66,10 @@ namespace BossAI
         }
         public void CrabAttack()
         {
+            // bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= attackRange;
+            // Debug.Log(playerInAttackRange);
+            // if (!playerController.isBlocking && playerInAttackRange) playerController.TakeDamage(damage);
+            if (!playerController.isBlocking) playerController.TakeDamage(damage);
             _stunNode.setStunStatus();
             crabBossUI.blockCheckDone = true;
             crabBossUI.blockCheckResult =

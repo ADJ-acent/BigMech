@@ -124,12 +124,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_CrabRoar" ID="{2058F058-948D-4EA6-9CB1-955746B68D3B}">
+				<Event Name="Play_Crab_Roar" ID="{1A94728D-3303-4D42-B1A9-07AAAFE190B4}">
 					<ChildrenList>
-						<Action Name="" ID="{BCD33EC5-B47D-419E-B302-CBE99157CC0B}" ShortID="346584555">
+						<Action Name="" ID="{304F1046-7CD1-46A7-AC59-404757800698}" ShortID="261608736">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="CrabRoar" ID="{F91AFBE2-F258-4073-B66B-66D0B92B1A0D}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
+									<ObjectRef Name="Crab Roar" ID="{94279CB4-363B-45ED-99AF-CC880F793968}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Crab_Walk" ID="{0E67B1AA-608C-4D2F-AFDD-12F1F91D1524}">
+					<ChildrenList>
+						<Action Name="" ID="{1D4E7FA7-6177-4D2C-A78E-A7FC9E6AED0F}" ShortID="1060377618">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Crab Walk" ID="{18F0555E-B208-4317-9A03-9A5AE3B6C187}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Night_Ambience" ID="{D590A751-5FCA-438E-AAC8-5B05F098CC62}">
+					<ChildrenList>
+						<Action Name="" ID="{06DB656C-7A59-469B-8822-558C6308A8CB}" ShortID="197739090">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Night Ambience" ID="{3FEF9864-01BA-4F29-868A-A79DF26FE49B}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

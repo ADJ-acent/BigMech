@@ -15,14 +15,16 @@ namespace BossAI
         private Transform _mechTransform;
         public PlayerController _playerController;
         public CrabBossUI _crabBossUI;
+        public float _damage;
 
-        public TaskAttackMech(Transform transform, Transform mechTransform, PlayerController playerController, CrabBossUI crabBossUI)
+        public TaskAttackMech(Transform transform, Transform mechTransform, PlayerController playerController, CrabBossUI crabBossUI, float damage)
         {
             _crabBossUI = crabBossUI;
             _playerController = playerController;
             _transform = transform;
             _animator = transform.GetComponent<Animator>();
             _mechTransform = mechTransform;
+            _damage = damage;
         }
         
         public override NodeState Evaluate()
@@ -35,15 +37,10 @@ namespace BossAI
                 _animator.SetInteger("AttackNum", curAttack);
                 _animator.SetFloat("AttackWaitTime",1f);
 
-                // TODO: may need to move code elsewhere or add event to animation
-                if (!_playerController.isBlocking) _playerController.TakeDamage();
-
                 _attackCounter = 0;
                 haveAttacked = true;
                 parent.parent.SetData("Attack", true);
             }
-            // _crabBossUI.attackSignOn = false;
-            // _crabBossUI.blockSignOn = false;
             state = NodeState.Running;
             return state;
         }
