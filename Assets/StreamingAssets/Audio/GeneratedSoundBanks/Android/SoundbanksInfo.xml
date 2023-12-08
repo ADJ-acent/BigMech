@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{BF5FDBA0-E798-6314-D35F-4F5F2D046B22}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{326EC0C5-D73E-B28F-DA33-1A136DB725B4}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -25,7 +25,7 @@
 				<GameParameter Id="3407379032" Name="ArmVelocity"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{2A179215-DC13-DC9C-FF41-3B91979A9392}">
+		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{403DDD39-DFBC-966A-1E1A-DE535490B488}">
 			<ShortName>SFX_Test</ShortName>
 			<Path>SFX_Test.bnk</Path>
 			<Media>
@@ -85,6 +85,10 @@
 					<ShortName>Punch Building.wav</ShortName>
 					<CachePath>SFX/Punch Building_10C4C929.wem</CachePath>
 				</File>
+				<File Id="813198519" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CrabHiss.wav</ShortName>
+					<CachePath>SFX/CrabHiss_10C4C929.wem</CachePath>
+				</File>
 				<File Id="889949765" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\heavy footsteps v3.wav</ShortName>
 					<CachePath>SFX/Footsteps/heavy footsteps v3_4599E3AF.wem</CachePath>
@@ -118,6 +122,12 @@
 					<CachePath>SFX/cement blocks fall_0AFE41AE.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="854738304" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="981157829" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="1214530318" Name="Play_Big_Hit" DurationType="OneShot" DurationMin="2.7085035" DurationMax="2.7085035">
 					<MediaRefs>
@@ -129,10 +139,17 @@
 						<MediaRef Id="64125215"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="640433324" Name="Play_CrabRoar" DurationType="OneShot" DurationMin="2.0241845" DurationMax="3.0328498">
+				<Event Id="3088348135" Name="Play_Crab_Roar" DurationType="OneShot" DurationMin="0.74915355" DurationMax="3.2131925">
 					<MediaRefs>
 						<MediaRef Id="27048691"/>
+						<MediaRef Id="813198519"/>
 					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="854738304"/>
+							<PluginRef Id="981157829"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 				<Event Id="324646143" Name="Play_Defeat" DurationType="OneShot" DurationMin="1.8461678" DurationMax="1.8461678">
 					<MediaRefs>
@@ -191,5 +208,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{17C76783-C04D-94D0-A689-4DA7E60836D4}</FileHash>
+	<FileHash>{0CEFF8AE-C403-7C58-E8E7-04AE87030B43}</FileHash>
 </SoundBanksInfo>
