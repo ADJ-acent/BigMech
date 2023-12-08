@@ -25,7 +25,7 @@ public class AudioManager: Singleton<AudioManager>
 
     [Header("Crab Sounds")]
     [SerializeField] public AK.Wwise.Event crabRoar;
-
+    [SerializeField] public AK.Wwise.Event crabWalk;
 
     // mech robot sounds
 
@@ -99,6 +99,11 @@ public class AudioManager: Singleton<AudioManager>
     public void playCrabRoar()
     {
         crabRoar.Post(gameObject);
+    }
+
+    public void playCrabWalk()
+    {
+        crabWalk.Post(gameObject);
     }
 
 }

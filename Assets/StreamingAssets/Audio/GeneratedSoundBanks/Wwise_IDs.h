@@ -16,10 +16,12 @@ namespace AK
         static const AkUniqueID PLAY_BIG_HIT = 1214530318U;
         static const AkUniqueID PLAY_BUILDING_COLLAPSE = 2456951556U;
         static const AkUniqueID PLAY_CRAB_ROAR = 3088348135U;
+        static const AkUniqueID PLAY_CRAB_WALK = 2055996920U;
         static const AkUniqueID PLAY_DEFEAT = 324646143U;
         static const AkUniqueID PLAY_ENGINE_LOOP = 2588973845U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_MID_HITS = 3894796597U;
+        static const AkUniqueID PLAY_NIGHT_AMBIENCE = 2019603999U;
         static const AkUniqueID PLAY_PUNCH_BUILDING = 3404907241U;
         static const AkUniqueID PLAY_SMALL_HITS = 2165031948U;
         static const AkUniqueID PLAY_SMALL_PIECE_SHATTER = 391794082U;
