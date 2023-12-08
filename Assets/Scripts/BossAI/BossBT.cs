@@ -66,16 +66,15 @@ namespace BossAI
             bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= attackRange;
             if (playerInAttackRange)
             {
-                crabBossUI.blockSignOn = true;
-                crabBossUI.attackSignOn = false;
+                crabBossUI.blockSignOn = false;
+                crabBossUI.attackSignOn = true;
             }
         }
         public void CrabAttack()
         {
             // TODO: replace with actual value
             bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= attackRange;
-            if (!playerController.isBlocking && playerInAttackRange) 
-            playerController.TakeDamage(damage);
+            if (!playerController.isBlocking && playerInAttackRange) playerController.TakeDamage(damage);
             _stunNode.setStunStatus();
             crabBossUI.blockCheckDone = true;
             crabBossUI.blockCheckResult =
@@ -87,13 +86,25 @@ namespace BossAI
         {
             yield return new WaitForSeconds(2);
             crabBossUI.HideBlockSign();
-            crabBossUI.blockSignOn = false;
+            // crabBossUI.blockSignOn = false;
             crabBossUI.blockCheckDone = false;
         }
 
         public void BlockSuccessCalc()
         {
         playerController.BlockSuccessCalc();
+        }
+
+        public void ToggleOnOff()
+        {
+            crabBossUI.attackSignOn = false;
+            crabBossUI.blockSignOn = true;
+        }
+
+        public void ToggleOffOn()
+        {
+            crabBossUI.blockSignOn = false;
+            crabBossUI.attackSignOn = true;
         }
     }
 }

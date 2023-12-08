@@ -60,7 +60,6 @@ public class CrabBossUI : MonoBehaviour
             attackSignOn = true;
             HideBlockSign();
             attackSignBlue.enabled = false;
-            Debug.Log("here");
             // AttackSignCalc(attackSignGreen);
             StartCoroutine(Wait());
         }
@@ -169,8 +168,16 @@ public class CrabBossUI : MonoBehaviour
         {
             sign.enabled = true;
             Debug.Log(animator.GetInteger("AttackNum"));
-            if (animator.GetInteger("AttackNum") == 0) armLeft.enabled = true;
-            else armRight.enabled = true;
+            if (animator.GetInteger("AttackNum") == 0) 
+            {
+                armRight.enabled = false;
+                armLeft.enabled = true;
+            }
+            else 
+            {
+                armLeft.enabled = false;
+                armRight.enabled = true;
+            }
         }
         else sign.enabled = true;
     }
