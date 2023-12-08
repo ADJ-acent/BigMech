@@ -15,6 +15,8 @@ public class CrabBossUI : MonoBehaviour
     public Image blockSignGreen;
     public Image warningSignLeft;
     public Image warningSignRight;
+    public Image armLeft;
+    public Image armRight;
 
     public bool attackSignOn;
     public bool blockSignOn;
@@ -29,6 +31,8 @@ public class CrabBossUI : MonoBehaviour
     private float angle;
 
     public PlayerController playerController;
+    public GameObject crabBoss;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +46,9 @@ public class CrabBossUI : MonoBehaviour
         blockSignRed.enabled = false;
         warningSignLeft.enabled = false;
         warningSignRight.enabled = false;
+        HighArms();
         angle = 40f;
+        animator = crabBoss.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -51,14 +57,25 @@ public class CrabBossUI : MonoBehaviour
         if (successfulAttack) 
         {
             blockSignOn = false;
+            attackSignOn = true;
             HideBlockSign();
             attackSignBlue.enabled = false;
-            AttackSignCalc(attackSignGreen);
-            // StartCoroutine(Wait());
+            // AttackSignCalc(attackSignGreen);
+            StartCoroutine(Wait());
         }
 
-        if (blockCheckDone) return;
-        if (blockSignOn) 
+        // if (blockCheckDone) return;
+        if (!blockSignOn)
+        {
+            HideBlockSign();
+            if (attackSignOn) 
+            {
+                attackSignGreen.enabled = false;
+                AttackSignCalc(attackSignBlue);
+            }
+            else HideAttackSign();
+        }
+        else 
         {
             HideAttackSign();
             if (playerController.successfulBlocking) 
@@ -70,11 +87,13 @@ public class CrabBossUI : MonoBehaviour
             else if (playerController.unsuccessfulBlocking)
             {
                 blockSignBlue.enabled = false;
+                HighArms();
                 BlockSignCalc(blockSignRed);
             }
             else if (playerController.isBlocking)
             {
                 blockSignBlue.enabled = false;
+                HighArms();
                 blockSignGreen.enabled = false;
                 BlockSignCalc(blockSignYellow);
             }
@@ -84,19 +103,6 @@ public class CrabBossUI : MonoBehaviour
                 blockSignGreen.enabled = false;
                 blockSignRed.enabled = false;
                 BlockSignCalc(blockSignBlue);
-            }
-        }
-        else
-        {
-            HideBlockSign();
-            if (attackSignOn) 
-            {
-                attackSignGreen.enabled = false;
-                AttackSignCalc(attackSignBlue);
-            }
-            else
-            {
-                HideAttackSign();
             }
         }
     }
@@ -150,7 +156,7 @@ public class CrabBossUI : MonoBehaviour
         float scaledIndicatorDistance = rectT.rect.width * rectT.localScale.x * indicatorDistance / 1.5f;
         Vector3 direction = (Quaternion.Euler(0, wrap * 90, 0) * mechTransform.forward);
         Vector3 distanceChange = scaledIndicatorDistance * direction;
-        Vector3 pos = indicatorCanvas.transform.position + (1f * distanceChange);
+        Vector3 pos = indicatorCanvas.transform.position + distanceChange;
         return pos;
     }
 
@@ -158,12 +164,28 @@ public class CrabBossUI : MonoBehaviour
     {
         Vector3 pos = PositionCalc(angle, wrap);
         sign.transform.position = pos;
-        sign.enabled = true;
+        if (sign.sprite.name == "UI-defense-appear")
+        {
+            sign.enabled = true;
+            Debug.Log(animator.GetInteger("AttackNum"));
+            if (animator.GetInteger("AttackNum") == 0) 
+            {
+                armRight.enabled = false;
+                armLeft.enabled = true;
+            }
+            else 
+            {
+                armLeft.enabled = false;
+                armRight.enabled = true;
+            }
+        }
+        else sign.enabled = true;
     }
 
     public void HideBlockSign()
     {
         blockSignBlue.enabled = false;
+        HighArms();
         blockSignYellow.enabled = false;
         blockSignGreen.enabled = false;
         blockSignRed.enabled = false;
@@ -193,8 +215,16 @@ public class CrabBossUI : MonoBehaviour
         warningSignRight.enabled = true;
     }
 
+    public void HighArms()
+    {
+        armLeft.enabled = false;
+        armRight.enabled = false;
+    }
+
     public IEnumerator Wait()
     {
+        BlockSignCalc(attackSignGreen);
         yield return new WaitForSeconds(10);
+        attackSignOn = false;
     }
 }

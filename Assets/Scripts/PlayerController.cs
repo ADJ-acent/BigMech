@@ -18,14 +18,13 @@ public class PlayerController : MonoBehaviour
     public bool unsuccessfulBlocking;
     public Transform crabTransform;
     public Animator _animator;
-    public float damage;
     public bool isPlaying;
 
     // Start is called before the first frame update
     void Start()
     { 
         healthRight = maxHealth;
-        healthLeft = maxHealth;
+        healthLeft = crabMaxHealth;
 
         _animator = crabTransform.GetComponent<Animator>();
         isPlaying = false;
@@ -54,9 +53,8 @@ public class PlayerController : MonoBehaviour
         AnimatorStateInfo crabStateInfo = _animator.GetCurrentAnimatorStateInfo(0);   
         if (crabStateInfo.IsTag("leftAttack") || crabStateInfo.IsTag("rightAttack"))
         {
-            successfulBlocking = isBlocking;
             unsuccessfulBlocking = !isBlocking;
-            
+            successfulBlocking = isBlocking;
         }
         else 
         {
@@ -80,8 +78,20 @@ public class PlayerController : MonoBehaviour
     {
         AudioManager.Instance.playBigHit();
         yield return new WaitForSeconds(1f);
-        isPlaying = false;
-            
+        isPlaying = false;   
     }
-    
+
+    public void BlockSuccessCalc()
+    {
+        StartCoroutine(Wait());
+    }
+
+    public IEnumerator Wait()
+    {
+        unsuccessfulBlocking = !isBlocking;
+        successfulBlocking = isBlocking;
+        yield return new WaitForSeconds(1);
+        successfulBlocking = false;
+        unsuccessfulBlocking = false;
+    }
 }

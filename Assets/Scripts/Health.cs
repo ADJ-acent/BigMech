@@ -18,7 +18,6 @@ public class Health : MonoBehaviour
     /* returns true if the entity is dead, false otherwise*/
     public bool DealDamage(int delta)
     {
-        crabBossUI.successfulAttack = true;
         StartCoroutine(Wait());
 
         curHealth = Math.Clamp(curHealth - delta, 0, maxHealth);
@@ -29,6 +28,7 @@ public class Health : MonoBehaviour
 
     public IEnumerator Wait()
     {
+        crabBossUI.successfulAttack = true;
         yield return new WaitForSeconds(1);
         crabBossUI.successfulAttack = false;
     }

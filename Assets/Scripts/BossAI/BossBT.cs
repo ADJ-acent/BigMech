@@ -17,9 +17,10 @@ namespace BossAI
         public Transform[] buildingTransforms;
         public RayfireActivator leftClaw;
         public RayfireActivator rightClaw;
-        public float attackRange = 5f;
+        public float attackRange;
         private CheckStunStatus _stunNode;
         public float damage = 10f;
+        bool playerInAttackRange;
         protected override Node SetupTree() 
         {
             Transform t = transform;
@@ -61,30 +62,49 @@ namespace BossAI
         public void CrabStartAttack()
         {
             AudioManager.Instance.playCrabRoar();
-            crabBossUI.blockSignOn = true;
-            crabBossUI.attackSignOn = false;
+            // TODO: replace or move it somewhere else
+            bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= attackRange;
+            if (playerInAttackRange)
+            {
+                crabBossUI.blockSignOn = false;
+                crabBossUI.attackSignOn = true;
+            }
         }
         public void CrabAttack()
         {
-            // bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= attackRange;
-            // Debug.Log(playerInAttackRange);
-            // if (!playerController.isBlocking && playerInAttackRange) playerController.TakeDamage(damage);
-            if (!playerController.isBlocking) playerController.TakeDamage(damage);
+            // TODO: replace with actual value
+            bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= attackRange;
+            if (!playerController.isBlocking && playerInAttackRange) playerController.TakeDamage(damage);
             _stunNode.setStunStatus();
             crabBossUI.blockCheckDone = true;
             crabBossUI.blockCheckResult =
                 playerController.isBlocking ? crabBossUI.blockSignGreen : crabBossUI.blockSignRed;
             StartCoroutine(turnOffBlockSign());
         }
-        
 
         private IEnumerator turnOffBlockSign()
         {
             yield return new WaitForSeconds(2);
             crabBossUI.HideBlockSign();
-            crabBossUI.blockSignOn = false;
+            // crabBossUI.blockSignOn = false;
             crabBossUI.blockCheckDone = false;
         }
-    }
 
+        public void BlockSuccessCalc()
+        {
+        playerController.BlockSuccessCalc();
+        }
+
+        public void ToggleOnOff()
+        {
+            crabBossUI.attackSignOn = false;
+            crabBossUI.blockSignOn = true;
+        }
+
+        public void ToggleOffOn()
+        {
+            crabBossUI.blockSignOn = false;
+            crabBossUI.attackSignOn = true;
+        }
+    }
 }

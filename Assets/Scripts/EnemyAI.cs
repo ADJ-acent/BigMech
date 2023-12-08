@@ -119,7 +119,6 @@ public class EnemyAI : MonoBehaviour
             GetComponent<BoxCollider>().enabled = false;
             dead = true;
             attackSignBlue.enabled = false;
-            smallCrabUI.HideWarningSign(warningSignLeft, warningSignRight);
             StartCoroutine(Wait());
             anim.SetTrigger("Hit");
         }
@@ -132,11 +131,13 @@ public class EnemyAI : MonoBehaviour
 
     public IEnumerator Wait()
     {
-        attackSignGreen.enabled = true;
+        smallCrabUI.AttackSignCalc(attackSignGreen, warningSignLeft, warningSignRight, transform);
         yield return new WaitForSeconds(2);     
         Destroy(attackSignBlue0);
         Destroy(attackSignGreen0);
-        Destroy(attackSignBlue);
-        Destroy(attackSignGreen);   
+        Destroy(warningSignLeft0);
+        Destroy(warningSignRight0);
+        // TODO: replace with animation
+        Destroy(transform.gameObject);
     }
 }
