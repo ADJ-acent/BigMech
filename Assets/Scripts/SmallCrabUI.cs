@@ -9,10 +9,9 @@ public class SmallCrabUI : MonoBehaviour
     public Canvas indicatorCanvas;
     public GameObject attackSignBlue0;
     public GameObject attackSignGreen0;
-    public Image warningSignLeft;
-    public Image warningSignRight;
+    public GameObject warningSignLeft;
+    public GameObject warningSignRight;
 
-    public bool successfulAttack;
     public Transform player;
     public Transform humanTransform;
     public Transform mechTransform;
@@ -25,26 +24,36 @@ public class SmallCrabUI : MonoBehaviour
     {
         attackSignBlue0.SetActive(false);
         attackSignGreen0.SetActive(false);
-        warningSignLeft.enabled = false;
-        warningSignRight.enabled = false;
+        warningSignLeft.SetActive(false);
+        warningSignRight.SetActive(false);
 
         angle = 40f;
     }
 
-    public void AttackSignCalc(Image sign, Transform crabTransform)
+    public void AttackSignCalc(Image sign, Image sign1, Image sign2, Transform crabTransform)
     {
         if (crabTransform == null) return;
         Vector3 diff = crabTransform.position - player.position;
         Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
         float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
+        angleToPosition *= 1.2f;
+
 
         if ((-1 * angle) <= angleToPosition && angleToPosition <= angle)
         {
-            if (angleToPosition < 0) ShowAttackSign(sign, Mathf.Abs(angleToPosition), -1);
-            else if (angleToPosition >= 0) ShowAttackSign(sign, Mathf.Abs(angleToPosition), 1);
+            if (angleToPosition < 0) 
+            {
+                HideWarningSign(sign1, sign2);
+                ShowAttackSign(sign, Mathf.Abs(angleToPosition), -1);
+            }
+            else if (angleToPosition >= 0) 
+            {
+                HideWarningSign(sign1, sign2);
+                ShowAttackSign(sign, Mathf.Abs(angleToPosition), 1);
+            }
         }
-        else if ((-1 * angle) > angleToPosition) ShowLeftWarningSign(sign);
-        else ShowRightWarningSign(sign);
+        else if ((-1 * angle) > angleToPosition) ShowLeftWarningSign(sign, sign1);
+        else ShowRightWarningSign(sign, sign2);
     }
 
     private Vector3 PositionCalc(float angle, int wrap)
@@ -61,28 +70,27 @@ public class SmallCrabUI : MonoBehaviour
 
     public void ShowAttackSign(Image sign, float angle, int wrap)
     {
-        HideWarningSign();
         Vector3 pos = PositionCalc(angle, wrap);
         sign.transform.position = pos;
         sign.enabled = true;
     }
 
-    public void ShowLeftWarningSign(Image sign)
+    public void ShowLeftWarningSign(Image sign, Image sign1)
     {
         HideAttackSign(sign);
-        warningSignLeft.enabled = true;
+        sign1.enabled = true;
     }
 
-    public void ShowRightWarningSign(Image sign)
+    public void ShowRightWarningSign(Image sign, Image sign2)
     {
         HideAttackSign(sign);
-        warningSignRight.enabled = true;
+        sign2.enabled = true;
     }
 
-    public void HideWarningSign()
+    public void HideWarningSign(Image sign, Image sign1)
     {
-        warningSignLeft.enabled = false;
-        warningSignRight.enabled = false;
+        sign.enabled = false;
+        sign1.enabled = false;
     }
 
     public void HideAttackSign(Image sign)

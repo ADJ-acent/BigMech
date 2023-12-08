@@ -26,6 +26,10 @@ public class EnemyAI : MonoBehaviour
 
     private GameObject attackSignBlue0;
     private GameObject attackSignGreen0;
+    private GameObject warningSignLeft0;
+    private GameObject warningSignRight0;
+    private Image warningSignLeft;
+    private Image warningSignRight;
     private Image attackSignBlue;
     private Image attackSignGreen;
     public SmallCrabUI smallCrabUI;
@@ -61,13 +65,19 @@ public class EnemyAI : MonoBehaviour
     {
         attackSignBlue0 = Instantiate(smallCrabUI.attackSignBlue0, smallCrabUI.attackSignBlue0.transform.position, smallCrabUI.attackSignBlue0.transform.rotation, canvas.transform);
         attackSignGreen0 = Instantiate(smallCrabUI.attackSignGreen0, smallCrabUI.attackSignGreen0.transform.position, smallCrabUI.attackSignGreen0.transform.rotation, canvas.transform);
+        warningSignLeft0 = Instantiate(smallCrabUI.warningSignLeft, smallCrabUI.warningSignLeft.transform.position, smallCrabUI.warningSignLeft.transform.rotation, canvas.transform);
+        warningSignRight0 = Instantiate(smallCrabUI.warningSignRight, smallCrabUI.warningSignRight.transform.position, smallCrabUI.warningSignRight.transform.rotation, canvas.transform);
 
         attackSignBlue = attackSignBlue0.GetComponent<Image>();
         attackSignGreen = attackSignGreen0.GetComponent<Image>();
+        warningSignLeft = warningSignLeft0.GetComponent<Image>();
+        warningSignRight = warningSignRight0.GetComponent<Image>();
         attackSignBlue.rectTransform.sizeDelta = new Vector2(60, 60);
         attackSignGreen.rectTransform.sizeDelta = new Vector2(60, 60);
         attackSignBlue.enabled = false;
         attackSignGreen.enabled = false;
+        warningSignLeft.enabled = false;
+        warningSignRight.enabled = false;
     }
 
     private void ChasePlayer()
@@ -79,7 +89,7 @@ public class EnemyAI : MonoBehaviour
 
     private void AttackPlayer()
     {
-        smallCrabUI.AttackSignCalc(attackSignBlue, transform);
+        smallCrabUI.AttackSignCalc(attackSignBlue, warningSignLeft, warningSignRight, transform);
         agent.SetDestination(transform.position);
         transform.LookAt(player);
 
@@ -110,7 +120,7 @@ public class EnemyAI : MonoBehaviour
             GetComponent<BoxCollider>().enabled = false;
             dead = true;
             attackSignBlue.enabled = false;
-            smallCrabUI.HideWarningSign();
+            smallCrabUI.HideWarningSign(warningSignLeft, warningSignRight);
             StartCoroutine(Wait());
             anim.SetTrigger("Hit");
         }
