@@ -10,14 +10,10 @@ namespace BossAI
 {
     public class CheckAliveStatus : Node
     {
-        private float blockTime = 2f;
-        private float blockCounter = 0f;
         private Animator _animator;
         private Health _health;
         private Transform _transform;
         private NavMeshAgent _navMeshAgent;
-        private bool isHit;
-        private bool isBlocking;
         
         public CheckAliveStatus (Transform transform)
         {
