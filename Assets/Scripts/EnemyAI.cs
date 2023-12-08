@@ -2,54 +2,48 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.AI;
 using UnityEngine.VFX;
 
 public class EnemyAI : MonoBehaviour
 {
+    Animator anim;
     public NavMeshAgent agent;
     public Transform player;
     public LayerMask whatIsPlayer;
     public Transform mechTransform;
 
-    public PlayerCanvas playerCanvas;
-    public GameObject aliveEnemy;
-    public GameObject deadEnemy;
-    public ParticleSystem deathVFX;
+    // public GameObject aliveEnemy;
+    // public GameObject deadEnemy;
+    // public ParticleSystem deathVFX;
 
     public float timeBetweenAttacks;
     bool alreadyAttacked;
     public float attackRange;
     private bool playerInAttackRange;
-    public float angle;
     private bool dead;
+
+    private GameObject attackSignBlue0;
+    private GameObject attackSignGreen0;
+    private Image attackSignBlue;
+    private Image attackSignGreen;
+    public SmallCrabUI smallCrabUI;
 
     public PlayerController playerController;
     public float damage;
-
-    public GameObject attackSign0;
-    public GameObject blockSign0;
-    private GameObject attackSign;
-    private GameObject blockSign;
-    private bool attackSignOn;
-    private bool blockSignOn;
     public Canvas canvas;
-    private bool leftWarningSignOn;
-    private bool rightWarningSignOn;
 
     private void Awake()
     {
-        attackSign0.SetActive(false);
-        blockSign0.SetActive(false);
-
         SpawnIndicator();
 
-        angle = 65f;
+        anim = GetComponent<Animator>();
         player = GameObject.Find("PlayerController").transform;
         mechTransform = GameObject.Find("Mech").transform;
         agent = GetComponent<NavMeshAgent>();
         transform.LookAt(player);
-        deathVFX.Stop();
+        // deathVFX.Stop();
     }
 
     private void Update()
@@ -58,67 +52,22 @@ public class EnemyAI : MonoBehaviour
         {
             playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-            if (!playerInAttackRange) 
-            {
-                ChasePlayer();
-            }
-            else
-            {
-                AttackPlayer();
-            }
+            if (!playerInAttackRange) ChasePlayer();
+            else AttackPlayer();
         }
     }
 
     public void SpawnIndicator()
     {
-        attackSign = Instantiate(attackSign0, attackSign0.transform.position, attackSign0.transform.rotation, canvas.transform);
-        blockSign = Instantiate(blockSign0, blockSign0.transform.position, blockSign0.transform.rotation, canvas.transform);
+        attackSignBlue0 = Instantiate(smallCrabUI.attackSignBlue0, smallCrabUI.attackSignBlue0.transform.position, smallCrabUI.attackSignBlue0.transform.rotation, canvas.transform);
+        attackSignGreen0 = Instantiate(smallCrabUI.attackSignGreen0, smallCrabUI.attackSignGreen0.transform.position, smallCrabUI.attackSignGreen0.transform.rotation, canvas.transform);
 
-        attackSign.SetActive(false);
-        blockSign.SetActive(false);
-    }
-
-    private void AttackSignCalc()
-    {
-        Vector3 diff = transform.position - player.position;
-        Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
-        float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
-        angleToPosition = angleToPosition * 1.7f;
-        if (angleToPosition >= 60f && angleToPosition < 70f) angleToPosition = angleToPosition * 0.9f;
-        else if (angleToPosition >= 70f) angleToPosition = angleToPosition * 0.8f;
-
-        if (angleToPosition > angle)
-        {
-            playerCanvas.ShowRightWarningSign();
-            rightWarningSignOn = true;
-        }
-        else if (angleToPosition < (-1 * angle))
-        {
-            playerCanvas.ShowLeftWarningSign();
-            leftWarningSignOn = true;
-        }
-        else 
-        {
-            if (angleToPosition < 0) playerCanvas.ShowAttackSign(attackSign, Mathf.Abs(angleToPosition), -1);
-            else if (angleToPosition >= 0) playerCanvas.ShowAttackSign(attackSign, Mathf.Abs(angleToPosition), 1);
-            // attackSignOn = true;
-        }
-    }
-
-    private void BlockSignCalc()
-    {
-        Vector3 diff = transform.position - player.position;
-        Vector3 projectedVector = new Vector3(diff.x, 0, diff.z);
-        float angleToPosition = Vector3.SignedAngle(mechTransform.forward, projectedVector, Vector3.up);
-        angleToPosition = angleToPosition * 1.7f;
-        if (angleToPosition >= 60f && angleToPosition < 70f) angleToPosition = angleToPosition * 0.9f;
-        else if (angleToPosition >= 70f) angleToPosition = angleToPosition * 0.8f;
-
-        if ((-1 * angle) <= angleToPosition && angleToPosition <= angle)
-        {
-            if (angleToPosition < 0) playerCanvas.ShowBlockSign(attackSign, blockSign, Mathf.Abs(angleToPosition), -1);
-            else if (angleToPosition >= 0) playerCanvas.ShowBlockSign(attackSign, blockSign, Mathf.Abs(angleToPosition), 1);
-        }
+        attackSignBlue = attackSignBlue0.GetComponent<Image>();
+        attackSignGreen = attackSignGreen0.GetComponent<Image>();
+        attackSignBlue.rectTransform.sizeDelta = new Vector2(60, 60);
+        attackSignGreen.rectTransform.sizeDelta = new Vector2(60, 60);
+        attackSignBlue.enabled = false;
+        attackSignGreen.enabled = false;
     }
 
     private void ChasePlayer()
@@ -130,14 +79,14 @@ public class EnemyAI : MonoBehaviour
 
     private void AttackPlayer()
     {
-        AttackSignCalc();
+        smallCrabUI.AttackSignCalc(attackSignBlue, transform);
         agent.SetDestination(transform.position);
         transform.LookAt(player);
 
         if (!alreadyAttacked)
         {
-            BlockSignCalc();
-            playerController.healthRight -= damage;
+            anim.SetTrigger("Attack");
+            playerController.TakeDamageSmallCrab();
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
@@ -153,26 +102,27 @@ public class EnemyAI : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Mech"))
         {
-            aliveEnemy.SetActive(false);
-            deadEnemy.SetActive(true);
-            deathVFX.Clear();
-            deathVFX.Play();
+            // aliveEnemy.SetActive(false);
+            // deadEnemy.SetActive(true);
+            // deathVFX.Clear();
+            // deathVFX.Play();
             agent.enabled = false;
             GetComponent<BoxCollider>().enabled = false;
             dead = true;
-
-            Destroy(attackSign);
-            Destroy(blockSign);
-            if (rightWarningSignOn) 
-            {
-                playerCanvas.HideRightWarningSign();
-                rightWarningSignOn = false;
-            }
-            if (leftWarningSignOn) 
-            {
-                playerCanvas.HideLeftWarningSign();
-                leftWarningSignOn = false;
-            }
+            attackSignBlue.enabled = false;
+            smallCrabUI.HideWarningSign();
+            StartCoroutine(Wait());
+            anim.SetTrigger("Hit");
         }
+    }
+
+    public IEnumerator Wait()
+    {
+        attackSignGreen.enabled = true;
+        yield return new WaitForSeconds(2);     
+        Destroy(attackSignBlue0);
+        Destroy(attackSignGreen0);
+        Destroy(attackSignBlue);
+        Destroy(attackSignGreen);   
     }
 }

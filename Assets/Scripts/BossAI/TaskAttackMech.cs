@@ -40,14 +40,12 @@ namespace BossAI
                 _animator.SetFloat("AttackWaitTime",1f);
 
                 // TODO: may need to move code elsewhere or add event to animation
-                if (!_playerController.isBlocking) _playerController.TakeDamage();
+                if (!_playerController.isBlocking) _playerController.TakeDamageCrabBoss();
 
                 _attackCounter = 0;
                 haveAttacked = true;
                 parent.parent.SetData("Attack", true);
             }
-            // _crabBossUI.attackSignOn = false;
-            // _crabBossUI.blockSignOn = false;
             state = NodeState.Running;
             return state;
         }

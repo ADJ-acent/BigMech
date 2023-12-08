@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour
     public bool unsuccessfulBlocking;
     public Transform crabTransform;
     public Animator _animator;
-    public float crabDamage;
+    public float crabBossDamage;
+    public float smallCrabDamage;
     public bool isPlaying;
 
     // Start is called before the first frame update
@@ -72,9 +73,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void TakeDamage()
+    public void TakeDamageCrabBoss()
     {
-       healthRight -= crabDamage;
+       healthRight -= crabBossDamage;
+    }
+
+    public void TakeDamageSmallCrab()
+    {
+       healthRight -= smallCrabDamage;
     }
 
     private IEnumerator PlayBlockSound()
