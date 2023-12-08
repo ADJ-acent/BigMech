@@ -20,6 +20,7 @@ namespace BossAI
         public float attackRange = 5f;
         private CheckStunStatus _stunNode;
         public float damage = 10f;
+        bool playerInAttackRange;
         protected override Node SetupTree() 
         {
             Transform t = transform;
@@ -66,17 +67,16 @@ namespace BossAI
         }
         public void CrabAttack()
         {
-            // bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= attackRange;
+            bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= 20f;
             // Debug.Log(playerInAttackRange);
             // if (!playerController.isBlocking && playerInAttackRange) playerController.TakeDamage(damage);
-            if (!playerController.isBlocking) playerController.TakeDamage(damage);
+            if (!playerController.isBlocking && playerInAttackRange) playerController.TakeDamage(damage);
             _stunNode.setStunStatus();
             crabBossUI.blockCheckDone = true;
             crabBossUI.blockCheckResult =
                 playerController.isBlocking ? crabBossUI.blockSignGreen : crabBossUI.blockSignRed;
             StartCoroutine(turnOffBlockSign());
         }
-        
 
         private IEnumerator turnOffBlockSign()
         {

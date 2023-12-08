@@ -18,14 +18,13 @@ public class PlayerController : MonoBehaviour
     public bool unsuccessfulBlocking;
     public Transform crabTransform;
     public Animator _animator;
-    public float damage;
     public bool isPlaying;
 
     // Start is called before the first frame update
     void Start()
     { 
         healthRight = maxHealth;
-        healthLeft = maxHealth;
+        healthLeft = crabMaxHealth;
 
         _animator = crabTransform.GetComponent<Animator>();
         isPlaying = false;

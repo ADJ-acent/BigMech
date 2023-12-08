@@ -138,5 +138,7 @@ public class EnemyAI : MonoBehaviour
         Destroy(attackSignGreen0);
         Destroy(attackSignBlue);
         Destroy(attackSignGreen);   
+        // TODO: replace with animation
+        Destroy(transform);
     }
 }
