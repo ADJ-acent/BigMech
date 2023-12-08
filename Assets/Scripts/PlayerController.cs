@@ -68,8 +68,6 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(PlayBlockSound());
             isPlaying = successfulBlocking;
         }
-
-
     }
 
     public void TakeDamage(float damage)
