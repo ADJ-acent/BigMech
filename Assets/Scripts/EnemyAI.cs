@@ -96,7 +96,6 @@ public class EnemyAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             anim.SetTrigger("Attack");
-            playerController.TakeDamageSmallCrab();
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
@@ -124,6 +123,11 @@ public class EnemyAI : MonoBehaviour
             StartCoroutine(Wait());
             anim.SetTrigger("Hit");
         }
+    }
+
+    private void Hit()
+    {
+        playerController.TakeDamage(damage);
     }
 
     public IEnumerator Wait()
