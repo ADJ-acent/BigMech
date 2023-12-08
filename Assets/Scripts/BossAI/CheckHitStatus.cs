@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 using BehaviorTree;
-using Unity.VisualScripting;
 using UnityEngine.AI;
 
 namespace BossAI

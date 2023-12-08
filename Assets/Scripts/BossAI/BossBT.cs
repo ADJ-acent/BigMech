@@ -29,6 +29,12 @@ namespace BossAI
                 _stunNode, 
                 new Sequence(new List<Node>
                 {
+                    new CheckMechTooClose(t, mechTransform, attackRange-10),
+                    new TaskBackOff(t, mechTransform, attackRange)
+                        
+                }),
+                new Sequence(new List<Node>
+                {
                     new CheckMechInAttackRange(t, offsetFromMech, mechTransform, crabBossUI),
                     new TaskAttackMech(t, mechTransform, playerController, crabBossUI)
                 }),
