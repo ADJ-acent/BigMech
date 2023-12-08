@@ -30,6 +30,7 @@ namespace BossAI
             
             if (t != null && (bool)t)
             {
+                AudioManager.Instance.playVictory();
                 Object.Destroy(_transform.gameObject);
                 return NodeState.Success;
             }

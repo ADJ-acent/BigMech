@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID PLAY_PUNCH_BUILDING = 3404907241U;
         static const AkUniqueID PLAY_SMALL_HITS = 2165031948U;
         static const AkUniqueID PLAY_SMALL_PIECE_SHATTER = 391794082U;
+        static const AkUniqueID PLAY_VICTORY = 2453267296U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

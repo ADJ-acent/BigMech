@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	391794082	Play_Small_Piece_Shatter			\Default Work Unit\Play_Small_Piece_Shatter	
 	1214530318	Play_Big_Hit			\Default Work Unit\Play_Big_Hit	
 	2165031948	Play_Small_Hits			\Default Work Unit\Play_Small_Hits	
+	2453267296	Play_Victory			\Default Work Unit\Play_Victory	
 	2456951556	Play_Building_Collapse			\Default Work Unit\Play_Building_Collapse	
 	2588973845	Play_engine_loop			\Default Work Unit\Play_engine_loop	
 	3404907241	Play_Punch_Building			\Default Work Unit\Play_Punch_Building	
@@ -18,17 +19,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	64125215	Building Collapse	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\building collapse v2_3B51F27E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Building Collapse		507460
 	187151702	Small Hit 1	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Small Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Hits\Small Hit 1		133320
 	221989671	small_piece_3	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\small stone_A4E24545.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_3		135048
-	226150650	Mid Hit 2	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Mid Hit 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mid Hits\Mid Hit 2		155660
-	308891124	Mid Hit 3	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Mid Hit 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mid Hits\Mid Hit 3		118876
+	292839511	Victory	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Victory_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Victory		651468
 	462439837	small_piece_4	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\wood fall 1_9E34FAA9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_4		128392
-	562297956	Mid Hit 5	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Mid Hit 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mid Hits\Mid Hit 5		182312
+	504562728	Mid Hit 5	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Mid Hit 5 v2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mid Hits\Mid Hit 5		210916
 	741429729	small_piece_2	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Small Piece Shatter\small_piece_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_2		93648
+	743740111	Mid Hit 2	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Mid Hit 2 v2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mid Hits\Mid Hit 2		132820
 	766652272	Punch Building	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Punch Building_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Punch Building		270584
-	872324513	Mid Hit 1	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Mid Hit 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mid Hits\Mid Hit 1		134628
 	889949765	heavy footsteps v3	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Footsteps\heavy footsteps v3_4599E3AF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v3		227768
 	954059510	Big Hit	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Big Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Big Hit		477876
 	967748420	heavy footsteps v4	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Footsteps\heavy footsteps v4_99958F3F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v4		242956
-	1005087634	Mid Hit 4	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Mid Hit 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mid Hits\Mid Hit 4		102468
+	1011316994	Mid Hit 4	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Mid Hit Long_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mid Hits\Mid Hit 4		373504
+	1012927564	Mid Hit 3	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Mid Hit 3 v2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mid Hits\Mid Hit 3		210916
 	1022227761	Small Hit 2	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Small Hit 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Hits\Small Hit 2		98928
+	1031678577	Mid Hit 1	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\Mid Hit 1 v2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mid Hits\Mid Hit 1		210916
 	1034458455	small_piece_1	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Android\SFX\cement blocks fall_0AFE41AE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_1		154340
 

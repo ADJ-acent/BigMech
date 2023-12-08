@@ -562,9 +562,16 @@
 										<MediaID ID="872324513"/>
 									</MediaIDList>
 								</AudioFileSource>
+								<AudioFileSource Name="Mid Hit 1 v2" ID="{DCCDCAD5-B964-4DD3-B299-D3FA48A6DDB6}">
+									<Language>SFX</Language>
+									<AudioFile>Mid Hit 1 v2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1031678577"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Mid Hit 1" ID="{89221A19-6D26-4BC0-B97D-C3B0B4693B1D}" Platform="Linked"/>
+								<ActiveSource Name="Mid Hit 1 v2" ID="{DCCDCAD5-B964-4DD3-B299-D3FA48A6DDB6}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Mid Hit 2" ID="{3E5CB70E-9FB6-4D8F-9B11-E4F14146835E}" ShortID="519307884">
@@ -584,9 +591,16 @@
 										<MediaID ID="226150650"/>
 									</MediaIDList>
 								</AudioFileSource>
+								<AudioFileSource Name="Mid Hit 2 v2" ID="{5C43A298-7326-4126-9419-AA9386C863FD}">
+									<Language>SFX</Language>
+									<AudioFile>Mid Hit 2 v2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="743740111"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Mid Hit 2" ID="{17D7C388-453A-473A-835E-D72703DB97D5}" Platform="Linked"/>
+								<ActiveSource Name="Mid Hit 2 v2" ID="{5C43A298-7326-4126-9419-AA9386C863FD}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Mid Hit 3" ID="{818D55FB-9A32-4EA2-A858-88E3ABE7C691}" ShortID="652448746">
@@ -606,9 +620,16 @@
 										<MediaID ID="308891124"/>
 									</MediaIDList>
 								</AudioFileSource>
+								<AudioFileSource Name="Mid Hit 3 v2" ID="{71745EA8-4CC2-49D8-B724-A7297863FCD9}">
+									<Language>SFX</Language>
+									<AudioFile>Mid Hit 3 v2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1012927564"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Mid Hit 3" ID="{641260B3-B728-476C-8970-BDBE9B916A71}" Platform="Linked"/>
+								<ActiveSource Name="Mid Hit 3 v2" ID="{71745EA8-4CC2-49D8-B724-A7297863FCD9}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Mid Hit 4" ID="{09316609-A9DA-42E1-99A6-9BF885ECE880}" ShortID="851046064">
@@ -628,9 +649,16 @@
 										<MediaID ID="1005087634"/>
 									</MediaIDList>
 								</AudioFileSource>
+								<AudioFileSource Name="Mid Hit 4 v2" ID="{B3761672-A7D4-4076-A438-FC722C36BD2D}">
+									<Language>SFX</Language>
+									<AudioFile>Mid Hit 4 v2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1072550534"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Mid Hit 4" ID="{05A1974B-2E83-466C-81DC-706872400978}" Platform="Linked"/>
+								<ActiveSource Name="Mid Hit 4 v2" ID="{B3761672-A7D4-4076-A438-FC722C36BD2D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Mid Hit 5" ID="{A6329527-503E-447C-88F1-FC779593991F}" ShortID="268872015">
@@ -650,9 +678,16 @@
 										<MediaID ID="562297956"/>
 									</MediaIDList>
 								</AudioFileSource>
+								<AudioFileSource Name="Mid Hit 5 v2" ID="{81125652-72EF-41A3-8BDD-D1E647E72CF3}">
+									<Language>SFX</Language>
+									<AudioFile>Mid Hit 5 v2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="504562728"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Mid Hit 5" ID="{89C2BC18-EB00-453C-9412-5936191CDDB3}" Platform="Linked"/>
+								<ActiveSource Name="Mid Hit 5 v2" ID="{81125652-72EF-41A3-8BDD-D1E647E72CF3}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
