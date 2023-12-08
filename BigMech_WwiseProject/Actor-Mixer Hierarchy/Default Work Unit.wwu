@@ -843,6 +843,7 @@
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
 											<Property Name="Max" Type="Real64" Value="20"/>
+											<Property Name="Min" Type="Real64" Value="-20"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -855,8 +856,8 @@
 									<Modifier Name="" ID="{E976C68D-DB39-4A7F-B048-B5828CD9D307}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="400"/>
-											<Property Name="Min" Type="Real64" Value="-300"/>
+											<Property Name="Max" Type="Real64" Value="500"/>
+											<Property Name="Min" Type="Real64" Value="-400"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -935,6 +936,28 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Silence" ID="{8A1C7C60-B375-499D-8D58-A38C47A61216}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CrabHiss" ID="{8EFDC972-E957-4BBF-A8E7-AA6849877D03}" ShortID="369474891">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CrabHiss" ID="{5B9734F6-0975-4E90-A161-8EAD7FE77296}">
+									<Language>SFX</Language>
+									<AudioFile>CrabHiss.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="813198519"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CrabHiss" ID="{5B9734F6-0975-4E90-A161-8EAD7FE77296}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
