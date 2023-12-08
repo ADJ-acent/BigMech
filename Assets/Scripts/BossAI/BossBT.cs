@@ -66,6 +66,9 @@ namespace BossAI
         }
         public void CrabAttack()
         {
+            // bool playerInAttackRange = Vector3.Distance(transform.position, mechTransform.position) <= attackRange;
+            // Debug.Log(playerInAttackRange);
+            // if (!playerController.isBlocking && playerInAttackRange) playerController.TakeDamage(damage);
             if (!playerController.isBlocking) playerController.TakeDamage(damage);
             _stunNode.setStunStatus();
             crabBossUI.blockCheckDone = true;

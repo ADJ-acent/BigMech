@@ -12,6 +12,7 @@ public class Health : MonoBehaviour
     private void Start()
     {
         curHealth = maxHealth;
+        playerController.crabMaxHealth = maxHealth;
     }
 
     /* returns true if the entity is dead, false otherwise*/

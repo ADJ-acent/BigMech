@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public float crabMaxHealth;
     public float healthRight;
     public float maxHealth;
     public Image healthBarRight;
@@ -40,7 +41,7 @@ public class PlayerController : MonoBehaviour
     private void HealthBarFill()
     {
         healthBarRight.fillAmount = Mathf.Clamp(healthRight / maxHealth, 0, 1);
-        healthBarLeft.fillAmount = Mathf.Clamp(healthLeft / maxHealth, 0, 1);
+        healthBarLeft.fillAmount = Mathf.Clamp(healthLeft / crabMaxHealth, 0, 1);
     }
 
     private void BlockingCalc()
@@ -68,8 +69,6 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(PlayBlockSound());
             isPlaying = successfulBlocking;
         }
-
-
     }
 
     public void TakeDamage(float damage)
