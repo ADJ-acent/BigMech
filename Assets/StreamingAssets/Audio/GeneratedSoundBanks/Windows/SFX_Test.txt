@@ -1,22 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
 	324646143	Play_Defeat			\Default Work Unit\Play_Defeat	
 	391794082	Play_Small_Piece_Shatter			\Default Work Unit\Play_Small_Piece_Shatter	
+	640433324	Play_CrabRoar			\Default Work Unit\Play_CrabRoar	
 	1214530318	Play_Big_Hit			\Default Work Unit\Play_Big_Hit	
 	2165031948	Play_Small_Hits			\Default Work Unit\Play_Small_Hits	
 	2453267296	Play_Victory			\Default Work Unit\Play_Victory	
 	2456951556	Play_Building_Collapse			\Default Work Unit\Play_Building_Collapse	
 	2588973845	Play_engine_loop			\Default Work Unit\Play_engine_loop	
-	3088348135	Play_Crab_Roar			\Default Work Unit\Play_Crab_Roar	
 	3404907241	Play_Punch_Building			\Default Work Unit\Play_Punch_Building	
 	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
 	3894796597	Play_Mid_Hits			\Default Work Unit\Play_Mid_Hits	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3407379032	ArmVelocity			\Default Work Unit\ArmVelocity	
-
-Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	854738304	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Crab Roar\Silence1\Silence	
-	981157829	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Crab Roar\Silence\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4915979	heavy footsteps v2	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Footsteps\heavy footsteps v2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\heavy footsteps v2		239340

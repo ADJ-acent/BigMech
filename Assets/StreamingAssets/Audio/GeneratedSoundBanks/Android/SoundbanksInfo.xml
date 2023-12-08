@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{326EC0C5-D73E-B28F-DA33-1A136DB725B4}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{BF5FDBA0-E798-6314-D35F-4F5F2D046B22}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -25,7 +25,7 @@
 				<GameParameter Id="3407379032" Name="ArmVelocity"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{C3E93EA7-D9D7-D8AC-DBE9-58DC78069A5A}">
+		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{2A179215-DC13-DC9C-FF41-3B91979A9392}">
 			<ShortName>SFX_Test</ShortName>
 			<Path>SFX_Test.bnk</Path>
 			<Media>
@@ -118,12 +118,6 @@
 					<CachePath>SFX/cement blocks fall_0AFE41AE.wem</CachePath>
 				</File>
 			</Media>
-			<Plugins>
-				<Custom>
-					<Plugin Id="854738304" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="981157829" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
-				</Custom>
-			</Plugins>
 			<Events>
 				<Event Id="1214530318" Name="Play_Big_Hit" DurationType="OneShot" DurationMin="2.7085035" DurationMax="2.7085035">
 					<MediaRefs>
@@ -135,16 +129,10 @@
 						<MediaRef Id="64125215"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3088348135" Name="Play_Crab_Roar" DurationType="OneShot" DurationMin="0.7937005" DurationMax="3.0328498">
+				<Event Id="640433324" Name="Play_CrabRoar" DurationType="OneShot" DurationMin="2.0241845" DurationMax="3.0328498">
 					<MediaRefs>
 						<MediaRef Id="27048691"/>
 					</MediaRefs>
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="854738304"/>
-							<PluginRef Id="981157829"/>
-						</Custom>
-					</PluginRefs>
 				</Event>
 				<Event Id="324646143" Name="Play_Defeat" DurationType="OneShot" DurationMin="1.8461678" DurationMax="1.8461678">
 					<MediaRefs>
@@ -203,5 +191,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{16AB39C1-F523-FB1D-3AD1-26AB364D9743}</FileHash>
+	<FileHash>{17C76783-C04D-94D0-A689-4DA7E60836D4}</FileHash>
 </SoundBanksInfo>
