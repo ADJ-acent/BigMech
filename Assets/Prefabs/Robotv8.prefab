@@ -679,6 +679,7 @@ MonoBehaviour:
   _explosionGameObject: {fileID: 0}
   isLeft: 0
   robotArmProjection: {fileID: 5258608573944971947}
+  visualEffect: {fileID: 0}
 --- !u!135 &7072918338487723635
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2613,6 +2614,7 @@ MonoBehaviour:
   _explosionGameObject: {fileID: 0}
   isLeft: 1
   robotArmProjection: {fileID: 5258608573944971947}
+  visualEffect: {fileID: 0}
 --- !u!135 &8377511811326717578
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3876,6 +3878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7c3c386c5c42740808d7a6ae3bb993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crabMaxHealth: 0
   healthRight: 0
   maxHealth: 0
   healthBarRight: {fileID: 0}
@@ -3887,7 +3890,6 @@ MonoBehaviour:
   unsuccessfulBlocking: 0
   crabTransform: {fileID: 0}
   _animator: {fileID: 0}
-  crabDamage: 0
   isPlaying: 0
 --- !u!1 &8675098597545159727
 GameObject:
@@ -4805,6 +4807,8 @@ MonoBehaviour:
   blockSignGreen: {fileID: 0}
   warningSignLeft: {fileID: 8325098513520938177}
   warningSignRight: {fileID: 3207221639394608779}
+  armLeft: {fileID: 0}
+  armRight: {fileID: 0}
   attackSignOn: 0
   blockSignOn: 0
   successfulAttack: 0
@@ -4815,6 +4819,7 @@ MonoBehaviour:
   humanTransform: {fileID: 7566179898570681854}
   mechTransform: {fileID: 2411077483464546107}
   playerController: {fileID: 0}
+  crabBoss: {fileID: 0}
 --- !u!114 &8325098513520938177 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1953365682708585093, guid: f287b37df3741ef468e9b80e5ca79485,
