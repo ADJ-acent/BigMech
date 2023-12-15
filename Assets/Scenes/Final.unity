@@ -407,7 +407,7 @@ PrefabInstance:
     - target: {fileID: 1904395637518084836, guid: eab5516e0d5354f41bd0ab1ffa9203b0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.4
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1904395637518084836, guid: eab5516e0d5354f41bd0ab1ffa9203b0,
         type: 3}
@@ -452,7 +452,7 @@ PrefabInstance:
     - target: {fileID: 2769599889858211982, guid: eab5516e0d5354f41bd0ab1ffa9203b0,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.047058824
+      value: 0.019607844
       objectReference: {fileID: 0}
     - target: {fileID: 5836406932773881018, guid: eab5516e0d5354f41bd0ab1ffa9203b0,
         type: 3}
@@ -2822,13 +2822,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185532459}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14857289, y: -0.013315336, z: 0.0020006865, w: 0.98880976}
-  m_LocalPosition: {x: -58.9, y: 62.7, z: -76.9}
+  m_LocalRotation: {x: 0.1048966, y: -0, z: -0, w: 0.9944832}
+  m_LocalPosition: {x: -70.7, y: 32.1, z: -78.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 17.09, y: -1.543, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.042, y: 0, z: 0}
 --- !u!114 &185532463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7466,11 +7466,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1001203006}
     m_Modifications:
+    - target: {fileID: 3442324970608602982, guid: 679e6609ea37b8449b8a1f140c4b4c76,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e2996b743c6c8a42b5e3751f50f66e3, type: 2}
     - target: {fileID: 3666210520610857414, guid: 679e6609ea37b8449b8a1f140c4b4c76,
         type: 3}
       propertyPath: m_Name
       value: ducee house (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3687250011200726918, guid: 679e6609ea37b8449b8a1f140c4b4c76,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e2996b743c6c8a42b5e3751f50f66e3, type: 2}
+    - target: {fileID: 5056370273493104937, guid: 679e6609ea37b8449b8a1f140c4b4c76,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ad024fa92d3ee574bbb23a3b8a4fdb64, type: 2}
+    - target: {fileID: 5386993573485759289, guid: 679e6609ea37b8449b8a1f140c4b4c76,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e2996b743c6c8a42b5e3751f50f66e3, type: 2}
     - target: {fileID: 6103719267938528518, guid: 679e6609ea37b8449b8a1f140c4b4c76,
         type: 3}
       propertyPath: m_LocalScale.x
