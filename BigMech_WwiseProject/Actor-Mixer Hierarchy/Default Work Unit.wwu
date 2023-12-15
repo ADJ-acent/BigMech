@@ -1077,6 +1077,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Mech Start" ID="{01CFA8DF-BF01-49F1-A02C-677E5B58FF68}" ShortID="239258701">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>

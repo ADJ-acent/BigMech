@@ -33,6 +33,7 @@ namespace BossAI
                 Vector3 mechPos = _mechTransform.position;
                 _transform.LookAt(new Vector3(mechPos.x, _transform.position.y, mechPos.z));
 
+                AudioManager.Instance.setFightingState();
                 state = NodeState.Success;
                 return state;
             }
