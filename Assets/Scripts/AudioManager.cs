@@ -20,6 +20,7 @@ public class AudioManager: Singleton<AudioManager>
     private string RTPC_Velocity = "ArmVelocity";
 
     [Header("UI Sounds")]
+    [SerializeField] public AK.Wwise.Event mechStart;
     [SerializeField] public AK.Wwise.Event victory;
     [SerializeField] public AK.Wwise.Event defeat;
 
@@ -85,6 +86,11 @@ public class AudioManager: Singleton<AudioManager>
     }
 
     // UI sounds
+    public void playMechStart(GameObject source)
+    {
+        mechStart.Post(source);
+    }
+
     public void playVictory()
     {
         victory.Post(gameObject);

@@ -35,7 +35,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{3F79F084-0DDE-B021-D9BD-600DF45A5D55}">
+		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{D4C063E2-3D89-83C6-6DA4-3F1A1D6E738D}">
 			<ShortName>SFX_Test</ShortName>
 			<Path>SFX_Test.bnk</Path>
 			<Media>
@@ -86,6 +86,10 @@
 				<File Id="149235498" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BigMech-MusicFiles\BigMech-Winds2_170bpm4-4_L8M_P0.wav</ShortName>
 					<CachePath>SFX/BigMech-MusicFiles/BigMech-Winds2_170bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="161465446" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Mech Start.wav</ShortName>
+					<CachePath>SFX/Mech Start_10C4C929.wem</CachePath>
 				</File>
 				<File Id="187151702" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small Hit.wav</ShortName>
@@ -311,6 +315,11 @@
 						<MediaRef Id="967748420"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2374007780" Name="Play_Mech_Start" DurationType="OneShot" DurationMin="3.2376041" DurationMax="3.2376041">
+					<MediaRefs>
+						<MediaRef Id="161465446"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3894796597" Name="Play_Mid_Hits" DurationType="OneShot" DurationMin="0.69128126" DurationMax="1.9448333">
 					<MediaRefs>
 						<MediaRef Id="504562728"/>
@@ -365,5 +374,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F32D1880-EC01-753E-6EC2-CBCC03C3D5B5}</FileHash>
+	<FileHash>{1460D9FB-E801-D170-2B0B-BC213919C0E7}</FileHash>
 </SoundBanksInfo>

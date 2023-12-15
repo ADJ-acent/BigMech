@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID PLAY_DEFEAT = 324646143U;
         static const AkUniqueID PLAY_ENGINE_LOOP = 2588973845U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
+        static const AkUniqueID PLAY_MECH_START = 2374007780U;
         static const AkUniqueID PLAY_MID_HITS = 3894796597U;
         static const AkUniqueID PLAY_NIGHT_AMBIENCE = 2019603999U;
         static const AkUniqueID PLAY_PUNCH_BUILDING = 3404907241U;

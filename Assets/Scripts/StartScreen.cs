@@ -30,6 +30,8 @@ public class StartScreen : MonoBehaviour
     public GameObject smallCrab9;
     public GameObject CrabBoss;
 
+    private bool soundPlayed;
+
     // private List<string> triggers = new List<string>(){"Attack", "Block", "Start"};
 
     // Start is called before the first frame update
@@ -38,6 +40,7 @@ public class StartScreen : MonoBehaviour
         selfAnim = transform.GetComponent<Animator>();
         cogAnim = cog.GetComponent<Animator>();
         counter = 0;
+        soundPlayed = false;
     }
 
     // Update is called once per frame
@@ -62,7 +65,11 @@ public class StartScreen : MonoBehaviour
             {
                 selfAnim.SetTrigger("Starting");
                 cog.SetActive(true);
-            }
+                if (!soundPlayed)
+                {
+                    StartCoroutine(mechStarting());
+                }
+        }
         // }
     }
 
@@ -98,5 +105,12 @@ public class StartScreen : MonoBehaviour
     {
         yield return new WaitForSeconds(20.0f);
         CrabBoss.SetActive(true);
+    }
+
+    public IEnumerator mechStarting()
+    {
+        yield return new WaitForSeconds(0.5f);
+        AudioManager.Instance.playMechStart(startScreen);
+        soundPlayed = true;
     }
 }

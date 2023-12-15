@@ -10,6 +10,7 @@
 						<ObjectRef Name="Play_Night_Ambience" ID="{D590A751-5FCA-438E-AAC8-5B05F098CC62}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Defeat" ID="{A10C19BB-2876-4420-8F18-E2D5B60B0191}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps" ID="{B439CBE8-6AB5-44B6-855F-9E4CB01AE8A2}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Mech_Start" ID="{7E0A89DF-4EE4-452C-BFA5-ECC61D07A6D5}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Building_Collapse" ID="{10C6FBA7-B3EE-455B-BE51-557540CC28EA}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Big_Hit" ID="{CE2C3F4E-A19D-46CC-A30E-11E1175D9B3A}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Small_Piece_Shatter" ID="{82BFA321-EB47-4790-90DC-32D92847CE21}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>

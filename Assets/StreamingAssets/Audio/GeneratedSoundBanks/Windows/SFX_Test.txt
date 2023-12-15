@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2019603999	Play_Night_Ambience			\Default Work Unit\Play_Night_Ambience	
 	2055996920	Play_Crab_Walk			\Default Work Unit\Play_Crab_Walk	
 	2165031948	Play_Small_Hits			\Default Work Unit\Play_Small_Hits	
+	2374007780	Play_Mech_Start			\Default Work Unit\Play_Mech_Start	
 	2453267296	Play_Victory			\Default Work Unit\Play_Victory	
 	2456951556	Play_Building_Collapse			\Default Work Unit\Play_Building_Collapse	
 	2588973845	Play_engine_loop			\Default Work Unit\Play_engine_loop	
@@ -46,6 +47,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	132936878	BigMech-TransitionFiller_170bpm4-4_L4M_P0	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\BigMech-MusicFiles\BigMech-TransitionFiller_170bpm4-4_L4M_P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BigMech_InteractiveMusic\Fighting\Main1\BigMech-TransitionFiller_170bpm4-4_L4M_P0		1245320
 	145399657	BigMech-Bass2_170bpm4-4_L8M_P0	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\BigMech-MusicFiles\BigMech-Bass2_170bpm4-4_L8M_P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BigMech_InteractiveMusic\Intro\BigMech-Bass2_170bpm4-4_L8M_P0		1992424
 	149235498	BigMech-Winds2_170bpm4-4_L8M_P0	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\BigMech-MusicFiles\BigMech-Winds2_170bpm4-4_L8M_P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BigMech_InteractiveMusic\Intro\BigMech-Winds2_170bpm4-4_L8M_P0		1992424
+	161465446	Mech Start	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Mech Start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mech Start		310906
 	187151702	Small Hit 1	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Small Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Hits\Small Hit 1		133320
 	221989671	small_piece_3	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\small stone_A4E24545.wem		\Actor-Mixer Hierarchy\Default Work Unit\Small Piece Shatter\small_piece_3		135048
 	275675252	Defeat	C:\Users\shang\OneDrive\Documents\GitHub\BigMech\BigMech_WwiseProject\.cache\Windows\SFX\Defeat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Defeat		325808

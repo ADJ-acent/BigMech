@@ -168,6 +168,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Mech_Start" ID="{7E0A89DF-4EE4-452C-BFA5-ECC61D07A6D5}">
+					<ChildrenList>
+						<Action Name="" ID="{AD28D3CE-3CE2-472F-80ED-2BD31ACB1EAE}" ShortID="763442831">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mech Start" ID="{01CFA8DF-BF01-49F1-A02C-677E5B58FF68}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

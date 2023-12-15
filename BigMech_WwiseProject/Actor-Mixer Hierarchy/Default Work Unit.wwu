@@ -1076,6 +1076,28 @@
 						<ActiveSource Name="Night Ambience" ID="{B184325C-136B-4691-89FD-E4AFC30E3546}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Mech Start" ID="{01CFA8DF-BF01-49F1-A02C-677E5B58FF68}" ShortID="239258701">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Mech Start" ID="{A6D2F6D4-754B-4B4C-98AC-A24085870E4E}">
+							<Language>SFX</Language>
+							<AudioFile>Mech Start.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="161465446"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Mech Start" ID="{A6D2F6D4-754B-4B4C-98AC-A24085870E4E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
