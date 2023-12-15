@@ -28,11 +28,13 @@ namespace BossAI
         
         public override NodeState Evaluate()
         {
+            if (_mechTransform == null) return NodeState.Failure;
             if (Vector3.Distance(_transform.position, _mechTransform.position) <= _offset + 20)
             {
                 Vector3 mechPos = _mechTransform.position;
                 _transform.LookAt(new Vector3(mechPos.x, _transform.position.y, mechPos.z));
 
+                AudioManager.Instance.setFightingState();
                 state = NodeState.Success;
                 return state;
             }
