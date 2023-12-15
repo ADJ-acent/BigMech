@@ -24,11 +24,9 @@ namespace BossAI
         public override NodeState Evaluate()
         {
             Transform target = (Transform)GetData("target");
-            
             if (!_hasMoved)
             {
-                Vector3 targetPOS = new Vector3(target.position.x, _transform.position.y, target.position.z);
-                _navMeshAgent.SetDestination(targetPOS);
+                _navMeshAgent.SetDestination(target.position);
                 _animator.SetTrigger("Idle");
                 _hasMoved = true;
                 return NodeState.Running;
@@ -38,10 +36,8 @@ namespace BossAI
             {
                     if (!_navMeshAgent.hasPath || _navMeshAgent.velocity.sqrMagnitude == 0f)
                     {
-                        Debug.Log(target);
-                        Debug.Log(target.position);
-                        Vector3 targetPOS = new Vector3(target.position.x, _transform.position.y, target.position.z);
-                        Debug.Log(_navMeshAgent.SetDestination(targetPOS));
+                        _navMeshAgent.SetDestination(target.position);
+                        _animator.SetTrigger("Idle");
                         
                     }
 

@@ -57,8 +57,7 @@ namespace BossAI
                     if (curAttack == maxCount-1)
                     {
                         RayfireConnectivity rc = target.GetComponent<RayfireConnectivity>();
-                        if (rc != null)
-                            rc.enabled = true;
+                        rc.enabled = true;
                     }
 
                     _right.boxSize *= scaleSize;
