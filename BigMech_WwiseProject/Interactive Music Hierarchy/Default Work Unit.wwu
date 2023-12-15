@@ -1777,369 +1777,6 @@
 								</ObjectList>
 							</ObjectLists>
 						</MusicSegment>
-						<MusicSegment Name="Intro" ID="{90CF0988-9F26-42B9-91CA-B92FFCAB569B}" ShortID="698773291">
-							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="26117.6337201547"/>
-								<Property Name="Tempo" Type="Real64" Value="170"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicTrack Name="BigMech-Drum1_170bpm4-4_L8M_P0" ID="{BB47E85C-921A-4BC0-9E3D-76BA6D9D8F7C}" ShortID="1069927069">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BigMech-Drum1_170bpm4-4_L8M_P0" ID="{166626CE-9473-4DF7-8B9D-C5A6F79DB3F0}">
-											<Language>SFX</Language>
-											<AudioFile>BigMech-MusicFiles\BigMech-Drum1_170bpm4-4_L8M_P0.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="708908718"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{E193D586-C0DA-4D5A-8907-0046EE467357}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{9C1B0866-0E95-4547-BE28-6EFE3855066B}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="BigMech-Drum1_170bpm4-4_L8M_P0" ID="{112F3442-6730-4156-AD53-8A130328CD07}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="11294.10430839"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="BigMech-Drum1_170bpm4-4_L8M_P0" ID="{166626CE-9473-4DF7-8B9D-C5A6F79DB3F0}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-																<Reference>
-																	<Local>
-																		<MusicClip Name="BigMech-Drum1_170bpm4-4_L8M_P0" ID="{861FC8CE-6772-4B44-9D13-3523A4272BD9}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="11294.10430839"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																				<Property Name="PlayAt" Type="Real64" Value="11294.1176470588"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="BigMech-Drum1_170bpm4-4_L8M_P0" ID="{166626CE-9473-4DF7-8B9D-C5A6F79DB3F0}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="BigMech-Drum2_170bpm4-4_L8M_P0" ID="{153F0BB2-3C5F-4044-8CBB-7656E259C381}" ShortID="517432910">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BigMech-Drum2_170bpm4-4_L8M_P0" ID="{7A6A9B5E-4F05-4652-B7F1-903C0EF0B52E}">
-											<Language>SFX</Language>
-											<AudioFile>BigMech-MusicFiles\BigMech-Drum2_170bpm4-4_L8M_P0.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1073514090"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{AEA00D88-1279-4F10-991E-C33D4AC8D518}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{FBF88886-8320-438F-991F-13E4E9743D36}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="BigMech-Drum2_170bpm4-4_L8M_P0" ID="{ADE60953-9549-4B63-9A8E-F45C9341F333}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="11294.10430839"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="BigMech-Drum2_170bpm4-4_L8M_P0" ID="{7A6A9B5E-4F05-4652-B7F1-903C0EF0B52E}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-																<Reference>
-																	<Local>
-																		<MusicClip Name="BigMech-Drum2_170bpm4-4_L8M_P0" ID="{63DD6218-3BD8-499A-A085-DAE32A2A8F40}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="11294.10430839"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																				<Property Name="PlayAt" Type="Real64" Value="11294.1176470588"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="BigMech-Drum2_170bpm4-4_L8M_P0" ID="{7A6A9B5E-4F05-4652-B7F1-903C0EF0B52E}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="BigMech-Winds1_170bpm4-4_L8M_P0" ID="{5BB2777A-EC7C-4549-AD70-7315AE883F05}" ShortID="197163162">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BigMech-Winds1_170bpm4-4_L8M_P0" ID="{F2FB8A4A-F24B-4B77-B4C9-74537A702317}">
-											<Language>SFX</Language>
-											<AudioFile>BigMech-MusicFiles\BigMech-Winds1_170bpm4-4_L8M_P0.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1041644554"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{FEE65F78-84FE-4166-BA4B-A000380A5542}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{09E169AE-A0F0-495A-9FDB-83292AEC1100}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="BigMech-Winds1_170bpm4-4_L8M_P0" ID="{72080848-20E4-4D28-A6D8-AA5E27FAC9EF}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="11294.10430839"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="BigMech-Winds1_170bpm4-4_L8M_P0" ID="{F2FB8A4A-F24B-4B77-B4C9-74537A702317}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="BigMech-Winds2_170bpm4-4_L8M_P0" ID="{B978ADC9-C04E-476B-9F5F-76BAA9517563}" ShortID="551720142">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BigMech-Winds2_170bpm4-4_L8M_P0" ID="{E353EBAC-D235-4C10-B07D-7DCC41F17411}">
-											<Language>SFX</Language>
-											<AudioFile>BigMech-MusicFiles\BigMech-Winds2_170bpm4-4_L8M_P0.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="149235498"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{530776C0-21D1-467F-81B0-8A01B80A6D10}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{ECE91D95-DEE4-4437-82FD-2C46075C4C34}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="BigMech-Winds2_170bpm4-4_L8M_P0" ID="{F08BBC10-3F00-44D3-85E4-4A4115C5E13B}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="11294.10430839"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																				<Property Name="PlayAt" Type="Real64" Value="11294.1176470588"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="BigMech-Winds2_170bpm4-4_L8M_P0" ID="{E353EBAC-D235-4C10-B07D-7DCC41F17411}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="BigMech-Bass1_170bpm4-4_L8M_P0" ID="{381E543C-51F2-4A77-9757-6D21E9514B98}" ShortID="277574531">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BigMech-Bass1_170bpm4-4_L8M_P0" ID="{31B235B4-AEFA-44CB-AD91-671621C8A5B6}">
-											<Language>SFX</Language>
-											<AudioFile>BigMech-MusicFiles\BigMech-Bass1_170bpm4-4_L8M_P0.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1000290357"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{36E897B1-4CB1-4B02-AABF-2E4D1A6DA361}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{265DD2CC-3C3D-42DE-89E4-CDA83DE5BC14}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="BigMech-Bass1_170bpm4-4_L8M_P0" ID="{075D0A36-BE8D-4CE7-ABEA-7908FBB01668}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="12705.873015873"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="1205.65006745765"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="BigMech-Bass1_170bpm4-4_L8M_P0" ID="{31B235B4-AEFA-44CB-AD91-671621C8A5B6}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="BigMech-Bass2_170bpm4-4_L8M_P0" ID="{072631BF-32FD-4933-90BD-D1DB17505184}" ShortID="779808406">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BigMech-Bass2_170bpm4-4_L8M_P0" ID="{39D3F47B-42DA-43ED-B6C2-8383857C4F35}">
-											<Language>SFX</Language>
-											<AudioFile>BigMech-MusicFiles\BigMech-Bass2_170bpm4-4_L8M_P0.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="145399657"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{2BBF2F68-89B1-48DD-96FA-466567300879}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{1A4CA980-A57D-402A-8A78-98F272D3570A}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="BigMech-Bass2_170bpm4-4_L8M_P0" ID="{B754BB58-DF5F-46EF-A02B-1B538FC3B421}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="11294.10430839"/>
-																				<Property Name="FadeInDuration" Type="Real64" Value="79.7856662288159"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																				<Property Name="PlayAt" Type="Real64" Value="11294.1176470588"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="BigMech-Bass2_170bpm4-4_L8M_P0" ID="{39D3F47B-42DA-43ED-B6C2-8383857C4F35}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Cues">
-									<Reference>
-										<Local>
-											<MusicCue Name="Entry Cue" ID="{1593DB7F-2AED-442A-83E6-EDE4334E8F73}"/>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MusicCue Name="Exit Cue" ID="{888FA64A-C8BF-4472-8DB6-ED42DF9B72F1}">
-												<PropertyList>
-													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="22588.2352941176"/>
-												</PropertyList>
-											</MusicCue>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</MusicSegment>
 						<MusicPlaylistContainer Name="Fighting" ID="{B56D9680-E9FA-418B-8712-588B39B8E9DB}" ShortID="775630303">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -3039,7 +2676,7 @@
 																									</Point>
 																									<Point>
 																										<XPos>15</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
 																								</PointList>
@@ -4349,6 +3986,409 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Calm" ID="{53505B1F-0564-45BD-9E53-6AD09C82D5CF}" ShortID="305615686">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Intro" ID="{90CF0988-9F26-42B9-91CA-B92FFCAB569B}" ShortID="698773291">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="26117.6337201547"/>
+										<Property Name="Tempo" Type="Real64" Value="170"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="BigMech-Drum1_170bpm4-4_L8M_P0" ID="{BB47E85C-921A-4BC0-9E3D-76BA6D9D8F7C}" ShortID="1069927069">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BigMech-Drum1_170bpm4-4_L8M_P0" ID="{166626CE-9473-4DF7-8B9D-C5A6F79DB3F0}">
+													<Language>SFX</Language>
+													<AudioFile>BigMech-MusicFiles\BigMech-Drum1_170bpm4-4_L8M_P0.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="708908718"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{E193D586-C0DA-4D5A-8907-0046EE467357}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{9C1B0866-0E95-4547-BE28-6EFE3855066B}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="BigMech-Drum1_170bpm4-4_L8M_P0" ID="{112F3442-6730-4156-AD53-8A130328CD07}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="11294.10430839"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="BigMech-Drum1_170bpm4-4_L8M_P0" ID="{166626CE-9473-4DF7-8B9D-C5A6F79DB3F0}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="BigMech-Drum1_170bpm4-4_L8M_P0" ID="{861FC8CE-6772-4B44-9D13-3523A4272BD9}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="11294.10430839"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="11294.1176470588"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="BigMech-Drum1_170bpm4-4_L8M_P0" ID="{166626CE-9473-4DF7-8B9D-C5A6F79DB3F0}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="BigMech-Drum2_170bpm4-4_L8M_P0" ID="{153F0BB2-3C5F-4044-8CBB-7656E259C381}" ShortID="517432910">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BigMech-Drum2_170bpm4-4_L8M_P0" ID="{7A6A9B5E-4F05-4652-B7F1-903C0EF0B52E}">
+													<Language>SFX</Language>
+													<AudioFile>BigMech-MusicFiles\BigMech-Drum2_170bpm4-4_L8M_P0.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1073514090"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{AEA00D88-1279-4F10-991E-C33D4AC8D518}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{FBF88886-8320-438F-991F-13E4E9743D36}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="BigMech-Drum2_170bpm4-4_L8M_P0" ID="{ADE60953-9549-4B63-9A8E-F45C9341F333}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="11294.10430839"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="BigMech-Drum2_170bpm4-4_L8M_P0" ID="{7A6A9B5E-4F05-4652-B7F1-903C0EF0B52E}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="BigMech-Drum2_170bpm4-4_L8M_P0" ID="{63DD6218-3BD8-499A-A085-DAE32A2A8F40}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="11294.10430839"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="11294.1176470588"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="BigMech-Drum2_170bpm4-4_L8M_P0" ID="{7A6A9B5E-4F05-4652-B7F1-903C0EF0B52E}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="BigMech-Winds1_170bpm4-4_L8M_P0" ID="{5BB2777A-EC7C-4549-AD70-7315AE883F05}" ShortID="197163162">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BigMech-Winds1_170bpm4-4_L8M_P0" ID="{F2FB8A4A-F24B-4B77-B4C9-74537A702317}">
+													<Language>SFX</Language>
+													<AudioFile>BigMech-MusicFiles\BigMech-Winds1_170bpm4-4_L8M_P0.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1041644554"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{FEE65F78-84FE-4166-BA4B-A000380A5542}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{09E169AE-A0F0-495A-9FDB-83292AEC1100}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="BigMech-Winds1_170bpm4-4_L8M_P0" ID="{72080848-20E4-4D28-A6D8-AA5E27FAC9EF}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="11294.10430839"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="BigMech-Winds1_170bpm4-4_L8M_P0" ID="{F2FB8A4A-F24B-4B77-B4C9-74537A702317}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="BigMech-Winds2_170bpm4-4_L8M_P0" ID="{B978ADC9-C04E-476B-9F5F-76BAA9517563}" ShortID="551720142">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BigMech-Winds2_170bpm4-4_L8M_P0" ID="{E353EBAC-D235-4C10-B07D-7DCC41F17411}">
+													<Language>SFX</Language>
+													<AudioFile>BigMech-MusicFiles\BigMech-Winds2_170bpm4-4_L8M_P0.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="149235498"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{530776C0-21D1-467F-81B0-8A01B80A6D10}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{ECE91D95-DEE4-4437-82FD-2C46075C4C34}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="BigMech-Winds2_170bpm4-4_L8M_P0" ID="{F08BBC10-3F00-44D3-85E4-4A4115C5E13B}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="11294.10430839"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="11294.1176470588"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="BigMech-Winds2_170bpm4-4_L8M_P0" ID="{E353EBAC-D235-4C10-B07D-7DCC41F17411}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="BigMech-Bass1_170bpm4-4_L8M_P0" ID="{381E543C-51F2-4A77-9757-6D21E9514B98}" ShortID="277574531">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BigMech-Bass1_170bpm4-4_L8M_P0" ID="{31B235B4-AEFA-44CB-AD91-671621C8A5B6}">
+													<Language>SFX</Language>
+													<AudioFile>BigMech-MusicFiles\BigMech-Bass1_170bpm4-4_L8M_P0.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1000290357"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{36E897B1-4CB1-4B02-AABF-2E4D1A6DA361}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{265DD2CC-3C3D-42DE-89E4-CDA83DE5BC14}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="BigMech-Bass1_170bpm4-4_L8M_P0" ID="{075D0A36-BE8D-4CE7-ABEA-7908FBB01668}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="12705.873015873"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="1205.65006745765"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="BigMech-Bass1_170bpm4-4_L8M_P0" ID="{31B235B4-AEFA-44CB-AD91-671621C8A5B6}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="BigMech-Bass2_170bpm4-4_L8M_P0" ID="{072631BF-32FD-4933-90BD-D1DB17505184}" ShortID="779808406">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BigMech-Bass2_170bpm4-4_L8M_P0" ID="{39D3F47B-42DA-43ED-B6C2-8383857C4F35}">
+													<Language>SFX</Language>
+													<AudioFile>BigMech-MusicFiles\BigMech-Bass2_170bpm4-4_L8M_P0.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="145399657"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{2BBF2F68-89B1-48DD-96FA-466567300879}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{1A4CA980-A57D-402A-8A78-98F272D3570A}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="BigMech-Bass2_170bpm4-4_L8M_P0" ID="{B754BB58-DF5F-46EF-A02B-1B538FC3B421}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="11294.10430839"/>
+																						<Property Name="FadeInDuration" Type="Real64" Value="79.7856662288159"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="11294.1176470588"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="BigMech-Bass2_170bpm4-4_L8M_P0" ID="{39D3F47B-42DA-43ED-B6C2-8383857C4F35}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{1593DB7F-2AED-442A-83E6-EDE4334E8F73}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{888FA64A-C8BF-4472-8DB6-ED42DF9B72F1}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="22588.2352941176"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{F0C54D45-93ED-43FC-BF8D-60711EA11248}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{DF7158DD-EFFA-43A2-A74F-638D252D6957}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{CC070825-7A99-47CC-962A-6ABB9864782A}" ShortID="505915130">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="3"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{28FB1C68-A8F2-4765-93A8-50DE70F6EDFA}" ShortID="48298635">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Intro" ID="{90CF0988-9F26-42B9-91CA-B92FFCAB569B}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{546C6F49-866E-4A6F-8A51-7146496E2D62}">
@@ -4372,7 +4412,7 @@
 								<PathElementRef Name="CalmState" ID="{EEA8D06F-5894-4EFF-80C6-5227DA787B11}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="Intro" ID="{90CF0988-9F26-42B9-91CA-B92FFCAB569B}" WorkUnitID="{14650F51-903F-4F63-977D-41B824CA224D}" Platform="Linked"/>
+								<AudioNodeRef Name="Calm" ID="{53505B1F-0564-45BD-9E53-6AD09C82D5CF}" WorkUnitID="{14650F51-903F-4F63-977D-41B824CA224D}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 						<Entry>
