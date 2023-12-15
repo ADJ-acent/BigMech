@@ -82,15 +82,15 @@ public class StartScreen : MonoBehaviour
 
     public void ActivateSmallCrabs()
     {
-        smallCrab1.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
-        smallCrab2.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
-        smallCrab3.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
-        smallCrab4.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
-        smallCrab5.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
-        smallCrab6.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
-        smallCrab7.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
-        smallCrab8.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
-        smallCrab9.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
+        smallCrab1.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
+        smallCrab2.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
+        smallCrab3.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
+        smallCrab4.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
+        smallCrab5.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
+        smallCrab6.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
+        smallCrab7.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
+        smallCrab8.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
+        smallCrab9.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
         StartCoroutine(Wait());
     }
 
