@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID PLAY_MID_HITS = 3894796597U;
         static const AkUniqueID PLAY_NIGHT_AMBIENCE = 2019603999U;
         static const AkUniqueID PLAY_PUNCH_BUILDING = 3404907241U;
+        static const AkUniqueID PLAY_SMALL_CRAB_HISS = 395366456U;
         static const AkUniqueID PLAY_SMALL_HITS = 2165031948U;
         static const AkUniqueID PLAY_SMALL_PIECE_SHATTER = 391794082U;
         static const AkUniqueID PLAY_VICTORY = 2453267296U;

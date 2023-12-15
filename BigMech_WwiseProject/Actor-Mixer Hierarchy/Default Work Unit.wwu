@@ -1098,6 +1098,105 @@
 						<ActiveSource Name="Mech Start" ID="{A6D2F6D4-754B-4B4C-98AC-A24085870E4E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="small crab hiss" ID="{66BF1B29-4E51-40E4-85AD-B7DFDE0CA02C}" ShortID="164140978">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="small_crab_hiss1" ID="{0A608DFB-2F11-4596-99A2-92081169B582}" ShortID="311065319">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="small_crab_hiss1" ID="{C5CC052A-ACCC-4CDD-B706-3B93AAD99387}">
+									<Language>SFX</Language>
+									<AudioFile>small crab hiss\small_crab_hiss1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1060976758"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="small_crab_hiss1" ID="{C5CC052A-ACCC-4CDD-B706-3B93AAD99387}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="small_crab_hiss2" ID="{B4887017-0957-488E-A9A1-1CB85D018E5A}" ShortID="796325399">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="small_crab_hiss2" ID="{0CEF9C08-233C-451D-8FC0-B748ECE94EB9}">
+									<Language>SFX</Language>
+									<AudioFile>small crab hiss\small_crab_hiss2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="100360081"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="small_crab_hiss2" ID="{0CEF9C08-233C-451D-8FC0-B748ECE94EB9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="small_crab_hiss3" ID="{69B4E720-9E67-4E96-967C-4ED09760906C}" ShortID="827172202">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BC2EA024-651D-4B78-8F78-16EC5C0CEE9B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{940D17CC-86B8-4D36-BECD-6F46ADE1F295}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="small_crab_hiss3" ID="{CE52E6D7-A8CF-4FBC-941B-234604E9D26A}">
+									<Language>SFX</Language>
+									<AudioFile>small crab hiss\small_crab_hiss3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="370026190"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="small_crab_hiss3" ID="{CE52E6D7-A8CF-4FBC-941B-234604E9D26A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

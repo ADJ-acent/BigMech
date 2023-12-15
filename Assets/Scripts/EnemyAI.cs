@@ -38,6 +38,8 @@ public class EnemyAI : MonoBehaviour
     public float damage;
     public Canvas canvas;
 
+    private bool playedHiss;
+
     private void Awake()
     {
         SpawnIndicator();
@@ -48,6 +50,7 @@ public class EnemyAI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         transform.LookAt(player);
         // deathVFX.Stop();
+        playedHiss = false;
     }
 
     private void Update()
@@ -96,6 +99,12 @@ public class EnemyAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             anim.SetTrigger("Attack");
+
+            if (!playedHiss)
+            {
+                AudioManager.Instance.playCrabHiss();
+                playedHiss = true;
+            }
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
