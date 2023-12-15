@@ -157,6 +157,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_BigMech_InteractiveMusic" ID="{1CA51DCB-6A6E-4A55-82C7-EBE101BB86B0}">
+					<ChildrenList>
+						<Action Name="" ID="{F363B066-31E9-4D06-870B-A5922440EC9F}" ShortID="805575771">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BigMech_InteractiveMusic" ID="{3A2F3A27-1CA5-4B40-89CC-5FD4A3D13567}" WorkUnitID="{14650F51-903F-4F63-977D-41B824CA224D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

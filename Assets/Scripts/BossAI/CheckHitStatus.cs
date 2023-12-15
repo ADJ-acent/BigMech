@@ -57,6 +57,8 @@ namespace BossAI
 
         private void SetHitStatus(Vector3 hitDirection, int damage)
         {
+            object isDead = GetData("dead");
+            if (isDead != null && (bool) isDead) return;
             object isStunned = GetData("stun");
             object isAttacking = GetData("Attack");
             // if stunned move crab to the opposite of the hit
