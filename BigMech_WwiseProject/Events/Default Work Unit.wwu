@@ -179,6 +179,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_small_crab_hiss" ID="{C1268A2B-B347-4145-9D52-DFEEFB6BBA0D}">
+					<ChildrenList>
+						<Action Name="" ID="{315A2807-138F-4043-93CE-46CCCDF67C14}" ShortID="99317149">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="small crab hiss" ID="{66BF1B29-4E51-40E4-85AD-B7DFDE0CA02C}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

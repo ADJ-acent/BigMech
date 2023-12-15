@@ -35,7 +35,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{D4C063E2-3D89-83C6-6DA4-3F1A1D6E738D}">
+		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{3C011B2B-AD46-3E8C-3BC4-09C5FE6F582C}">
 			<ShortName>SFX_Test</ShortName>
 			<Path>SFX_Test.bnk</Path>
 			<Media>
@@ -70,6 +70,10 @@
 				<File Id="78425507" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BigMech-MusicFiles\BigMech-TransitionMelody1_170bpm4-4_L11M_P0.wav</ShortName>
 					<CachePath>SFX/BigMech-MusicFiles/BigMech-TransitionMelody1_170bpm4-4_L11M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="100360081" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>small crab hiss\small_crab_hiss2.wav</ShortName>
+					<CachePath>SFX/small crab hiss/small_crab_hiss2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="104985127" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BigMech-MusicFiles\BigMech-DrumEnd_170bpm4-4_L3M_P0.wav</ShortName>
@@ -110,6 +114,10 @@
 				<File Id="298477130" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BigMech-MusicFiles\BigMech-FastDrum1_170bpm4-4_L4M_P0.wav</ShortName>
 					<CachePath>SFX/BigMech-MusicFiles/BigMech-FastDrum1_170bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="370026190" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>small crab hiss\small_crab_hiss3.wav</ShortName>
+					<CachePath>SFX/small crab hiss/small_crab_hiss3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="462439837" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>wood fall 1.wav</ShortName>
@@ -210,6 +218,10 @@
 				<File Id="1041644554" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BigMech-MusicFiles\BigMech-Winds1_170bpm4-4_L8M_P0.wav</ShortName>
 					<CachePath>SFX/BigMech-MusicFiles/BigMech-Winds1_170bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1060976758" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>small crab hiss\small_crab_hiss1.wav</ShortName>
+					<CachePath>SFX/small crab hiss/small_crab_hiss1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1073514090" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BigMech-MusicFiles\BigMech-Drum2_170bpm4-4_L8M_P0.wav</ShortName>
@@ -339,6 +351,13 @@
 						<MediaRef Id="766652272"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="395366456" Name="Play_small_crab_hiss" DurationType="OneShot" DurationMin="1.5181667" DurationMax="2.165021">
+					<MediaRefs>
+						<MediaRef Id="100360081"/>
+						<MediaRef Id="370026190"/>
+						<MediaRef Id="1060976758"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2165031948" Name="Play_Small_Hits" DurationType="OneShot" DurationMin="0.51476043" DurationMax="0.69388545">
 					<MediaRefs>
 						<MediaRef Id="187151702"/>
@@ -374,5 +393,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5E1E3FAE-F4BE-D802-E7FA-38A70F5CBD26}</FileHash>
+	<FileHash>{EC5151DF-6362-4338-07EE-ADADFB14F70B}</FileHash>
 </SoundBanksInfo>

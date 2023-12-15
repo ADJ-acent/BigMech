@@ -6,6 +6,7 @@
 				<SoundBank Name="SFX_Test" ID="{5C2FE11E-0D10-4E1E-9A6E-3BC6751590D9}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Victory" ID="{50C2C536-AD06-40A1-ADF3-2DC4C0B1E3F7}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_small_crab_hiss" ID="{C1268A2B-B347-4145-9D52-DFEEFB6BBA0D}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="engine_loop" ID="{E53D00F2-92FF-4330-B380-2BB5C6084F66}" WorkUnitID="{31AEE4DE-6BBD-4E1B-BF9F-8A18B2EDFF77}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Night_Ambience" ID="{D590A751-5FCA-438E-AAC8-5B05F098CC62}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Defeat" ID="{A10C19BB-2876-4420-8F18-E2D5B60B0191}" WorkUnitID="{2184E299-A2E6-443A-92A9-19648C30E517}" Origin="Manual" Filter="7"/>
