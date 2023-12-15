@@ -658,7 +658,7 @@ PrefabInstance:
     - target: {fileID: 6315279505870647709, guid: 41115222d720d0745bddf7673655538a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.54599
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 6315279505870647709, guid: 41115222d720d0745bddf7673655538a,
         type: 3}
@@ -744,7 +744,7 @@ PrefabInstance:
     - target: {fileID: 8302089119497122726, guid: 41115222d720d0745bddf7673655538a,
         type: 3}
       propertyPath: m_Name
-      value: Canvas 3
+      value: PlayerCanvas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
