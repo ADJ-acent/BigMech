@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5FF8B6C0-73E0-4896-B583-3452B4F66DBB}" SchemaVersion="110">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{5FF8B6C0-73E0-4896-B583-3452B4F66DBB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5FF8B6C0-73E0-4896-B583-3452B4F66DBB}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Fighting_State" ID="{0C0D8A48-CC64-4D46-90BA-E4E58470D235}">
+					<ChildrenList>
+						<State Name="None" ID="{0DCB35BD-0CE1-4298-BD79-13A79F66C987}"/>
+						<State Name="FightingCrab" ID="{53DD6AE9-D0F3-4ACB-9098-C8C765136E19}"/>
+						<State Name="FightEnd" ID="{96F61220-1BE5-415F-959C-781D75A5B92F}"/>
+						<State Name="CalmState" ID="{EEA8D06F-5894-4EFF-80C6-5227DA787B11}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

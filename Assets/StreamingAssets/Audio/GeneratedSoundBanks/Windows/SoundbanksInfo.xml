@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{978DB45D-87C0-7CAC-D341-6F23668F14A8}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1F2B9C25-F551-63CA-E6DE-920C11CE47C5}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -24,11 +24,25 @@
 			<GameParameters>
 				<GameParameter Id="3407379032" Name="ArmVelocity"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="196956717" Name="Fighting_State">
+					<States>
+						<State Id="169198692" Name="FightEnd"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1251818829" Name="FightingCrab"/>
+						<State Id="3375266715" Name="CalmState"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{515CCAA4-56CC-B7A0-F5C4-032778CA1605}">
+		<SoundBank Id="3018450665" Type="User" Language="SFX" Hash="{3F79F084-0DDE-B021-D9BD-600DF45A5D55}">
 			<ShortName>SFX_Test</ShortName>
 			<Path>SFX_Test.bnk</Path>
 			<Media>
+				<File Id="3274428" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-TrumpetBase1_170bpm4-4_L8M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-TrumpetBase1_170bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="4915979" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\heavy footsteps v2.wav</ShortName>
 					<CachePath>SFX/Footsteps/heavy footsteps v2_10C4C929.wem</CachePath>
@@ -45,9 +59,33 @@
 					<ShortName>CrabRoar.wav</ShortName>
 					<CachePath>SFX/CrabRoar_10C4C929.wem</CachePath>
 				</File>
+				<File Id="30151841" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-TrumpetBase2_170bpm4-4_L8M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-TrumpetBase2_170bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="64125215" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>building collapse v2.wav</ShortName>
 					<CachePath>SFX/building collapse v2_3B51F27E.wem</CachePath>
+				</File>
+				<File Id="78425507" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-TransitionMelody1_170bpm4-4_L11M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-TransitionMelody1_170bpm4-4_L11M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="104985127" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-DrumEnd_170bpm4-4_L3M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-DrumEnd_170bpm4-4_L3M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="132936878" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-TransitionFiller_170bpm4-4_L4M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-TransitionFiller_170bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="145399657" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-Bass2_170bpm4-4_L8M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-Bass2_170bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="149235498" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-Winds2_170bpm4-4_L8M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-Winds2_170bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="187151702" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small Hit.wav</ShortName>
@@ -65,6 +103,10 @@
 					<ShortName>Victory.wav</ShortName>
 					<CachePath>SFX/Victory_10C4C929.wem</CachePath>
 				</File>
+				<File Id="298477130" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-FastDrum1_170bpm4-4_L4M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-FastDrum1_170bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="462439837" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>wood fall 1.wav</ShortName>
 					<CachePath>SFX/wood fall 1_9E34FAA9.wem</CachePath>
@@ -76,6 +118,14 @@
 				<File Id="572267456" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Night Ambience.wav</ShortName>
 					<CachePath>SFX/Night Ambience_10C4C929.wem</CachePath>
+				</File>
+				<File Id="655841913" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Melody1 2nd ver.wav</ShortName>
+					<CachePath>SFX/Melody1 2nd ver_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="708908718" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-Drum1_170bpm4-4_L8M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-Drum1_170bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="741429729" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small Piece Shatter\small_piece_2.wav</ShortName>
@@ -97,9 +147,25 @@
 					<ShortName>CrabHiss.wav</ShortName>
 					<CachePath>SFX/CrabHiss_10C4C929.wem</CachePath>
 				</File>
+				<File Id="840434564" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-MelodyChords_170bpm4-4_L12M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-MelodyChords_170bpm4-4_L12M_P0_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="889949765" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\heavy footsteps v3.wav</ShortName>
 					<CachePath>SFX/Footsteps/heavy footsteps v3_4599E3AF.wem</CachePath>
+				</File>
+				<File Id="933460955" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-FastDrum2_170bpm4-4_L4M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-FastDrum2_170bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="947644036" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Transition Melody 2nd ver.wav</ShortName>
+					<CachePath>SFX/Transition Melody 2nd ver_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="951646094" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-Melody2_170bpm4-4_L12M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-Melody2_170bpm4-4_L12M_P0_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="954059510" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Big Hit.wav</ShortName>
@@ -112,6 +178,10 @@
 				<File Id="967776350" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Crab_Walk1.wav</ShortName>
 					<CachePath>SFX/Crab_Walk1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1000290357" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-Bass1_170bpm4-4_L8M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-Bass1_170bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="1011316994" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Mid Hit Long.wav</ShortName>
@@ -133,6 +203,14 @@
 					<ShortName>cement blocks fall.wav</ShortName>
 					<CachePath>SFX/cement blocks fall_0AFE41AE.wem</CachePath>
 				</File>
+				<File Id="1041644554" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-Winds1_170bpm4-4_L8M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-Winds1_170bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1073514090" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BigMech-MusicFiles\BigMech-Drum2_170bpm4-4_L8M_P0.wav</ShortName>
+					<CachePath>SFX/BigMech-MusicFiles/BigMech-Drum2_170bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
 			</Media>
 			<Plugins>
 				<Custom>
@@ -148,6 +226,44 @@
 					<MediaRefs>
 						<MediaRef Id="954059510"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="3179462199" Name="Play_BigMech_InteractiveMusic" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="196956717" Id="3375266715"/>
+							<MediaRefs>
+								<MediaRef Id="145399657"/>
+								<MediaRef Id="149235498"/>
+								<MediaRef Id="708908718"/>
+								<MediaRef Id="1000290357"/>
+								<MediaRef Id="1041644554"/>
+								<MediaRef Id="1073514090"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="196956717" Id="1251818829"/>
+							<MediaRefs>
+								<MediaRef Id="3274428"/>
+								<MediaRef Id="30151841"/>
+								<MediaRef Id="78425507"/>
+								<MediaRef Id="132936878"/>
+								<MediaRef Id="298477130"/>
+								<MediaRef Id="655841913"/>
+								<MediaRef Id="840434564"/>
+								<MediaRef Id="933460955"/>
+								<MediaRef Id="947644036"/>
+								<MediaRef Id="951646094"/>
+								<MediaRef Id="1000290357"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="196956717" Id="169198692"/>
+							<MediaRefs>
+								<MediaRef Id="3274428"/>
+								<MediaRef Id="104985127"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="2456951556" Name="Play_Building_Collapse" DurationType="OneShot" DurationMin="2.8762019" DurationMax="2.8762019">
 					<MediaRefs>
@@ -237,7 +353,17 @@
 			<GameParameters>
 				<GameParameter Id="3407379032" Name="ArmVelocity"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="196956717" Name="Fighting_State">
+					<States>
+						<State Id="169198692" Name="FightEnd"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1251818829" Name="FightingCrab"/>
+						<State Id="3375266715" Name="CalmState"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9BF34BC8-A5E2-0915-45DF-456DCC09B0CC}</FileHash>
+	<FileHash>{D23265C8-E8B3-3894-5800-E3DB706AF332}</FileHash>
 </SoundBanksInfo>
