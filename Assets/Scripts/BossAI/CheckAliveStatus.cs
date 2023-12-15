@@ -40,7 +40,7 @@ namespace BossAI
                 AudioManager.Instance.playVictory();
                 dying = true;
                 time = Time.time;
-                _animator.SetBool("Dying", true);
+                _animator.SetTrigger("Dying");
                 return NodeState.Success;
             }
     
