@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6948479752097033859}
   - component: {fileID: 3063076290135807926}
   m_Layer: 0
-  m_Name: huitugou_2105_2233
+  m_Name: streetlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
