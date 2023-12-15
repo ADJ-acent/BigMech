@@ -37,7 +37,6 @@ public class CrabBossUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // TODO: remove this line
         attackSignBlue.enabled = false;
         attackSignGreen.enabled = false;
         blockSignBlue.enabled = false;
@@ -60,7 +59,6 @@ public class CrabBossUI : MonoBehaviour
             attackSignOn = true;
             HideBlockSign();
             attackSignBlue.enabled = false;
-            // AttackSignCalc(attackSignGreen);
             StartCoroutine(Wait());
         }
 
@@ -70,7 +68,7 @@ public class CrabBossUI : MonoBehaviour
             HideBlockSign();
             if (attackSignOn) 
             {
-                attackSignGreen.enabled = false;
+                // attackSignGreen.enabled = false;
                 AttackSignCalc(attackSignBlue);
             }
             else HideAttackSign();
@@ -222,8 +220,8 @@ public class CrabBossUI : MonoBehaviour
 
     public IEnumerator Wait()
     {
-        BlockSignCalc(attackSignGreen);
-        yield return new WaitForSeconds(10);
-        attackSignOn = false;
+        AttackSignCalc(attackSignGreen);
+        yield return new WaitForSeconds(1.0f);
+        attackSignGreen.enabled = false;
     }
 }
