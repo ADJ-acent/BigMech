@@ -104,6 +104,7 @@ public class EnemyAI : MonoBehaviour
             {
                 AudioManager.Instance.playCrabHiss();
                 playedHiss = true;
+                AudioManager.Instance.setCalmState();
             }
 
             alreadyAttacked = true;
