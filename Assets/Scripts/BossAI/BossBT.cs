@@ -21,12 +21,13 @@ namespace BossAI
         private CheckStunStatus _stunNode;
         public float damage = 10f;
         bool playerInAttackRange;
+        public GameObject endScreen;
         protected override Node SetupTree() 
         {
             Transform t = transform;
             _stunNode = new CheckStunStatus(t, playerController);
             return new Selector(new List<Node> {
-                new CheckAliveStatus(t),
+                new CheckAliveStatus(t, endScreen),
                 new CheckHitStatus(t),
                 _stunNode, 
                 new Sequence(new List<Node>

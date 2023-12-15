@@ -14,12 +14,14 @@ namespace BossAI
         private NavMeshAgent _navMeshAgent;
         private bool dying = false;
         private float time = 0f;
+        private GameObject _endScreen;
         
-        public CheckAliveStatus (Transform transform)
+        public CheckAliveStatus (Transform transform, GameObject endScreen)
         {
             _transform = transform;
             _animator = transform.GetComponent<Animator>();
             _navMeshAgent = transform.GetComponent<NavMeshAgent>();
+            _endScreen = endScreen;
         }
         public override NodeState Evaluate()
         {
@@ -41,6 +43,7 @@ namespace BossAI
                 dying = true;
                 time = Time.time;
                 _animator.SetTrigger("Dying");
+                _endScreen.SetActive(true);
                 return NodeState.Success;
             }
     

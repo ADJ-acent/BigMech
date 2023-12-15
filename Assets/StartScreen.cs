@@ -12,57 +12,58 @@ public class StartScreen : MonoBehaviour
     public InputActionReference leftGrip;
     public GameObject cog;
     public GameObject startScreen;
-    public GameObject pointLight;
     public GameObject blackBox;
     public MechMovementPrototype script;
     private Animator selfAnim;
     private Animator cogAnim;
+    public int counter;
 
-    private List<string> triggers = new List<string>(){"Attack", "Block", "Start"};
+    // private List<string> triggers = new List<string>(){"Attack", "Block", "Start"};
 
     // Start is called before the first frame update
     void Start()
     {
         selfAnim = transform.GetComponent<Animator>();
         cogAnim = cog.GetComponent<Animator>();
+        counter = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (triggers.Count != 0)
-        {
-            if (Mathf.Epsilon <= (rightTrigger.action.ReadValue<float>()) || 
-                Mathf.Epsilon <= (rightGrip.action.ReadValue<float>()) ||
-                Mathf.Epsilon <= (leftTrigger.action.ReadValue<float>()) || 
-                Mathf.Epsilon <= (leftGrip.action.ReadValue<float>()))
-                {
-                    selfAnim.SetTrigger(triggers[0]);
-                    triggers.RemoveAt(0);
-                }
-        }
-        else 
-        {
-            if (Mathf.Epsilon <= (rightGrip.action.ReadValue<float>()) &&  
-                Mathf.Epsilon <= (leftGrip.action.ReadValue<float>()))
-                {
-                    selfAnim.SetTrigger("Starting");
-                    cog.SetActive(true);
-                }
-        }
+        // if (triggers.Count != 0)
+        // {
+        //     Debug.Log(triggers);
+        //     if (Mathf.Epsilon <= (rightTrigger.action.ReadValue<float>()) || 
+        //         Mathf.Epsilon <= (rightGrip.action.ReadValue<float>()) ||
+        //         Mathf.Epsilon <= (leftTrigger.action.ReadValue<float>()) || 
+        //         Mathf.Epsilon <= (leftGrip.action.ReadValue<float>()))
+        //         {
+        //             selfAnim.SetTrigger(triggers[0]);
+        //             triggers.RemoveAt(0);
+        //         }
+        // }
+        // else 
+        // {
+        if (Mathf.Epsilon <= (rightGrip.action.ReadValue<float>()) &&  
+            Mathf.Epsilon <= (leftGrip.action.ReadValue<float>()) && counter == 4)
+            {
+                selfAnim.SetTrigger("Starting");
+                cog.SetActive(true);
+            }
+        // }
     }
 
     public void DisableObjects()
     {
-        pointLight.SetActive(false);
-        blackBox.SetActive(false);
         script.enabled = true;
         startScreen.SetActive(false);
         Destroy(startScreen);
+        Destroy(blackBox);
     }
 
-    public void RemoveTrigger()
+    public void SetCounter()
     {
-        // triggers.RemoveAt(0);
+        counter = 4;
     }
 }
