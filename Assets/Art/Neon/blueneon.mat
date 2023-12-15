@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3904892348629062373
+--- !u!114 &-362353489563207034
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: lamp
+  m_Name: blueneon
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -127,8 +127,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.8301887, g: 0.52382576, b: 0, a: 1}
-    - _Color: {r: 0.8301887, g: 0.5238257, b: 0, a: 1}
-    - _EmissionColor: {r: 2.0619416, g: 0.9202658, b: 0.21397485, a: 1}
+    - _BaseColor: {r: 0, g: 0.10197057, b: 0.5031446, a: 1}
+    - _Color: {r: 0, g: 0.101970546, b: 0.50314456, a: 1}
+    - _EmissionColor: {r: 0.36504164, g: 0.7971653, b: 3.0314326, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
