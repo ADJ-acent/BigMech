@@ -32,6 +32,6 @@ public class EndScreen : MonoBehaviour
 
     public void DisableObjects()
     {
-        SceneManager.LoadScene("DemoForAlpha");
+        SceneManager.LoadScene("Final");
     }
 }

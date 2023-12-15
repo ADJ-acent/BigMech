@@ -19,6 +19,17 @@ public class StartScreen : MonoBehaviour
     private Animator cogAnim;
     public int counter;
 
+    public GameObject smallCrab1;
+    public GameObject smallCrab2;
+    public GameObject smallCrab3;
+    public GameObject smallCrab4;
+    public GameObject smallCrab5;
+    public GameObject smallCrab6;
+    public GameObject smallCrab7;
+    public GameObject smallCrab8;
+    public GameObject smallCrab9;
+    public GameObject CrabBoss;
+
     // private List<string> triggers = new List<string>(){"Attack", "Block", "Start"};
 
     // Start is called before the first frame update
@@ -61,10 +72,31 @@ public class StartScreen : MonoBehaviour
         startScreen.SetActive(false);
         Destroy(startScreen);
         Destroy(blackBox);
+        ActivateSmallCrabs();
     }
 
     public void SetCounter()
     {
         counter = 4;
+    }
+
+    public void ActivateSmallCrabs()
+    {
+        smallCrab1.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
+        smallCrab2.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
+        smallCrab3.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
+        smallCrab4.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
+        smallCrab5.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
+        smallCrab6.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
+        smallCrab7.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
+        smallCrab8.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
+        smallCrab9.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 10f;
+        StartCoroutine(Wait());
+    }
+
+    public IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(20.0f);
+        CrabBoss.SetActive(true);
     }
 }

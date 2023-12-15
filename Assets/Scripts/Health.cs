@@ -22,7 +22,12 @@ public class Health : MonoBehaviour
 
         curHealth = Math.Clamp(curHealth - delta, 0, maxHealth);
         playerController.healthLeft -= delta;
-        if (curHealth == 0) return true;
+        if (curHealth == 0) 
+        {
+            crabBossUI.attackSignOn = false;
+            crabBossUI.blockSignOn = false;
+            return true;
+        }
         return false;
     }
 
