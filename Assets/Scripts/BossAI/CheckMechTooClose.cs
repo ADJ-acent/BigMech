@@ -31,6 +31,7 @@ namespace BossAI
         
         public override NodeState Evaluate()
         {
+            if (_mechTransform == null) return NodeState.Failure;
             object stun = GetData("stun");
             object attacking = GetData("Attack");
             if ((stun != null && (bool)stun))

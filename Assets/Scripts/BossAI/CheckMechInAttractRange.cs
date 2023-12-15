@@ -28,6 +28,7 @@ namespace BossAI
         
         public override NodeState Evaluate()
         {
+            if (_mechTransform == null) return NodeState.Failure;
             if (Vector3.Distance(_transform.position, _mechTransform.position) <= _attractRange)
             { 
                 _crabBossUI.attackSignOn = true;
