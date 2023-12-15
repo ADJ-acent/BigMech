@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_BIG_HIT = 1214530318U;
+        static const AkUniqueID PLAY_BIGMECH_INTERACTIVEMUSIC = 3179462199U;
         static const AkUniqueID PLAY_BUILDING_COLLAPSE = 2456951556U;
         static const AkUniqueID PLAY_CRAB_ROAR = 3088348135U;
         static const AkUniqueID PLAY_CRAB_WALK = 2055996920U;
@@ -27,6 +28,23 @@ namespace AK
         static const AkUniqueID PLAY_SMALL_PIECE_SHATTER = 391794082U;
         static const AkUniqueID PLAY_VICTORY = 2453267296U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace FIGHTING_STATE
+        {
+            static const AkUniqueID GROUP = 196956717U;
+
+            namespace STATE
+            {
+                static const AkUniqueID CALMSTATE = 3375266715U;
+                static const AkUniqueID FIGHTEND = 169198692U;
+                static const AkUniqueID FIGHTINGCRAB = 1251818829U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace FIGHTING_STATE
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {
