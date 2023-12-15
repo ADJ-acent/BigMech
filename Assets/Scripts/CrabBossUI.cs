@@ -167,7 +167,6 @@ public class CrabBossUI : MonoBehaviour
         if (sign.sprite.name == "UI-defense-appear")
         {
             sign.enabled = true;
-            Debug.Log(animator.GetInteger("AttackNum"));
             if (animator.GetInteger("AttackNum") == 0) 
             {
                 armRight.enabled = false;

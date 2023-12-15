@@ -48,7 +48,7 @@ public class MechFist : MonoBehaviour
         if (other.gameObject.CompareTag("Crab"))
         {
             robotArmProjection.hitMech(isLeft);
-            _explosion.Clear();
+            visualEffect.Reinit();
             visualEffect.transform.position = transform.position;
             visualEffect.Play();
         }
