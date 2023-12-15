@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5824430527287694680}
   - component: {fileID: 1881172131492957847}
   m_Layer: 9
-  m_Name: FirePit
+  m_Name: FirePitfancy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,17 +154,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8306443186487516174, guid: 214a13f91a3b806448d66193162715e1,
         type: 3}
-      propertyPath: m_Intensity
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8306443186487516174, guid: 214a13f91a3b806448d66193162715e1,
-        type: 3}
       propertyPath: m_RenderMode
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 3336836181128943160, guid: 214a13f91a3b806448d66193162715e1, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 214a13f91a3b806448d66193162715e1, type: 3}
