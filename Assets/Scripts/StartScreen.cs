@@ -13,13 +13,12 @@ public class StartScreen : MonoBehaviour
     public InputActionReference leftGrip;
     public GameObject cog;
     public GameObject startScreen;
-    public Canvas startCanvas;
     public GameObject blackBox;
     public MechMovementPrototype script;
     private Animator selfAnim;
     private Animator cogAnim;
     public int counter;
-
+    private bool started = false;
     public GameObject smallCrab1;
     public GameObject smallCrab2;
     public GameObject smallCrab3;
@@ -42,12 +41,12 @@ public class StartScreen : MonoBehaviour
         cogAnim = cog.GetComponent<Animator>();
         counter = 0;
         soundPlayed = false;
-        startCanvas = startScreen.GetComponent<Canvas>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (started) return;
         // if (triggers.Count != 0)
         // {
         //     Debug.Log(triggers);
@@ -80,9 +79,11 @@ public class StartScreen : MonoBehaviour
         script.enabled = true;
         /*startScreen.SetActive(false);*/
         ActivateSmallCrabs();
-        startCanvas.enabled = false;
+        startScreen.GetComponent<SpriteRenderer>().enabled = false;
+        Destroy(cog);
         /*Destroy(startScreen);*/
         Destroy(blackBox);
+        started = true;
     }
 
     public void SetCounter()
@@ -99,42 +100,42 @@ public class StartScreen : MonoBehaviour
             smallCrab1.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
         }
             
-        if (smallCrab1 != null)
+        if (smallCrab2 != null)
         {
             done = false;
             smallCrab2.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
         }
-        if (smallCrab1 != null)
+        if (smallCrab3 != null)
         {
             done = false;
             smallCrab3.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
         }
-        if (smallCrab1 != null)
+        if (smallCrab4 != null)
         {
             done = false;
             smallCrab4.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
         }
-        if (smallCrab1 != null)
+        if (smallCrab5 != null)
         {
             done = false;
             smallCrab5.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
         }
-        if (smallCrab1 != null)
+        if (smallCrab6 != null)
         {
             done = false;
             smallCrab6.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
         }
-        if (smallCrab1 != null)
+        if (smallCrab7 != null)
         {
             done = false;
             smallCrab7.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
         }
-        if (smallCrab1 != null)
+        if (smallCrab8 != null)
         {
             done = false;
             smallCrab8.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
         }
-        if (smallCrab1 != null)
+        if (smallCrab9 != null)
         {
             done = false;
             smallCrab9.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
@@ -143,7 +144,7 @@ public class StartScreen : MonoBehaviour
         if (done)
         {
             StopCoroutine(Wait());
-            CrabBoss.SetActive(true);
+            CrabBoss.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
             Destroy(startScreen);
             
         }
@@ -153,7 +154,7 @@ public class StartScreen : MonoBehaviour
     public IEnumerator Wait()
     {
         yield return new WaitForSeconds(20.0f);
-        CrabBoss.SetActive(true);
+        CrabBoss.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 12f;
         Destroy(startScreen);
     }
 

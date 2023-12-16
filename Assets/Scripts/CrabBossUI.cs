@@ -53,6 +53,7 @@ public class CrabBossUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (attackSignBlue == null || attackSignGreen == null) return;
         if (successfulAttack) 
         {
             blockSignOn = false;
@@ -222,6 +223,6 @@ public class CrabBossUI : MonoBehaviour
     {
         AttackSignCalc(attackSignGreen);
         yield return new WaitForSeconds(1.0f);
-        attackSignGreen.enabled = false;
+        if (attackSignGreen != null) attackSignGreen.enabled = false;
     }
 }

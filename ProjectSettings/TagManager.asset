@@ -8,6 +8,7 @@ TagManager:
   - Building
   - Crab
   - Ground
+  - Fracture
   layers:
   - Default
   - TransparentFX

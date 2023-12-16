@@ -7,6 +7,6 @@ public class FloorDestruction : MonoBehaviour
 {
     private void OnCollisionEnter(Collision other)
     {
-        Destroy(other.gameObject,5f);
+        if (other.gameObject.CompareTag("Fracture")) Destroy(other.gameObject,5f);
     }
 }

@@ -24,6 +24,8 @@ public class Health : MonoBehaviour
         playerController.healthLeft -= delta;
         if (curHealth == 0) 
         {
+            Destroy(crabBossUI.attackSignBlue);
+            Destroy(crabBossUI.attackSignGreen);
             crabBossUI.attackSignOn = false;
             crabBossUI.blockSignOn = false;
             return true;
