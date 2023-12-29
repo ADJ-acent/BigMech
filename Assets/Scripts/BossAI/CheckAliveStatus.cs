@@ -38,7 +38,8 @@ namespace BossAI
             
             if (t != null && (bool)t)
             {
-                _navMeshAgent.isStopped = true;   
+                _navMeshAgent.isStopped = true;
+                AudioManager.Instance.setNoneState();
                 AudioManager.Instance.playVictory();
                 dying = true;
                 time = Time.time;

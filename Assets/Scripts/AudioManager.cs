@@ -30,7 +30,7 @@ public class AudioManager: Singleton<AudioManager>
     [SerializeField] public AK.Wwise.Event crabHiss;
 
     // music
-    // 
+    
     public void setFightingState()
     {
         AkSoundEngine.SetState("Fighting_State", "FightingCrab");
@@ -39,6 +39,11 @@ public class AudioManager: Singleton<AudioManager>
     public void setCalmState()
     {
         AkSoundEngine.SetState("Fighting_State", "CalmState");
+    }
+
+    public void setNoneState()
+    {
+        AkSoundEngine.SetState("Fighting_State", "None");
     }
 
     // mech robot sounds
